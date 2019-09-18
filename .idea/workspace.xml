@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="159c3e73-da89-4150-933a-5648e942f7d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/map/amap/20191001/01/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/map/amap/20191001/01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/map/amap/20191001/01/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/amap/20191001/01/index.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,26 +20,48 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map/amap/20191001/01/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="1222">
+              <caret line="188" column="14" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map/amap/20191001/01/index.js">
+        <entry file="file://$PROJECT_DIR$/map/amap/20191001/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="7" lean-forward="true" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/map/amap/20191001/01/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="1" lean-forward="true" selection-end-line="7" />
+            <state relative-caret-position="532">
+              <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#582#854#0" />
+                <element signature="e#875#972#0" />
+                <element signature="e#1023#1111#0" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1844#1958#0" />
+                <element signature="e#2004#5254#0" />
+                <element signature="e#2524#2652#0" />
+                <element signature="e#2783#2848#0" />
+                <element signature="e#2954#3799#0" />
+                <element signature="e#3081#3246#0" />
+                <element signature="e#3379#3586#0" />
+                <element signature="e#3589#3780#0" />
+                <element signature="e#3913#4554#0" />
+                <element signature="e#4058#4174#0" />
+                <element signature="e#4223#4419#0" />
+                <element signature="e#4635#5239#0" />
+                <element signature="e#4682#4955#0" />
+                <element signature="e#5044#5219#0" />
+                <element signature="e#5811#5911#0" />
+                <element signature="e#6024#6083#0" />
+                <element signature="e#6176#6542#0" />
+                <element signature="e#6177#6297#0" />
+                <element signature="e#6299#6419#0" />
+                <element signature="e#6421#6541#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,11 +71,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fitblue</find>
+      <find>fitall</find>
+      <find>myList</find>
+      <find>infoWindow</find>
+      <find>desc</find>
+      <find>data</find>
+      <find>.id</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,17 +96,8 @@
       <list>
         <option value="$PROJECT_DIR$/map/amap/20191001/01/index.css" />
         <option value="$PROJECT_DIR$/map/amap/20191001/01/index.js" />
+        <option value="$PROJECT_DIR$/map/amap/20191001/demo.html" />
         <option value="$PROJECT_DIR$/map/amap/20191001/01/index.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/static.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
@@ -156,12 +182,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568793633178</updated>
-      <workItem from="1568793635125" duration="1685000" />
+      <workItem from="1568793635125" duration="10951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1685000" />
+    <option name="totallyTimeSpent" value="10951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1737" height="1049" extended-state="0" />
@@ -204,10 +230,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/map/amap/20191001/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#582#854#0" />
+            <element signature="e#875#972#0" />
+            <element signature="e#1023#1111#0" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1844#1958#0" />
+            <element signature="e#2004#5254#0" />
+            <element signature="e#2524#2652#0" />
+            <element signature="e#2783#2848#0" />
+            <element signature="e#2954#3799#0" />
+            <element signature="e#3081#3246#0" />
+            <element signature="e#3379#3586#0" />
+            <element signature="e#3589#3780#0" />
+            <element signature="e#3913#4554#0" />
+            <element signature="e#4058#4174#0" />
+            <element signature="e#4223#4419#0" />
+            <element signature="e#4635#5239#0" />
+            <element signature="e#4682#4955#0" />
+            <element signature="e#5044#5219#0" />
+            <element signature="e#5811#5911#0" />
+            <element signature="e#6024#6083#0" />
+            <element signature="e#6176#6542#0" />
+            <element signature="e#6177#6297#0" />
+            <element signature="e#6299#6419#0" />
+            <element signature="e#6421#6541#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/map/amap/20191001/01/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="1222">
+          <caret line="188" column="14" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
         </state>
       </provider>
     </entry>

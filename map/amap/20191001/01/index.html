@@ -8,8 +8,43 @@
     <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61'></script>
     <!-- UI组件库 1.0 -->
     <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <style>
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 <div id="container"></div>
+<script type="text/javascript">
+    //创建地图
+    var map = new AMap.Map('container', {
+        zoom: 10,
+        center: [102.833722,24.881539] // 云南昆明
+    });
+
+    AMapUI.loadUI(['overlay/AwesomeMarker'],
+        function (AwesomeMarker) {
+            new AwesomeMarker({
+                //设置awesomeIcon
+                awesomeIcon: 'address-book',
+                iconLabel: {
+                    style: {
+                        color: '#333',
+                        fontSize: '14px'
+                    }
+                },
+                iconStyle: 'orange',
+                map: map,
+                position: [102.833722,24.881539],
+                title: 'awesomeIcon :' + 'address-book'
+            });
+        });
+
+</script>
 </body>
 </html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大理景点分布</title>
+    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div id="outer-box">
+    <div id="container"></div>
+    <div id="panel" class="scrollbar1">
+        <div id="intro">
+            <h3>大理景点分布</h3>
+        </div>
+        <ul id="my-list"></ul>
+    </div>
+</div>
+<script type="text/javascript">
+    //创建地图
+    var map = new AMap.Map('container', {
+        zoom: 11,
+        center: [100.2676400000,25.6064800000] // 云南大理
+    });
+
+    AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
+        function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
+
+            var daliMarker = new AwesomeMarker({
+                //设置awesomeIcon
+                awesomeIcon: 'train',
+                iconLabel: {
+                    style: {
+                        color: '#333',
+                        fontSize: '14px'
+                    }
+                },
+                iconStyle: 'orange',
+                map: map,
+                position: [100.2497500000,25.5891900000], // 大理站
+                title: '大理站'
+            });
+
+            //即jQuery/Zepto
+            var $ = MarkerList.utils.$;
+
+            var defaultIconStyle = 'red', //默认的图标样式
+                hoverIconStyle = 'green', //鼠标hover时的样式
+                selectedIconStyle = 'purple' //选中时的图标样式
+            ;
+
+            //默认的图标标签
+            var defaultIconLabel = {
+                    style: {
+                        color: '#333',
+                        fontSize: '14px'
+                    }
+                },
+                //鼠标hover时的标签
+                hoverIconLabel = {
+                    style: {
+                        color: '#ffffff',
+                        fontSize: '14px'
+                    }
+                },
+                //选中时的图标标签
+                selectedIconLabel = {
+                    style: {
+                        color: '#c3a083',
+                        fontSize: '14px'
+                    }
+                }
+            ;
+
+            var markerList = new MarkerList({
+                //关联的map对象
+                map: map,
+                //列表的dom容器的id
+                listContainer: 'my-list',
+                //选中状态（通过点击列表或者marker）时在Marker和列表节点上添加的class，可以借此编写css控制选中时的展示效果
+                selectedClassNames: 'selected',
+                //返回数据项的Id
+                getDataId: function(dataItem, index) {
+                    //index表示该数据项在数组中的索引位置，从0开始，如果确实没有id，可以返回index代替
+                    return dataItem.id;
+                },
+                //返回数据项的位置信息，需要是AMap.LngLat实例，或者是经纬度数组，比如[116.789806, 39.904989]
+                getPosition: function(dataItem) {
+                    return dataItem.position;
+                },
+                //返回数据项对应的Marker
+                getMarker: function(dataItem, context, recycledMarker) {
+
+                    //存在可回收利用的marker
+                    if (recycledMarker) {
+                        //直接更新内容返回
+                        // recycledMarker.setLabel(label);
+                        return recycledMarker;
+                    }
+
+                    //返回一个新的Marker
+                    return new AwesomeMarker({
+                        //设置awesomeIcon
+                        awesomeIcon: 'photo',
+                        containerClassNames: 'my-marker',
+                        iconLabel: defaultIconLabel,
+                        iconStyle: defaultIconStyle,
+                        map: map,
+                    });
+                },
+                //返回数据项对应的infoWindow
+                getInfoWindow: function(dataItem, context, recycledInfoWindow) {
+
+                    var tpl = '<p><%- dataItem.id %>：<%- dataItem.infoWinContent %><p>';
+
+                    //MarkerList.utils.template支持underscore语法的模板
+                    var content = MarkerList.utils.template(tpl, {
+                        dataItem: dataItem,
+                        dataIndex: context.index
+                    });
+
+                    if (recycledInfoWindow) {
+                        //存在可回收利用的infoWindow, 直接更新内容返回
+                        // recycledInfoWindow.setContent(content);
+                        recycledInfoWindow.setInfoTitle(dataItem.name);
+                        recycledInfoWindow.setInfoBody(dataItem.address);
+                        return recycledInfoWindow;
+                    }
+
+                    //返回一个新的InfoWindow
+                    return new SimpleInfoWindow({
+                        infoTitle: dataItem.name,
+                        infoBody: dataItem.address,
+                        offset: new AMap.Pixel(0, -37)
+                    });
+
+                    // return new AMap.InfoWindow({
+                    //     offset: new AMap.Pixel(0, -23),
+                    //     content: content
+                    // });
+                },
+                //返回数据项对应的列表节点
+                getListElement: function(dataItem, context, recycledListElement) {
+
+                    var tpl = '<p><%- dataItem.id %>：<%- dataItem.listDesc %><p>';
+
+                    var content = MarkerList.utils.template(tpl, {
+                        dataItem: dataItem,
+                        dataIndex: context.index
+                    });
+
+                    if (recycledListElement) {
+                        //存在可回收利用的listElement, 直接更新内容返回
+                        recycledListElement.innerHTML = content;
+                        return recycledListElement;
+                    }
+
+                    //返回一段html，MarkerList将利用此html构建一个新的dom节点
+                    return '<li>' + content + '</li>';
+                },
+                //列表节点上监听的事件
+                listElementEvents: ['click', 'mouseenter', 'mouseleave'],
+                //marker上监听的事件
+                markerEvents: ['click', 'mouseover', 'mouseout'],
+            });
+
+            //监听选中改变
+            markerList.on('selectedChanged', function(event, info) {
+                //console.log(event, info);
+                if (info.selected) {
+
+                    console.log(info);
+
+                    if (info.selected.marker) {
+                        //更新为选中样式
+                        info.selected.marker.setIconStyle(selectedIconStyle);
+                        info.selected.marker.setIconLabel(selectedIconLabel);
+                    }
+
+                    //选中并非由列表节点上的事件触发，将关联的列表节点移动到视野内
+                    if (!info.sourceEventInfo.isListElementEvent) {
+
+                        if (info.selected.listElement) {
+                            scrollListElementIntoView($(info.selected.listElement));
+                        }
+                    }
+                }
+
+                if (info.unSelected && info.unSelected.marker) {
+                    //更新为默认样式
+                    info.unSelected.marker.setIconStyle(defaultIconStyle);
+                    info.unSelected.marker.setIconLabel(defaultIconLabel);
+                }
+            });
+
+            // 监听Marker的鼠标移入和ListElement上的鼠标悬浮
+            markerList.on('listElementMouseenter markerMouseover', function(event, record) {
+
+                if (record && record.marker) {
+
+                    forcusMarker(record.marker);
+
+                    //this.openInfoWindowOnRecord(record);
+
+                    //非选中的id
+                    if (!this.isSelectedDataId(record.id)) {
+                        //设置为hover样式
+                        record.marker.setIconStyle(hoverIconStyle);
+                        record.marker.setIconLabel(hoverIconLabel);
+                        //this.closeInfoWindow();
+                    }
+                }
+            });
+
+            //监听Marker的鼠标移出和ListElement上的鼠标悬出
+            markerList.on('listElementMouseleave markerMouseout', function(event, record) {
+
+                if (record && record.marker) {
+
+                    if (!this.isSelectedDataId(record.id)) {
+                        //恢复默认样式
+                        record.marker.setIconStyle(defaultIconStyle);
+                        record.marker.setIconLabel(defaultIconLabel);
+                    }
+                }
+            });
+
+            //监听Marker和ListElement上的点击
+            markerList.on('markerClick listElementClick', function(event, record) {
+                //console.log(event, record);
+            });
+
+            //构建一个数据项数组，数据项本身没有格式要求，但需要支持getDataId和getPosition
+            var data = [{
+                id: 1,
+                position: [100.1655000000,25.6954700000],
+                name: '大理古城',
+                address: '云南省大理白族自治州大理市大理镇',
+                infoWinContent: '大理古城',
+                listDesc: '大理古城'
+            }, {
+                id: 2,
+                position: [100.1470400000,25.6807100000],
+                name: '苍山景区',
+                address: '云南省大理白族自治州大理市214国道附近',
+                infoWinContent: '苍山景区',
+                listDesc: '苍山景区'
+            }, {
+                id: 3,
+                position: [100.1433100000,25.7045300000],
+                name: '崇圣寺三塔',
+                address: '云南省大理白族自治州大理市中和镇苍山应乐峰下',
+                infoWinContent: '崇圣寺三塔',
+                listDesc: '崇圣寺三塔'
+            }, {
+                id: 4,
+                position: [100.1491785049,25.6797643243],
+                name: '崇圣寺三塔',
+                address: '云南省大理白族自治州大理市中和镇苍山应乐峰下',
+                infoWinContent: '崇圣寺三塔',
+                listDesc: '崇圣寺三塔'
+            }, {
+                id: 5,
+                position: [100.1970300000,25.7755800000],
+                name: '洱海',
+                address: '云南省大理白族自治州大理市大理镇',
+                infoWinContent: '洱海',
+                listDesc: '洱海'
+            }, {
+                id: 6,
+                position: [100.1943970000,25.9093860000],
+                name: '双廊古镇',
+                address: '云南省大理白族自治州大理市环海东路西',
+                infoWinContent: '双廊古镇',
+                listDesc: '双廊古镇'
+            }, {
+                id: 7,
+                position: [100.1903000000,25.9063600000],
+                name: '双廊古镇-月亮宫',
+                address: '云南省大理白族自治州大理市双廊镇双廊古镇景区内',
+                infoWinContent: '双廊古镇-月亮宫',
+                listDesc: '双廊古镇-月亮宫'
+            }];
+
+            //展示该数据
+            markerList.render(data);
+
+            function forcusMarker(marker) {
+                marker.setTop(true);
+
+                //不在地图视野内
+                if (!(map.getBounds().contains(marker.getPosition()))) {
+
+                    //移动到中心
+                    map.setCenter(marker.getPosition());
+                }
+            }
+
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+                );
+            }
+
+            function scrollListElementIntoView($listEle) {
+
+                if (!isElementInViewport($listEle.get(0))) {
+                    $('#panel').scrollTop($listEle.offset().top - $listEle.parent().offset().top);
+                }
+
+                //闪动一下
+                $listEle
+                    .one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+                        function(e) {
+                            $(this).removeClass('flash animated');
+                        }).addClass('flash animated');
+            }
+        });
+
+    // 地图加载完成
+    map.on("complete", function () {
+        // 无参数时，自动自适应所有覆盖物
+        map.setFitView();
+    });
+
+</script>
+</body>
+</html>

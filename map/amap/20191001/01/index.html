@@ -19,6 +19,21 @@
             margin: 5px 0;
             line-height: 150%;
         }
+
+        .amap-marker-label{
+            border: 0;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: rgba(39, 39, 39, 0.85);
+            height: 26px;
+        }
+
+        .name {
+            /*position: relative;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            line-height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +44,21 @@
         zoom: 8,
         center: [102.833722, 24.881539] // 云南昆明
     });
+
+    var polylinePath = [
+        new AMap.LngLat(102.833722,24.881539),
+        new AMap.LngLat(100.225668, 25.589449),
+        new AMap.LngLat(100.233026, 26.872108)
+    ];
+
+    // 创建线覆盖物
+    var polyline = new AMap.Polyline({
+        path: polylinePath,
+        strokeColor: '#2193b0',
+        strokeWeight: 7
+    });
+
+    map.add(polyline);
 
     AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
         function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
@@ -45,7 +75,12 @@
                 iconStyle: 'orange',
                 map: map,
                 position: [102.833722,24.881539], // 云南昆明
-                title: '云南昆明'
+                title: '云南昆明',
+                //Marker的label(见https://lbs.amap.com/api/javascript-api/reference/overlay/#Marker)
+                label: {
+                    content: "<div class='name'>昆明</div>",
+                    offset: new AMap.Pixel(-7, -35)
+                }
             });
             var kunmingInfoWindow = new SimpleInfoWindow({
                 infoTitle: '<strong>云南省昆明市</strong>',
@@ -69,7 +104,12 @@
                 iconStyle: 'orange',
                 map: map,
                 position: [100.225668, 25.589449], // 云南大理
-                title: '云南大理'
+                title: '云南大理',
+                //Marker的label(见https://lbs.amap.com/api/javascript-api/reference/overlay/#Marker)
+                label: {
+                    content: "<div class='name'>大理</div>",
+                    offset: new AMap.Pixel(-50, 17)
+                }
             });
             var daliInfoWindow = new SimpleInfoWindow({
                 infoTitle: '<strong>云南省大理市</strong>',
@@ -81,8 +121,7 @@
                 daliInfoWindow.open(map, daliMarker.getPosition());
             });
 
-
-            new AwesomeMarker({
+            var lijiangMarker = new AwesomeMarker({
                 //设置awesomeIcon
                 awesomeIcon: 'flag',
                 iconLabel: {
@@ -94,104 +133,22 @@
                 iconStyle: 'orange',
                 map: map,
                 position: [100.233026, 26.872108], // 云南丽江
-                title: '云南丽江'
+                title: '云南丽江',
+                //Marker的label(见https://lbs.amap.com/api/javascript-api/reference/overlay/#Marker)
+                label: {
+                    content: "<div class='name'>丽江</div>",
+                    offset: new AMap.Pixel(40, -10)
+                }
             });
-
-            new AwesomeMarker({
-                //设置awesomeIcon
-                awesomeIcon: 'flag',
-                iconLabel: {
-                    style: {
-                        color: '#333',
-                        fontSize: '14px'
-                    }
-                },
-                iconStyle: 'orange',
-                map: map,
-                position: [99.7014, 27.811987], // 云南香格里拉
-                title: '云南香格里拉'
+            var lijiangInfoWindow = new SimpleInfoWindow({
+                infoTitle: '<strong>云南省丽江市</strong>',
+                infoBody: '<p class="my-desc">丽江，云南省地级市，位于云南省西北部，滇川藏三省区交界处，是国际知名旅游城市、古代“南方丝绸之路”和“茶马古道”的重要通道。市区中心位于东经100°25\'，北纬26°86\'，总面积2.06万平方公里，北连迪庆藏族自治州，南接大理白族自治州，西邻怒江傈僳族自治州，东与四川凉山彝族自治州和攀枝花市接壤，距昆明市527公里。</p>',
+                //基点指向marker的头部位置
+                offset: new AMap.Pixel(0, -31)
             });
-
-            new AwesomeMarker({
-                //设置awesomeIcon
-                awesomeIcon: 'flag',
-                iconLabel: {
-                    style: {
-                        color: '#333',
-                        fontSize: '14px'
-                    }
-                },
-                iconStyle: 'orange',
-                map: map,
-                position: [100.8191480000, 27.7019170000], // 云南泸沽湖
-                title: '云南泸沽湖'
+            lijiangMarker.on('click', function () {
+                lijiangInfoWindow.open(map, lijiangMarker.getPosition());
             });
-
-            new AwesomeMarker({
-                //设置awesomeIcon
-                awesomeIcon: 'flag',
-                iconLabel: {
-                    style: {
-                        color: '#333',
-                        fontSize: '14px'
-                    }
-                },
-                iconStyle: 'orange',
-                map: map,
-                position: [100.2137170000, 27.1252820000], // 云南玉龙雪山
-                title: '云南玉龙雪山'
-            });
-
-            new AwesomeMarker({
-                //设置awesomeIcon
-                awesomeIcon: 'flag',
-                iconLabel: {
-                    style: {
-                        color: '#333',
-                        fontSize: '14px'
-                    }
-                },
-                iconStyle: 'orange',
-                map: map,
-                position: [100.2458800000, 25.6036600000], // 云南洱海
-                title: '云南洱海'
-            });
-
-            // var marker = new AwesomeMarker({
-            //     //设置awesomeIcon
-            //     awesomeIcon: 'flag',
-            //     iconLabel: {
-            //         style: {
-            //             color: '#333',
-            //             fontSize: '14px'
-            //         }
-            //     },
-            //     iconStyle: 'orange',
-            //     map: map,
-            //     position: [100.2626037598,26.9379867492], // 云南拉市海
-            //     title: '云南拉市海'
-            // });
-
-
-            // var infoWindow = new SimpleInfoWindow({
-            //
-            //     infoTitle: '<strong>云南拉市海</strong>',
-            //     infoBody: '<p class="my-desc">拉市海位于丽江城西面10公里处的拉市坝中部，是云南省第一个以“湿地”命名的自然保护区，毗邻花花色玫瑰花基地。“拉市”为古纳西语译名，“拉”为荒坝，“市”为新，意为新的荒坝。</p>',
-            //
-            //     //基点指向marker的头部位置
-            //     offset: new AMap.Pixel(0, -31)
-            // });
-
-            // function openInfoWin(infoWindow, marker) {
-            //     infoWindow.open(map, marker.getPosition());
-            // }
-
-            //marker 点击时打开
-            // AMap.event.addListener(marker, 'click', function() {
-            //     openInfoWin();
-            // });
-
-            //openInfoWin(infoWindow);
         });
 
     // 地图加载完成

@@ -8,7 +8,7 @@ body{
 }
 #outer-box{
     height:100%;
-    padding-right:300px;
+    padding-right: 20%;
 }
 #container{
     height:100%;
@@ -24,7 +24,7 @@ body{
     right:0;
     height:100%;
     overflow:auto;
-    width:300px;
+    width: 20%;
     z-index:999;
     border-left:1px solid #eaeaea;
     background:#fff;

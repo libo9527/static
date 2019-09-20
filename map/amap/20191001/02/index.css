@@ -6,6 +6,21 @@ body{
     padding:0;
     font-size:13px;
 }
+#new-tab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px;
+    background: transparent;
+}
+#new-tab a i{
+    color: black;
+}
+#new-tab a i:hover{
+    color: #212980;
+    font-size: 20px;
+}
 #outer-box{
     height:100%;
     padding-right: 20%;

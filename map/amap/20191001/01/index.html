@@ -34,9 +34,28 @@
             /*right: 0;*/
             line-height: 26px;
         }
+
+        #new-tab{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            padding: 5px;
+            background: transparent;
+        }
+        #new-tab a i{
+            color: black;
+        }
+        #new-tab a i:hover{
+            color: #212980;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
+<div id="new-tab">
+    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
+</div>
 <div id="container"></div>
 <script type="text/javascript">
     //创建地图

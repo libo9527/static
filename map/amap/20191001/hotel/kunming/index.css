@@ -21,107 +21,25 @@ body{
     color: #212980;
     font-size: 20px;
 }
-#outer-box{
-    height:100%;
-    padding-right: 20%;
-}
 #container{
     height:100%;
     width:100%;
 }
-#intro{
-    border-bottom: 1px solid #eeeeee;
+.amap-marker-label{
+    border: 0;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgba(39, 39, 39, 0.85);
+    height: 15px;
 }
-#panel{
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    height:100%;
-    overflow:auto;
-    width: 20%;
-    z-index:999;
-    border-left:1px solid #eaeaea;
-    background:#fff;
+.label-content-text {
+    line-height: 15px;
 }
-#my-list{
-    margin:0;
-    padding:0;
+.amap-info-contentContainer img {
+    float: left;
+    margin-right: 6px;
 }
-#my-list li{
-    border-bottom:1px solid #eaeaea;
-    border-left:2px solid rgba(0,0,0,0);
-    list-style:none;
-    padding:10px 3px;
-    cursor:pointer;
-}
-#my-list li p{
-    /*margin:5px;*/
-}
-#my-list li.selected{
-    border-left-color:#f00;
-    background:#f6f6f6;
-}
-#my-list li:hover{
-    background:#f6f6f6;
-}
-.selected .amap-marker-label{
-    background:green;
-    color:#fff;
-    border-color:#ccc;
-}
-#panel h3{
-    margin:10px 0;
-}
-#panel dd{
-    margin:5px 5px;
-}
-#panel dl{
-    margin:7px 0;
-}
-@-webkit-keyframes flash{
-    from,
-    50%,
-    to{
-        opacity:1;
-    }
-    25%,
-    75%{
-        opacity:0;
-    }
-}
-@keyframes flash{
-    from,
-    50%,
-    to{
-        opacity:1;
-    }
-    25%,
-    75%{
-        opacity:0;
-    }
-}
-.flash{
-    -webkit-animation-name:flash;
-    animation-name:flash;
-}
-.animated{
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-}
-.scrollbar1::-webkit-scrollbar-track{
-    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
-    background-color:#fff;
-}
-.scrollbar1::-webkit-scrollbar{
-    width:6px;
-    background-color:#fff;
-}
-.scrollbar1::-webkit-scrollbar-thumb{
-    background-color:#aaa;
-}
-.clear{
-    clear:both;
+.info-body{
+    font-size: 12px;
+    line-height: 20px;
 }

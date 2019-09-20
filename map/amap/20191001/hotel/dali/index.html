@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大理酒店分布</title>
+    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div id="new-tab">
+    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
+</div>
+<div id="container"></div>
+<script type="text/javascript">
+    //创建地图
+    var map = new AMap.Map('container', {
+        zoom: 11,
+        center: [100.2676400000, 25.6064800000] // 云南大理
+    });
+
+    AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
+        function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
+
+            var data = [{
+                id: 1,
+                title: "大理站",
+                position: [100.2497500000, 25.5891900000],
+                awesomeIcon: "train",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "orange",
+                label: {
+                    content: "<div class='label-content-text'>大理站</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 2,
+                title: "大理古城",
+                position: [100.1655000000, 25.6954700000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>大理古城</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 3,
+                title: "苍山景区",
+                position: [100.1470400000, 25.6807100000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>苍山景区</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 4,
+                title: "崇圣寺三塔",
+                position: [100.1433100000, 25.7045300000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>崇圣寺三塔</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 5,
+                title: "洱海",
+                position: [100.1970300000, 25.7755800000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>洱海</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 6,
+                title: "双廊古镇",
+                position: [100.1943970000, 25.9093860000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>双廊古镇</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 7,
+                title: "双廊古镇-月亮宫",
+                position: [100.1903000000, 25.9063600000],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>双廊古镇-月亮宫</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 8,
+                title: '大理古城米畔·轻宿客栈',
+                position: [100.171946, 25.695686],
+                awesomeIcon: 'hotel',
+                iconLabel: {
+                    style: {
+                        color: '#666',
+                        fontSize: '14px'
+                    }
+                },
+                iconStyle: 'lightblue',
+                label: {
+                    content: "<div class='label-content-text'>大理古城米畔·轻宿客栈</div>",
+                    direction: 'top'
+                },
+                type: 'hotel',
+                detailUrl: 'https://hotel.alitrip.com/hotel_detail2.htm?spm=181.11197625.4973973.2.73f44a0apbz3Ps&shid=56653689',
+                imgUrl: '../../images/dalihotel01.png',
+                address: '大理古城洱海门月溪村五组，洱海门旁大院子',
+                phone: '18687225000',
+                price: '前院露台双床房(2间) ¥319.20/间',
+                from: '2019-10-04',
+                to: '2019-10-05'
+            }];
+
+            var infoWindow = new SimpleInfoWindow({
+                offset: new AMap.Pixel(0, -31)
+            });
+            for (let item of data) {
+                var marker = new AwesomeMarker({
+                    awesomeIcon: item.awesomeIcon,
+                    iconLabel: item.iconLabel,
+                    iconStyle: item.iconStyle,
+                    map: map,
+                    position: item.position,
+                    title: item.title
+                });
+                marker.on('mouseover', function () {
+                    this.setTop(true);
+                    this.setLabel({
+                        content: "<div class='label-content-text'>" + this.getTitle() + "</div>",
+                        offset: new AMap.Pixel(0, -31)
+                    });
+                });
+                marker.on('mouseout', function () {
+                    this.setLabel();
+                });
+                if (item.type && item.type === 'hotel') {
+                    marker.infoTitle = item.title;
+                    marker.infoBody = "<div style='display: flex;'>\n" +
+                        "    <div><a href='" + item.detailUrl + "' target='_blank'><img alt='Pic' height='110' src='" + item.imgUrl + "'></a></div>\n" +
+                        "    <div>\n" +
+                        "        <div style='min-width:230px;'>详细地址：" + item.address + "</div>\n" +
+                        "        <div>联系电话：" + item.phone + "</div>\n" +
+                        "        <div>房型价格：" + item.price + "</div>\n" +
+                        "        <div>入住日期：" + item.from + " ~ " + item.to + "</div>\n" +
+                        "        <div><a href='" + item.detailUrl + "' target=\"_blank\">详细信息</a></div>\n" +
+                        "    </div>\n" +
+                        "</div>";
+                    marker.on('click', markerClick);
+                    marker.emit('click', {target: marker});
+                }
+            }
+
+            function markerClick(e) {
+                infoWindow.setInfoTitle(e.target.infoTitle);
+                infoWindow.setInfoBody(e.target.infoBody);
+                infoWindow.open(map, e.target.getPosition());
+            }
+        });
+
+    // 地图加载完成
+    map.on("complete", function () {
+        // 无参数时，自动自适应所有覆盖物
+        map.setFitView();
+    });
+</script>
+</body>
+</html>

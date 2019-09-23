@@ -1,10 +1,19 @@
 var map = new AMap.Map('container', {
     center: [102.833722, 24.881539], // 云南昆明
-    zoom: 6
+    zoom: 7
 });
 
-AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
-    function ( AwesomeMarker, SimpleInfoWindow) {
+AMapUI.loadUI(['control/BasicControl', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
+    function (BasicControl, AwesomeMarker, SimpleInfoWindow) {
+
+        //缩放控件
+        map.addControl(new BasicControl.Zoom({
+            //内置的dark主题
+            theme: 'dark',
+
+            //左下角
+            position: 'bl'
+        }));
 
         var infoWindow = new SimpleInfoWindow({
             infoTitle: '<strong>实时天气</strong>',

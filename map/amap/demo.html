@@ -1,13 +1,12 @@
-<!-- 重点：districtExplorer.locatePosition -->
 <!doctype html>
 <html lang="zh-CN">
 
 <head>
-    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/geo/DistrictExplorer/examples/locate.html -->
-    <base href="//webapi.amap.com/ui/1.0/ui/geo/DistrictExplorer/examples/" />
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/control/BasicControl/examples/custom-theme.html -->
+    <base href="//webapi.amap.com/ui/1.0/ui/control/BasicControl/examples/" />
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>区域定位</title>
+    <title>自定义主题</title>
     <style>
         html,
         body,
@@ -15,157 +14,69 @@
             width: 100%;
             height: 100%;
             margin: 0px;
+            font-size: 13px;
+        }
+        /* 定义 my-red 主题 */
+
+        .amap-ui-control-theme-my-red .amap-ui-control-layer {
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+            background: red;
         }
 
-        #locTip {
-            position: absolute;
-            width: 100%;
-            background: #000;
-            z-index: 9999;
-            text-align: center;
-            line-height: 150%;
+        .amap-ui-control-theme-my-red .amap-ui-control-layer-expanded {
+            color: #fff;
+            background: red;
+        }
+
+        .amap-ui-control-theme-my-red .amap-ui-control-layer-toggle {
             color: #fff;
         }
     </style>
 </head>
 
 <body>
-<div id="locTip">点击地图进行区域定位</div>
-<div id="container"></div>
+<div class="container" id="container"></div>
 <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
 <!-- UI组件库 1.0 -->
 <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<style>
+
+</style>
 <script type="text/javascript">
-    //创建地图
-    var map = new AMap.Map('container', {
-        cursor: 'default',
-        zoom: 4
-    });
+    var map = new AMap.Map('container');
 
-    //just some colors
-    var colors = [
-        "#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00",
-        "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707",
-        "#651067", "#329262", "#5574a6", "#3b3eac"
-    ];
+    AMapUI.loadUI(['control/BasicControl'], function(BasicControl) {
 
-    AMapUI.load(['ui/geo/DistrictExplorer', 'lib/$'], function(DistrictExplorer, $) {
-
-        //创建一个实例
-        var districtExplorer = new DistrictExplorer({
-            map: map
+        var layerCtrl = new BasicControl.LayerSwitcher({
+            //my-red 见上方style
+            theme: 'my-red',
+            position: 'tr'
         });
 
-        //定位点Marker
-        var locMarker = new AMap.Marker();
+        map.addControl(layerCtrl);
 
-        function listenMouseEvents() {
 
-            var isLocating = false;
+        //缩放控件
+        map.addControl(new BasicControl.Zoom({
+            //内置的dark主题
+            theme: 'dark',
 
-            map.on('click', function(e) {
+            //左下角
+            position: 'bl'
+        }));
 
-                if (isLocating) {
-                    return;
-                }
+        //动态加载css
+        AMapUI.loadCss('./zoom-green.css', function() {
 
-                isLocating = true;
-
-                $('#locTip').html('定位中......');
-
-                districtExplorer.locatePosition(e.lnglat, function(err, features) {
-
-                    isLocating = false;
-
-                    if (err) {
-                        console.error(err);
-                        return;
-                    }
-
-                    renderFeatures(features);
-
-                    refreshLocTip(e.lnglat, features);
-
-                    locMarker.setPosition(e.lnglat);
-                    locMarker.setMap(map);
-                }, {
-                    levelLimit: 4
-                });
-
+            var zoomCtrl = new BasicControl.Zoom({
+                //见zoom-green.css
+                theme: 'my-green',
+                position: 'br',
+                showZoomNum: true
             });
-        }
 
-        listenMouseEvents();
-
-        function renderFeatures(features) {
-
-            //清除已有的绘制内容
-            districtExplorer.clearFeaturePolygons();
-
-            if (!features.length) {
-                renderCountry(false);
-                return;
-            }
-
-            for (var i = 0, len = features.length; i < len; i++) {
-
-                var strokeColor = colors[i % colors.length];
-                var fillColor = strokeColor;
-
-                districtExplorer.renderFeature(features[i], {
-                    cursor: 'default',
-                    bubble: true,
-                    strokeColor: strokeColor, //线颜色
-                    strokeOpacity: 1, //线透明度
-                    strokeWeight: 1, //线宽
-                    fillColor: fillColor, //填充色
-                    fillOpacity: 0.35, //填充透明度
-                });
-            }
-        }
-
-        //更新位置头部的提示内容
-        function refreshLocTip(lngLat, features) {
-
-            var i, len = features.length,
-                $node = $('#locTip');
-
-            if (!len) {
-                $node.html(lngLat.toString() + '：未知区域');
-                return;
-            }
-
-            var routes = [];
-
-            for (i = 0; i < len; i++) {
-
-                routes.push('<span style="color:' + colors[i] + '">' + features[i].properties.name + '</span>');
-            }
-
-            $node.html(lngLat.toString() + '：' + routes.join(' &gt; '));
-        }
-
-        function renderCountry(setBounds) {
-
-            districtExplorer.loadCountryNode(function(err, countryNode) {
-
-                if (setBounds) {
-                    map.setBounds(countryNode.getBounds());
-                }
-
-                districtExplorer.renderParentFeature(countryNode, {
-                    cursor: 'default',
-                    bubble: true,
-                    strokeColor: 'black', //线颜色
-                    strokeOpacity: 1, //线透明度
-                    strokeWeight: 2, //线宽
-                    fillColor: colors[0], //填充色
-                    fillOpacity: 0.35, //填充透明度
-                });
-            });
-        }
-
-        renderCountry(true);
+            map.addControl(zoomCtrl);
+        });
     });
 </script>
 </body>

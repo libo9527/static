@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline</title>
+    <link  rel="stylesheet" type="text/css"  href="index.css">
+</head>
+<body>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.12.0/lib/index.js"></script>
+<div id="app">
+    <h1 style="text-align: center">时间轴</h1>
+    <el-divider></el-divider>
+    <div class="block">
+        <el-timeline>
+            <el-timeline-item v-for="(item, index) of list" :key="index" :timestamp="item.timestamp" placement="top" :type="getTimelineType(item.timestamp)">
+                <el-card>
+                    <div v-if="item.imgUrls.length > 0" style="height: 100px;">
+                        <el-image style="width: 100px; height: 100px" :src="item.imgUrls[0]" fit="cover" :preview-src-list="item.imgUrls">
+                            <div slot="error" class="image-slot">
+                                <i class="el-icon-picture-outline"></i>
+                            </div>
+                        </el-image>
+                    </div>
+                    <div style="padding-left: 10px">
+                        <strong>{{item.title}}</strong>
+                        <p>成员：{{item.members}}</p>
+                        <p>{{item.content}}</p>
+                    </div>
+                </el-card>
+            </el-timeline-item>
+        </el-timeline>
+    </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -51,7 +51,16 @@ var Main = {
                 ],
                 title: '地铁 昆明南 - 汉庭优佳昆明东华酒店',
                 members: '李、浮',
-                content: '从昆明南站出发，前往酒店',
+                content: '从昆明南站出发，前往酒店。大约 1 小时 20 分钟。',
+                amapUrl: 'https://surl.amap.com/11oyN5l8z5'
+            }, {
+                timestamp: '2019/10/02 22:50:00',
+                imgUrls: [
+                    '../images/kmn-ht-01.gif'
+                ],
+                title: '地铁 昆明南 - 汉庭优佳昆明东华酒店',
+                members: '李、浮',
+                content: '到达汉庭优佳昆明东华酒店',
                 amapUrl: 'https://surl.amap.com/11oyN5l8z5'
             }, {
                 timestamp: '2019/10/03 00:30:00',

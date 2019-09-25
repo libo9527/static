@@ -124,11 +124,32 @@ var Main = {
             }, {
                 timestamp: '2019/10/03 11:30:00',
                 imgUrls: [
-                    '../images/ht-ylxs.png'
+                    '../images/ht-ylxs.png',
+                    '../images/ht-ylxs-02.png'
                 ],
                 title: '打车 汉庭丽江古城福星路酒店 - 玉龙雪山游客中心',
                 members: '李、浮、谭、党',
-                content: '从汉庭丽江古城福星路酒店出发，前往玉龙雪山。大约 ¥80～100，40~50 分钟。',
+                content: '从汉庭丽江古城福星路酒店出发，前往玉龙雪山。<br>' +
+                    '打车：大约 ¥80～100，40~50 分钟。<br>' +
+                    '公交：大约 ¥15/人，1 小时 31 分钟。',
+            }, {
+                timestamp: '2019/10/03 13:00:00',
+                imgUrls: [
+                ],
+                title: '打车 汉庭丽江古城福星路酒店 - 玉龙雪山游客中心',
+                members: '李、浮、谭、党',
+                content: '12:30 ~ 13:00 到达玉龙雪山游客中心',
+            }, {
+                timestamp: '2019/09/28 07:00:00',
+                imgUrls: [
+                    '../images/ylxs-mp.png',
+                    '../images/ylxs-mp-01.png',
+                    '../images/ylxs-mp-02.png'
+                ],
+                title: '买票 玉龙雪山景点门票',
+                members: '李、浮、谭、党',
+                content: '提前订票<br>' +
+                    '官方订票：丽江旅游集团公众号(7:00 - 21:00)',
             }, {
                 timestamp: '2019/10/04 07:38:00',
                 imgUrls: [

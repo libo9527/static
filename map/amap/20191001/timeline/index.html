@@ -28,7 +28,7 @@
                     <div style="padding-left: 10px">
                         <strong>{{item.title}}</strong>
                         <p>成员：{{item.members}}</p>
-                        <p>{{item.content}}</p>
+                        <span v-html="item.content"></span>
                     </div>
                 </el-card>
             </el-timeline-item>

@@ -26,7 +26,7 @@
                         </el-image>
                     </div>
                     <div style="padding-left: 10px">
-                        <strong>{{item.title}}</strong>
+                        <strong><span v-html="item.title"></span> <a v-if="item.amapUrl" :href="item.amapUrl">高德地图</a></strong>
                         <p>成员：{{item.members}}</p>
                         <span v-html="item.content"></span>
                     </div>

@@ -115,23 +115,78 @@ var Main = {
                 content: '从丽江站出发，前往汉庭丽江古城福星路酒店。大约 ¥30～40，30～40分钟。',
                 amapUrl: 'https://surl.amap.com/AkKvo71n2Ru'
             }, {
-                timestamp: '2019/10/03 11:30:00',
+                timestamp: '2019/10/01 07:00:00',
                 imgUrls: [
+                    '../images/ylxs-mp.png',
+                    '../images/ylxs-mp-01.png',
+                    '../images/ylxs-mp-02.png'
                 ],
-                title: '打车 丽江站 - 汉庭丽江古城福星路酒店',
+                title: '看票 玉龙雪山景点门票',
                 members: '李、浮、谭、党',
-                content: '到达汉庭丽江古城福星路酒店',
+                content: '提前试一下看能不能在官方网站抢到票，如果比较难强就要考虑在其他三方上购票了<br>' +
+                    '官方订票(只能订当日)：丽江旅游集团公众号(7:00 - 21:00)<br>' +
+                    '进山费：景区大门口购买，¥100/人'
+            }, {
+                timestamp: '2019/10/02 07:00:00',
+                imgUrls: [
+                    '../images/ylxs-mp.png',
+                    '../images/ylxs-mp-01.png',
+                    '../images/ylxs-mp-02.png'
+                ],
+                title: '看票 玉龙雪山景点门票',
+                members: '李、浮、谭、党',
+                content: '提前试一下看能不能在官方网站抢到票，如果比较难强就要考虑在其他三方上购票了<br>' +
+                    '官方订票(只能订当日)：丽江旅游集团公众号(7:00 - 21:00)<br>' +
+                    '进山费：景区大门口购买，¥100/人'
+            }, {
+                timestamp: '2019/10/03 07:00:00',
+                imgUrls: [
+                    '../images/ylxs-mp.png',
+                    '../images/ylxs-mp-01.png',
+                    '../images/ylxs-mp-02.png'
+                ],
+                title: '<strong style="color: orangered;">抢票</strong> 玉龙雪山景点门票',
+                members: '李、浮、谭、党',
+                content: '提前抢票<br>' +
+                    '官方订票(只能订当日)：丽江旅游集团公众号(7:00 - 21:00)<br>' +
+                    '进山费：景区大门口购买，¥100/人'
             }, {
                 timestamp: '2019/10/03 11:30:00',
                 imgUrls: [
+                    '../images/ylxsjqzx.png',
                     '../images/ht-ylxs.png',
                     '../images/ht-ylxs-02.png'
+                ],
+                title: '购物 忠义市场购买氧气罐',
+                members: '谭、党',
+                content: '忠义市场购物清单：<br>' +
+                    '1. 氧气罐：¥20～30/罐，建议买三罐<br>' +
+                    '2. 巧克力/士力架<br>' +
+                    '购买完后从忠义市场站乘车，在红太阳广场站汇合。'
+            }, {
+                timestamp: '2019/10/03 11:40:00',
+                imgUrls: [
+                    '../images/ylxsjqzx.png',
+                    '../images/ht-ylxs.png',
+                    '../images/ht-ylxs-02.png'
+                ],
+                title: '打车 丽江站 - 汉庭丽江古城福星路酒店',
+                members: '李、浮',
+                content: '到达汉庭丽江古城福星路酒店，办理入住，寄存行李。<br>' +
+                    '之后前往红太阳广场站乘车汇合。'
+            }, {
+                timestamp: '2019/10/03 11:40:00',
+                imgUrls: [
+                    '../images/ht-ylxs.png',
+                    '../images/ht-ylxs-02.png',
+                    '../images/ylxsjqzx.png'
                 ],
                 title: '打车 汉庭丽江古城福星路酒店 - 玉龙雪山游客中心',
                 members: '李、浮、谭、党',
                 content: '从汉庭丽江古城福星路酒店出发，前往玉龙雪山。<br>' +
                     '打车：大约 ¥80～100，40~50 分钟。<br>' +
-                    '公交：大约 ¥15/人，1 小时 31 分钟。',
+                    '公交：大约 ¥15/人，1 小时 31 分钟。<br>' +
+                    '建议坐<a href="http://www.sohu.com/a/307119287_123580">旅游专线的公交</a>，在车上就可以买进山的大门票。',
             }, {
                 timestamp: '2019/10/03 13:00:00',
                 imgUrls: [
@@ -139,17 +194,6 @@ var Main = {
                 title: '打车 汉庭丽江古城福星路酒店 - 玉龙雪山游客中心',
                 members: '李、浮、谭、党',
                 content: '12:30 ~ 13:00 到达玉龙雪山游客中心',
-            }, {
-                timestamp: '2019/09/28 07:00:00',
-                imgUrls: [
-                    '../images/ylxs-mp.png',
-                    '../images/ylxs-mp-01.png',
-                    '../images/ylxs-mp-02.png'
-                ],
-                title: '买票 玉龙雪山景点门票',
-                members: '李、浮、谭、党',
-                content: '提前订票<br>' +
-                    '官方订票：丽江旅游集团公众号(7:00 - 21:00)',
             }, {
                 timestamp: '2019/10/04 07:38:00',
                 imgUrls: [

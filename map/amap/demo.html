@@ -1,398 +1,185 @@
-<!-- 重点参数：renderOptions -->
-<!doctype html>
-<html lang="zh-CN">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/adjust-navig-style.html -->
-    <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>调整巡航器样式</title>
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-        }
-
-        #outer-box {
-            height: 100%;
-            padding-right: 280px;
-        }
-
-        #container {
-            height: 100%;
-            width: 100%;
-        }
-
-        #panel {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 280px;
-            z-index: 999;
-            height: calc(100% - 5px);
-            overflow: hidden;
-            overflow-y: auto;
-        }
-
-        #my-gui-container {
-            height: 1200px;
-        }
-
-        #my-gui-container h3 {
-            margin: 10px 0 3px 0;
-        }
-
-        #my-gui-container .close-button {
-            display: none;
-        }
-
-        #my-gui-container .dg {
-            float: none;
-            margin: 0 0 5px 5px;
-        }
-
-        .hide {
-            display: none;
-        }
-
-        #loadingTip {
-            position: absolute;
-            z-index: 9999;
-            top: 0;
-            left: 0;
-            padding: 3px 10px;
-            background: red;
-            color: #fff;
-            font-size: 13px;
-        }
-
-        #exportBtn {
-            margin: 5px 0 5px 5px;
-            display: block;
-            width: 250px;
-            line-height: 150%;
-        }
-
-        #exportConfigPanel {
-            position: absolute;
-            z-index: 9999;
-            top: 0;
-            left: 0;
-            padding: 3px 10px;
-            background: #1a1a1a;
-            color: #fff;
-            font-size: 13px;
-            height: 90%;
-            overflow: auto;
-        }
-
-        #exportConfigPanel pre {
-            margin: 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>丽江酒店分布</title>
+    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <link rel="stylesheet" type="text/css" href="./demo.css">
 </head>
-
 <body>
-<div id="outer-box">
-    <div id="container">
-    </div>
-    <div id="panel">
-        <button id="exportBtn">显示配置信息</button>
-        <div id="my-gui-container"></div>
-    </div>
+<div id="new-tab">
+    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
 </div>
-<script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
-<script src="../../../../plug/ext/dat.gui.min.js?v=1.0.11"></script>
-<!-- UI组件库 1.0 -->
-<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<div id="container"></div>
 <script type="text/javascript">
     //创建地图
     var map = new AMap.Map('container', {
-        zoom: 4
+        zoom: 11,
+        center: [100.233026, 26.872108] // 云南丽江
     });
 
-    AMapUI.load(['ui/misc/PathSimplifier', 'lib/$', 'lib/utils'], function(PathSimplifier, $, utils) {
-
-        if (!PathSimplifier.supportCanvas) {
-            alert('当前环境不支持 Canvas！');
-            return;
-        }
-
-        var defaultRenderOptions = {
-            pathNavigatorStyle: {
-                initRotateDegree: 0,
-                width: 16,
-                height: 16,
-                autoRotate: true,
-                lineJoin: 'round',
-                content: 'plan_icon',
-                fillStyle: '#087EC4',
-                strokeStyle: '#116394', //'#eeeeee',
-                lineWidth: 1,
-                pathLinePassedStyle: {
-                    lineWidth: 2,
-                    strokeStyle: 'rgba(8, 126, 196, 1)',
-                    borderWidth: 1,
-                    borderStyle: '#eeeeee',
-                    dirArrowStyle: false
-                }
-            }
-        };
-
-        var pathSimplifierIns = new PathSimplifier({
-
-            zIndex: 100,
-
-            map: map,
-
-            getPath: function(pathData, pathIndex) {
-
-                return pathData.path;
-            },
-            getHoverTitle: function(pathData, pathIndex, pointIndex) {
-
-                if (pointIndex >= 0) {
-                    //point
-                    return pathData.name + '，点:' + pointIndex + '/' + pathData.path.length;
-                }
-
-                return pathData.name + '，点数量' + pathData.path.length;
-            },
-            renderOptions: defaultRenderOptions
-        });
-
-        window.pathSimplifierIns = pathSimplifierIns;
-
-
-        pathSimplifierIns.setData([{
-            name: 'Test',
-            path: PathSimplifier.getGeodesicPath([116.405289, 39.904987], [87.61792, 43.793308], 300)
-        }]);
-
-        pathSimplifierIns.setSelectedPathIndex(0);
-
-
-        var navg = pathSimplifierIns.createPathNavigator(0, {
-
-            loop: true,
-            speed: 700000,
-            pathNavigatorStyle: {
-                //content: 'none'
-            }
-        });
-
-        navg.start();
-
-        var customContainer = document.getElementById('my-gui-container');
-
-        function createKeyNavigatorStyleGui(target) {
-
-            var keyNavigatorStyleGui = new dat.GUI({
-                width: 260,
-                autoPlace: false,
-            });
-
-            var keyNavigatorStyleParams = utils.extend({}, defaultRenderOptions[target]);
-
-            //形状类型
-            keyNavigatorStyleGui.add(keyNavigatorStyleParams,
-                'content', ['defaultPathNavigator', 'defaultArrow', 'plane_icon', 'circle', 'none']).onChange(render);
-
-
-            keyNavigatorStyleGui.add(keyNavigatorStyleParams, 'autoRotate').onChange(render);
-
-            keyNavigatorStyleGui.add(keyNavigatorStyleParams, 'initRotateDegree', 0, 360).step(1).onChange(render);
-
-            keyNavigatorStyleGui.add(keyNavigatorStyleParams, 'height', 10, 50).step(1).onChange(render);
-
-            keyNavigatorStyleGui.addColor(keyNavigatorStyleParams, 'fillStyle').onChange(render);
-
-            keyNavigatorStyleGui.addColor(keyNavigatorStyleParams, 'strokeStyle').onChange(render);
-
-            keyNavigatorStyleGui.add(keyNavigatorStyleParams, 'lineWidth', 1, 20).step(1).onChange(render);
-
-            addGuiPanel(target, target, keyNavigatorStyleGui);
-
-            return keyNavigatorStyleParams;
-        }
-
-        function createPathLineStyleGui(target) {
-
-            var pathLineStyleGui = new dat.GUI({
-                width: 260,
-                autoPlace: false,
-            });
-
-            var parts = target.split('.');
-
-            var pathLineStyleParams = utils.extend({}, defaultRenderOptions[parts[0]][parts[1]]);
-
-            pathLineStyleGui.addColor(pathLineStyleParams, 'strokeStyle').onChange(render);
-
-            pathLineStyleGui.add(pathLineStyleParams, 'lineWidth', 1, 20).step(1).onChange(render);
-
-            pathLineStyleGui.addColor(pathLineStyleParams, 'borderStyle').onChange(render);
-
-            pathLineStyleGui.add(pathLineStyleParams, 'borderWidth', 1, 20).step(1).onChange(render);
-
-            pathLineStyleGui.add(pathLineStyleParams, 'dirArrowStyle').onChange(render);
-
-            addGuiPanel(target, target, pathLineStyleGui);
-
-            return pathLineStyleParams;
-        }
-
-        function addGuiPanel(id, title, gui) {
-
-            var container = document.createElement('div');
-
-            container.id = id;
-
-            if (title) {
-                var tEle = document.createElement('h3');
-                tEle.innerHTML = title;
-                container.appendChild(tEle);
-            }
-
-            container.appendChild(gui.domElement);
-
-            customContainer.appendChild(container);
-        }
-
-        var keyNavigatorStyleOptions = ['pathNavigatorStyle'],
-            pathLineStyleOptions = ['pathNavigatorStyle.pathLinePassedStyle'];
-
-
-        var styleParamsMap = {};
-
-        for (var i = 0, len = keyNavigatorStyleOptions.length; i < len; i++) {
-            styleParamsMap[keyNavigatorStyleOptions[i]] = createKeyNavigatorStyleGui(keyNavigatorStyleOptions[i]);
-        }
-
-        for (var i = 0, len = pathLineStyleOptions.length; i < len; i++) {
-            styleParamsMap[pathLineStyleOptions[i]] = createPathLineStyleGui(pathLineStyleOptions[i]);
-        }
-
-
-
-        var customContentMap = {
-            'plane_icon': function(params) {
-
-                return utils.extend(params, {
-                    //使用图片
-                    content: PathSimplifier.Render.Canvas.getImageContent(
-                        './imgs/plane.png',
-                        function onload() {
-                            pathSimplifierIns.renderLater();
-                        },
-                        function onerror(e) {
-                            alert('图片加载失败！');
-                        })
-                });
-            }
-        };
-
-
-        function getStyleParams() {
-
-            var params = utils.extend({}, styleParamsMap['pathNavigatorStyle']);
-
-            params = fixColors(params);
-
-            if (params['content'] && customContentMap[params['content']]) {
-                params = customContentMap[params['content']](params);
-            }
-
-            params.pathLinePassedStyle = utils.extend({}, styleParamsMap['pathNavigatorStyle.pathLinePassedStyle']);
-
-            params.pathLinePassedStyle = fixColors(params.pathLinePassedStyle);
-
-            return {
-                pathNavigatorStyle: params
-            };
-        }
-
-        var colorFlds = ['fillStyle', 'strokeStyle', 'borderStyle'],
-            rgbAlphaRegx = /([\d\.]+)\s*\)/i;
-
-        function isEmptyColor(color) {
-
-            if (color.indexOf('rgba') !== 0) {
-                return false;
-            }
-
-            var match = color.match(rgbAlphaRegx);
-
-            if (match && parseFloat(match[1]) < 0.01) {
-                return true;
-            }
-
-            return false;
-        }
-
-        function fixColors(opts) {
-
-            if (utils.isObject(opts)) {
-
-                for (var i = 0, len = colorFlds.length; i < len; i++) {
-
-                    if (opts[colorFlds[i]] && isEmptyColor(opts[colorFlds[i]])) {
-                        opts[colorFlds[i]] = null;
+    AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
+        function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
+
+            var data = [{
+                id: 1,
+                title: "丽江站",
+                position: [100.252637, 26.810661], // 丽江站
+                awesomeIcon: "train",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
                     }
+                },
+                iconStyle: "orange",
+                label: {
+                    content: "<div class='label-content-text'>丽江站</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 2,
+                title: "玉龙雪山国家级风景名胜区",
+                position: [100.203875, 27.134403],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>玉龙雪山国家级风景名胜区</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 3,
+                title: "丽江古城",
+                position: [100.235517, 26.870507],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>丽江古城</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 3,
+                title: "忠义市场",
+                position: [100.235351,26.866068],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>忠义市场</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 4,
+                title: "拉市海国际湿地公园",
+                position: [100.11647, 26.876862],
+                awesomeIcon: "photo",
+                iconLabel: {
+                    style: {
+                        color: "#333",
+                        fontSize: "14px"
+                    }
+                },
+                iconStyle: "green",
+                label: {
+                    content: "<div class='label-content-text'>拉市海国际湿地公园</div>",
+                    direction: "top"
+                }
+            }, {
+                id: 5,
+                title: '汉庭丽江古城福星路酒店',
+                position: [100.22639,26.880503],
+                awesomeIcon: 'hotel',
+                iconLabel: {
+                    style: {
+                        color: '#666',
+                        fontSize: '14px'
+                    }
+                },
+                iconStyle: 'lightblue',
+                label: {
+                    content: "<div class='label-content-text'>汉庭丽江古城福星路酒店</div>",
+                    direction: 'top'
+                },
+                type: 'hotel',
+                detailUrl: 'http://hotels.huazhu.com/hotel/detail/6741001',
+                imgUrl: '../../images/lijianghotel01.png',
+                address: '云南省丽江市古城区福星路63号(距离丽江古城600米)',
+                phone: '0888-8833333',
+                price: '大床房(2间) ¥283/间',
+                from: '2019-10-03',
+                to: '2019-10-04'
+            }];
+
+            var infoWindow = new SimpleInfoWindow({
+                offset: new AMap.Pixel(0, -31)
+            });
+            for (let item of data) {
+                var marker = new AwesomeMarker({
+                    awesomeIcon: item.awesomeIcon,
+                    iconLabel: item.iconLabel,
+                    iconStyle: item.iconStyle,
+                    map: map,
+                    position: item.position,
+                    title: item.title
+                });
+                marker.on('mouseover', function () {
+                    this.setTop(true);
+                    this.setLabel({
+                        content: "<div class='label-content-text'>" + this.getTitle() + "</div>",
+                        offset: new AMap.Pixel(0, -31)
+                    });
+                });
+                marker.on('mouseout', function () {
+                    this.setLabel();
+                });
+                if (item.type && item.type === 'hotel') {
+                    marker.infoTitle = item.title;
+                    marker.infoBody = "<div style='display: flex;'>\n" +
+                        "    <div><a href='" + item.detailUrl + "' target='_blank'><img alt='Pic' height='110' src='" + item.imgUrl + "'></a></div>\n" +
+                        "    <div>\n" +
+                        "        <div style='min-width:230px;'>详细地址：" + item.address + "</div>\n" +
+                        "        <div>联系电话：" + item.phone + "</div>\n" +
+                        "        <div>房型价格：" + item.price + "</div>\n" +
+                        "        <div>入住日期：" + item.from + " ~ " + item.to + "</div>\n" +
+                        "        <div><a href='" + item.detailUrl + "' target=\"_blank\">详细信息</a></div>\n" +
+                        "    </div>\n" +
+                        "</div>";
+                    marker.on('click', markerClick);
+                    marker.emit('click', {target: marker});
                 }
             }
 
-            return opts;
-        }
-
-        function render() {
-
-            pathSimplifierIns.renderEngine.setOptions(getStyleParams());
-
-            pathSimplifierIns.renderLater(200);
-
-            refreshConfigPanel();
-        }
-
-
-        function exportRenderOptions() {
-
-            var options = getStyleParams();
-
-            return options;
-        }
-
-        function refreshConfigPanel() {
-
-            var options = exportRenderOptions();
-
-            var configStr = 'renderOptions: ' + JSON.stringify(options, null, 2);
-
-            $('#exportConfigPanel').find('pre').html(configStr);
-        }
-
-        $('#exportBtn').click(function() {
-
-            var panel = $('#exportConfigPanel');
-
-            if (!panel.length) {
-                panel = $('<div id="exportConfigPanel"><pre></pre></div>').appendTo(document.body);
-                $(this).html('隐藏配置信息');
-
-            } else {
-                $(this).html('显示配置信息');
-                panel.remove();
-                return;
+            function markerClick(e) {
+                infoWindow.setInfoTitle(e.target.infoTitle);
+                infoWindow.setInfoBody(e.target.infoBody);
+                infoWindow.open(map, e.target.getPosition());
             }
-            refreshConfigPanel();
         });
 
-        render();
+    // 地图加载完成
+    map.on("complete", function () {
+        // 无参数时，自动自适应所有覆盖物
+        map.setFitView();
     });
 </script>
 </body>
-
 </html>

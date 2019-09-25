@@ -15,6 +15,9 @@
         <el-timeline>
             <el-timeline-item v-for="(item, index) of list" :key="index" :timestamp="item.timestamp" placement="top" :type="getTimelineType(item.timestamp)">
                 <el-card>
+                    <div :class="{index: true, expired: getTimelineType(item.timestamp) === 'danger'}">
+                        No.{{index + 1}}
+                    </div>
                     <div v-if="item.imgUrls.length > 0" style="height: 100px;">
                         <el-image style="width: 100px; height: 100px" :src="item.imgUrls[0]" fit="cover" :preview-src-list="item.imgUrls">
                             <div slot="error" class="image-slot">

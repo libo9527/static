@@ -1,9 +1,10 @@
 @import url("//unpkg.com/element-ui@2.12.0/lib/theme-chalk/index.css");
-.el-card__body{
+
+.el-card__body {
     padding: 5px 20px;
 }
 
-.block .image-slot{
+.block .image-slot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,24 @@
     font-size: 30px;
 }
 
-.el-card__body{
+.el-card__body {
     display: flex;
+    align-items: center;
 }
 
+.index {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    background: #409EFF;
+    opacity: 0.8;
+    border-radius: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+}
+
+.index.expired{
+    background: #F56C6C;
+    opacity: 0.5;
+}

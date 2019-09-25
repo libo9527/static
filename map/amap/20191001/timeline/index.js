@@ -234,13 +234,16 @@ var Main = {
             }, {
                 timestamp: '2019/10/03 19:20:00',
                 imgUrls: [
+                    '../images/ylxs-ht-01.png',
+                    '../images/ylxs-ht-02.png'
                 ],
                 title: '打车 景区门口 - 汉庭丽江古城福星路酒店',
                 members: '李、浮、谭、党',
                 content: '从景区门口出发，前往汉庭丽江古城福星路酒店。<br>' +
                     '打车：大约 ¥80 ～ 100，40 ～ 60 分钟<br>' +
                     '黑车：大约 ¥20 ～ 40/人，40 ～ 60 分钟<br>' +
-                    '回程路上可以<a href="https://surl.amap.com/1Obea9Nf7ZN" style="color: orangered;">提前预定</a>第二天早上从酒店到火车站的车'
+                    '回程路上可以<a href="https://surl.amap.com/1Obea9Nf7ZN" style="color: orangered;">提前预定</a>第二天早上从酒店到火车站的车',
+                amapUrl: 'https://surl.amap.com/1Qqh3tt1lfjq'
             }, {
                 timestamp: '2019/10/03 20:20:00',
                 imgUrls: [

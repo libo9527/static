@@ -79,8 +79,8 @@
 
     map.add(polyline);
 
-    AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
-        function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
+    AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
+        function (AwesomeMarker, SimpleInfoWindow) {
 
             var kunmingMarker = new AwesomeMarker({
                 //设置awesomeIcon

@@ -1,185 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>demo | vue-amap</title>
     <meta charset="UTF-8">
-    <title>丽江酒店分布</title>
-    <script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61'></script>
-    <!-- UI组件库 1.0 -->
-    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
-    <link rel="stylesheet" type="text/css" href="./demo.css">
 </head>
 <body>
-<div id="new-tab">
-    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
+<div id="app">
+    <el-amap vid="amap"></el-amap>
 </div>
-<div id="container"></div>
-<script type="text/javascript">
-    //创建地图
-    var map = new AMap.Map('container', {
-        zoom: 11,
-        center: [100.233026, 26.872108] // 云南丽江
+</body>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/vue-amap/dist/index.js"></script>
+<script>
+    // 初始化高德地图的 key 和插件
+    window.VueAMap.initAMapApiLoader({
+        key: 'YOUR_KEY',
+        plugin: ['Autocomplete', 'PlaceSearch', 'Scale', 'OverView', 'ToolBar', 'MapType', 'PolyEditor', 'AMap.CircleEditor'],
+        // 默认高德 sdk 版本为 1.4.4
+        v: '1.4.4'
     });
 
-    AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
-        function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
-
-            var data = [{
-                id: 1,
-                title: "丽江站",
-                position: [100.252637, 26.810661], // 丽江站
-                awesomeIcon: "train",
-                iconLabel: {
-                    style: {
-                        color: "#333",
-                        fontSize: "14px"
-                    }
-                },
-                iconStyle: "orange",
-                label: {
-                    content: "<div class='label-content-text'>丽江站</div>",
-                    direction: "top"
-                }
-            }, {
-                id: 2,
-                title: "玉龙雪山国家级风景名胜区",
-                position: [100.203875, 27.134403],
-                awesomeIcon: "photo",
-                iconLabel: {
-                    style: {
-                        color: "#333",
-                        fontSize: "14px"
-                    }
-                },
-                iconStyle: "green",
-                label: {
-                    content: "<div class='label-content-text'>玉龙雪山国家级风景名胜区</div>",
-                    direction: "top"
-                }
-            }, {
-                id: 3,
-                title: "丽江古城",
-                position: [100.235517, 26.870507],
-                awesomeIcon: "photo",
-                iconLabel: {
-                    style: {
-                        color: "#333",
-                        fontSize: "14px"
-                    }
-                },
-                iconStyle: "green",
-                label: {
-                    content: "<div class='label-content-text'>丽江古城</div>",
-                    direction: "top"
-                }
-            }, {
-                id: 3,
-                title: "忠义市场",
-                position: [100.235351,26.866068],
-                awesomeIcon: "photo",
-                iconLabel: {
-                    style: {
-                        color: "#333",
-                        fontSize: "14px"
-                    }
-                },
-                iconStyle: "green",
-                label: {
-                    content: "<div class='label-content-text'>忠义市场</div>",
-                    direction: "top"
-                }
-            }, {
-                id: 4,
-                title: "拉市海国际湿地公园",
-                position: [100.11647, 26.876862],
-                awesomeIcon: "photo",
-                iconLabel: {
-                    style: {
-                        color: "#333",
-                        fontSize: "14px"
-                    }
-                },
-                iconStyle: "green",
-                label: {
-                    content: "<div class='label-content-text'>拉市海国际湿地公园</div>",
-                    direction: "top"
-                }
-            }, {
-                id: 5,
-                title: '汉庭丽江古城福星路酒店',
-                position: [100.22639,26.880503],
-                awesomeIcon: 'hotel',
-                iconLabel: {
-                    style: {
-                        color: '#666',
-                        fontSize: '14px'
-                    }
-                },
-                iconStyle: 'lightblue',
-                label: {
-                    content: "<div class='label-content-text'>汉庭丽江古城福星路酒店</div>",
-                    direction: 'top'
-                },
-                type: 'hotel',
-                detailUrl: 'http://hotels.huazhu.com/hotel/detail/6741001',
-                imgUrl: '../../images/lijianghotel01.png',
-                address: '云南省丽江市古城区福星路63号(距离丽江古城600米)',
-                phone: '0888-8833333',
-                price: '大床房(2间) ¥283/间',
-                from: '2019-10-03',
-                to: '2019-10-04'
-            }];
-
-            var infoWindow = new SimpleInfoWindow({
-                offset: new AMap.Pixel(0, -31)
-            });
-            for (let item of data) {
-                var marker = new AwesomeMarker({
-                    awesomeIcon: item.awesomeIcon,
-                    iconLabel: item.iconLabel,
-                    iconStyle: item.iconStyle,
-                    map: map,
-                    position: item.position,
-                    title: item.title
-                });
-                marker.on('mouseover', function () {
-                    this.setTop(true);
-                    this.setLabel({
-                        content: "<div class='label-content-text'>" + this.getTitle() + "</div>",
-                        offset: new AMap.Pixel(0, -31)
-                    });
-                });
-                marker.on('mouseout', function () {
-                    this.setLabel();
-                });
-                if (item.type && item.type === 'hotel') {
-                    marker.infoTitle = item.title;
-                    marker.infoBody = "<div style='display: flex;'>\n" +
-                        "    <div><a href='" + item.detailUrl + "' target='_blank'><img alt='Pic' height='110' src='" + item.imgUrl + "'></a></div>\n" +
-                        "    <div>\n" +
-                        "        <div style='min-width:230px;'>详细地址：" + item.address + "</div>\n" +
-                        "        <div>联系电话：" + item.phone + "</div>\n" +
-                        "        <div>房型价格：" + item.price + "</div>\n" +
-                        "        <div>入住日期：" + item.from + " ~ " + item.to + "</div>\n" +
-                        "        <div><a href='" + item.detailUrl + "' target=\"_blank\">详细信息</a></div>\n" +
-                        "    </div>\n" +
-                        "</div>";
-                    marker.on('click', markerClick);
-                    marker.emit('click', {target: marker});
-                }
-            }
-
-            function markerClick(e) {
-                infoWindow.setInfoTitle(e.target.infoTitle);
-                infoWindow.setInfoBody(e.target.infoBody);
-                infoWindow.open(map, e.target.getPosition());
-            }
-        });
-
-    // 地图加载完成
-    map.on("complete", function () {
-        // 无参数时，自动自适应所有覆盖物
-        map.setFitView();
+    new Vue({
+        el: '#app',
+        data: function(){
+            return { }
+        }
     });
 </script>
-</body>
 </html>

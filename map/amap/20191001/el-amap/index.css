@@ -1,0 +1,49 @@
+@import url("//unpkg.com/element-ui@2.12.0/lib/theme-chalk/index.css");
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#new-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px;
+    background: transparent;
+}
+
+#new-tab a i {
+    color: black;
+}
+
+#new-tab a i:hover {
+    color: #212980;
+    font-size: 20px;
+}
+
+#outer-box{
+    height:100%;
+    padding-right: 25%;
+}
+
+#panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    width: 25%;
+    z-index: 999;
+    border-left: 1px solid #eaeaea;
+    background: #fff;
+}
+
+.city-checkbox{
+    align-items: center;
+}

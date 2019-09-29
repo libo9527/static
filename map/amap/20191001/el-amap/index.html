@@ -24,11 +24,22 @@
         <el-amap ref="map" vid="amap" :center="center" :map-manager="amapManager" :zoom="zoom"
                  :events="events"></el-amap>
         <div id="panel" class="scrollbar1">
-            <div class="city-checkbox">
-                <el-checkbox-group v-model="cityGroup">
-                    <el-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox-button>
-                </el-checkbox-group>
-            </div>
+            <el-form ref="form" :model="form" label-width="60px" label-position="right" label-suffix="：">
+                <el-form-item label="城市" prop="cityGroup" size="small">
+                    <el-checkbox-group class="city-checkbox1" v-model="form.cityGroup">
+                        <el-checkbox-button v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox-button>
+                    </el-checkbox-group>
+                </el-form-item>
+                <el-form-item label="分类" prop="typeGroup" size="small">
+                    <el-checkbox-group class="city-checkbox1" v-model="form.typeGroup">
+                        <el-checkbox-button v-for="type in types" :label="type" :key="type">{{type}}</el-checkbox-button>
+                    </el-checkbox-group>
+                </el-form-item>
+                <el-form-item>
+                    <el-button size="small" type="warning" @click="search()">查询</el-button>
+                    <el-button size="small" @click="resetForm()">重置</el-button>
+                </el-form-item>
+            </el-form>
 
             <ul id="my-list"></ul>
         </div>

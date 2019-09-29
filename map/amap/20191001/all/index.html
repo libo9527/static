@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2019云南国庆游</title>
+    <script type="text/javascript"
+            src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61&&plugin=AMap.Scale,AMap.ToolBar'></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div id="new-tab">
+    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
+</div>
+<div id="legend">
+    <div style="display: flex;align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -682px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: salmon; font-size: 14px;"><i class="fa fa-star"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">行政区</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i class="fa fa-plane"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">机场</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i class="fa fa-train"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">火车站</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-salmon">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -360px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: black; font-size: 14px;"><i class="fa fa-hotel"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">酒店</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-green">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -72px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: lightgreen; font-size: 14px;"><i class="fa fa-photo"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">景区</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-green">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -432px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: green; font-size: 14px;"><i class="fa fa-arrows"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">内部景点</strong>
+    </div>
+</div>
+<div id="container"></div>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
+
+<div class="amap-marker"
+     style="top: -202px; left: -163px; z-index: 110; transform: rotate(0deg); transform-origin: 17.5px 43px; display: block;">
+    <div class="amap-marker-content" title="昆明长水国际机场" style="opacity: 1;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-orange">
+            <div class="amap-simple-marker-icon"></div>
+            <div class="amap-simple-marker-label" style="color: rgb(51, 51, 51); font-size: 14px;"><i
+                    class="fa fa-plane"></i></div>
+        </div>
+    </div>
+</div>

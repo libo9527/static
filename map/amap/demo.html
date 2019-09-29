@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>demo | vue-amap</title>
-    <meta charset="UTF-8">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>点标记</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <style>
+        html,body,#container{
+            height:100%;
+        }
+    </style>
 </head>
 <body>
-<div id="app">
-    <el-amap vid="amap"></el-amap>
+<div id="container" ></div>
+<div class="info" style='min-width:10rem;'>
+    <img src="//a.amap.com/lbs/static/img/js-markonapp.png" style='width:120px;height:120px'>
+    <div style='text-align: center'>手机扫码打开示例</div>
 </div>
-</body>
-<!-- 先引入 Vue -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<!-- 引入组件库 -->
-<script src="https://unpkg.com/vue-amap/dist/index.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
 <script>
-    // 初始化高德地图的 key 和插件
-    window.VueAMap.initAMapApiLoader({
-        key: 'YOUR_KEY',
-        plugin: ['Autocomplete', 'PlaceSearch', 'Scale', 'OverView', 'ToolBar', 'MapType', 'PolyEditor', 'AMap.CircleEditor'],
-        // 默认高德 sdk 版本为 1.4.4
-        v: '1.4.4'
+    var map = new AMap.Map("container", {
+        zoom: 18,
+        center:[116.473188,39.993253]
     });
-
-    new Vue({
-        el: '#app',
-        data: function(){
-            return { }
+    var marker = new AMap.Marker({
+        map:map,
+        position:[116.473188,39.993253],
+        label: {
+            offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+            content: "点击Marker打开高德地图"
         }
-    });
+    })
+    marker.on('click',function(e){
+        marker.markOnAMAP({
+            name:'首开广场',
+            position:marker.getPosition()
+        })
+    })
+    if(AMap.UA.mobile){
+        document.getElementsByClassName('info')[0].style.display='none';
+    }
+
 </script>
+</body>
 </html>

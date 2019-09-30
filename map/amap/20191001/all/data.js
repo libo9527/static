@@ -143,9 +143,18 @@ const data = [{
     infoBody: "",
     type: "景区"
 }, {
+    id: 16,
+    title: "滇池海埂公园",
+    position: [102.660665,24.959797],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区"
+}, {
     id: 17,
-    title: "西山",
-    position: [102.664376, 25.038297],
+    title: "西山风景区",
+    position: [102.623565,24.969733],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -173,6 +182,15 @@ const data = [{
     id: 20,
     title: "翠湖公园",
     position: [102.703689, 25.048474],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区"
+}, {
+    id: 20,
+    title: "黑龙潭公园",
+    position: [102.750964,25.141631],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -727,4 +745,112 @@ const data = [{
     iconStyle: "lightgreen",
     infoBody: "",
     type: "内部景点"
+}, {
+    id: 74,
+    title: "云南民族博物馆",
+    position: [102.669125,24.965073],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "昆明故城",
+    position: [102.667043,24.967601],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "白族村",
+    position: [102.658234,24.966677],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "佤族村",
+    position: [102.661224,24.963226],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "傣寨",
+    position: [102.663472,24.966],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "彝（/yí/）族村",
+    position: [102.656761,24.967542],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "拉祜（/hù/）族寨",
+    position: [102.659788,24.963541],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "摩梭之家",
+    position: [102.6552,24.966648],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
+    id: 74,
+    title: "牛仔王正宗邵通特色小肉串",
+    position: [102.746721,25.057033],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>清真：牛肉串、牛腰子</div><div style='text-align: right'>— — 小红书某攻略</div>",
+    type: "美食"
+}, {
+    id: 74,
+    title: "昭通天麻竹荪（/sūn/）火腿鸡",
+    position: [102.842802,24.860161],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>火锅</div><div style='text-align: right'>— — 小红书某攻略</div>",
+    type: "美食"
+}, {
+    id: 74,
+    title: "醉鼎尖椒鸡(寺瓦路店) ",
+    position: [102.759411,25.045662],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>干锅，又麻又辣超过瘾。还有油焖田螺、炸土豆、炸豌豆粉。</div><div style='text-align: right'>— — 小红书某攻略</div>",
+    type: "美食"
+}, {
+    id: 74,
+    title: "圆西路小吃街",
+    position: [102.705717,25.05528],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>这条街上最出名的是烤猪蹄和烤豆腐。</div><div style='text-align: right'>— — 小红书某攻略</div>",
+    type: "美食"
 }];

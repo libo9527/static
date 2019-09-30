@@ -608,4 +608,36 @@ const data = [{
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen"
+}, {
+    id: 6,
+    level: 4,
+    title: "千寻塔",
+    position: [100.147465,25.70563],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen"
+}, {
+    id: 6,
+    level: 4,
+    title: "聚影池",
+    position: [100.145645,25.705777],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen"
+}, {
+    id: 6,
+    level: 4,
+    title: "南诏建极大钟",
+    position: [100.145565,25.705036],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen"
+}, {
+    id: 6,
+    level: 4,
+    title: "崇圣寺",
+    position: [100.139503,25.703136],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen"
 }];

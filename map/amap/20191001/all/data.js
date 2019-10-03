@@ -431,6 +431,15 @@ const data = [{
     infoBody: "",
     type: "内部景点"
 }, {
+    id: 46,
+    title: "三眼井",
+    position: [100.204833,26.917871],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点"
+}, {
     id: 47,
     title: "青龙桥",
     position: [100.204096, 26.921657],

@@ -109,6 +109,16 @@ const traffic = [{
     infoBody: "",
     type: "汽车站",
     visible: true
+}, {
+    id: 8,
+    title: "厦深铁路惠东站",
+    position: [114.79538,22.84392],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
 }];
 const hotel = [{
     id: 9,

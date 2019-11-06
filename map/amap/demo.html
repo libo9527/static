@@ -1,81 +1,145 @@
+<!-- 重点参数：iconStyle -->
 <!doctype html>
-<html>
+<html lang="zh-CN">
+
 <head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/overlay/AwesomeMarker/examples/iconStyle.html -->
+    <base href="//webapi.amap.com/ui/1.0/ui/overlay/AwesomeMarker/examples/" />
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>获取某个覆盖物</title>
-    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <title>图标样式</title>
     <style>
-        html, body, #container {
-            height: 100%;
+        html,
+        body,
+        #container {
             width: 100%;
+            height: 100%;
+            margin: 0px;
         }
     </style>
 </head>
+
 <body>
 <div id="container"></div>
-<div class="input-card">
-    <input id="getAllOverlays" type="button" class="btn" value="获取 id 为 2 覆盖物"/>
-</div>
-<script type="text/javascript"
-        src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
+<script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
+<!-- UI组件库 1.0 -->
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
 <script type="text/javascript">
-    // 创建地图实例
-    var map = new AMap.Map("container", {
-        zoom: 13,
-        center: [116.43, 39.92],
-        resizeEnable: true
+    //创建地图
+    var map = new AMap.Map('container', {
+        zoom: 4
     });
 
-    var lnglats = [[116.39, 39.92], [116.41, 39.93], [116.43, 39.91], [116.46, 39.93]];
-    var markers = [];
+    AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleMarker'],
+        function(AwesomeMarker, SimpleMarker) {
 
-    for (var i = 0; i < lnglats.length; i++) {
-        var lnglat = lnglats[i];
-        // 创建点实例
-        var marker = new AMap.Marker({
-            position: new AMap.LngLat(lnglat[0], lnglat[1]),
-            icon: 'https://webapi.amap.com/theme/v1.3/markers/n/mark_b'+(i+1)+'.png',
-            extData:{
-                id: i + 1
+            //icon的取值请见  http://fontawesome.io/icons/
+            var awIcons = [
+                'address-book',
+                'address-book-o',
+                'address-card',
+                'address-card-o',
+                'adjust',
+                'american-sign-language-interpreting',
+                'anchor',
+                'archive',
+                'area-chart',
+                'arrows',
+                'arrows-h',
+                'arrows-v',
+                'asl-interpreting',
+                'assistive-listening-systems',
+                'asterisk'
+            ];
+            // beige,black,blue,cadetblue,darkblue,
+            // darkgreen,darkred,gray,green,lightblue,
+            // lightgray,lightgreen,lightpink,orange,orchid,
+            // pink,purple,red,salmon,white
+
+
+            var iconStyles = SimpleMarker.getBuiltInIconStyles();
+            console.log(iconStyles);
+
+            //获取一批grid排布的经纬度
+            var lngLats = getGridLngLats(map.getCenter(), 5, awIcons.length);
+
+            for (var i = 0, len = lngLats.length; i < len; i++) {
+
+                new AwesomeMarker({
+
+                    //设置awesomeIcon
+                    awesomeIcon: awIcons[i],
+
+                    iconLabel: {
+                        style: {
+                            color: iconStyles[iconStyles.length - 1 - i],
+                            fontSize: '14px'
+                        }
+                    },
+
+                    //图标
+                    iconStyle: iconStyles[i],
+
+                    map: map,
+                    position: lngLats[i],
+                    title: 'awesomeIcon :' + awIcons[i]
+
+                });
+
             }
+
         });
 
-        markers.push(marker);
-    }
+    AMap.plugin(['AMap.ToolBar'], function() {
+        map.addControl(new AMap.ToolBar({
+            map: map
+        }));
+    });
 
-    // 将点添加到地图
-    map.add(markers);
+    /**
+     * 返回一批网格排列的经纬度
 
-    // 获取当前 id 的覆盖物
-    function getOneOverlay() {
-        var targetId = 2;
-        var targetMarker;
+     * @param  {AMap.LngLat} center 网格中心
+     * @param  {number} colNum 列数
+     * @param  {number} size  总数
+     * @param  {number} cellX  横向间距
+     * @param  {number} cellY  竖向间距
+     * @return {Array}  返回经纬度数组
+     */
+    function getGridLngLats(center, colNum, size, cellX, cellY) {
 
-        for(var i = 0; i < markers.length; i++){
-            // 获取存在每个 extData 中的 id
-            var id = markers[i].getExtData().id;
+        var pxCenter = map.lnglatToPixel(center);
 
-            if(id === targetId){
-                targetMarker = markers[i];
-                break;
+        var rowNum = Math.ceil(size / colNum);
+
+        var startX = pxCenter.getX(),
+            startY = pxCenter.getY();
+
+        cellX = cellX || 70;
+
+        cellY = cellY || 70;
+
+
+        var lngLats = [];
+
+        for (var r = 0; r < rowNum; r++) {
+
+            for (var c = 0; c < colNum; c++) {
+
+                var x = startX + (c - (colNum - 1) / 2) * (cellX);
+
+                var y = startY + (r - (rowNum - 1) / 2) * (cellY);
+
+                lngLats.push(map.pixelToLngLat(new AMap.Pixel(x, y)));
+
+                if (lngLats.length >= size) {
+                    break;
+                }
             }
         }
-
-        var position = targetMarker.getPosition();
-
-        var infoWindow = new AMap.InfoWindow({
-            position: position,
-            offset: new AMap.Pixel(0, -35),
-            content: '<div>已获取 id 为 2 覆盖物</div>'
-        });
-
-        infoWindow.open(map);
+        return lngLats;
     }
-
-    // 绑定获取覆盖物事件
-    document.getElementById("getAllOverlays").onclick = getOneOverlay;
 </script>
 </body>
+
 </html>

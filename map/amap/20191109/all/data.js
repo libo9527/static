@@ -119,6 +119,26 @@ const traffic = [{
     infoBody: "",
     type: "公交站",
     visible: true
+}, {
+    id: 8,
+    title: "稔山中队",
+    position: [114.807518,22.843794],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
+}, {
+    id: 8,
+    title: "稔山镇政府",
+    position: [114.807709,22.839649],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
 }];
 const hotel = [{
     id: 9,

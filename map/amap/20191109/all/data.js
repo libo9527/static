@@ -10,18 +10,8 @@ const data = [{
     visible: true
 }, {
     id: 2,
-    title: "大理",
-    position: [100.225668, 25.589449],
-    awesomeIcon: "star",
-    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
-    iconStyle: "black",
-    infoBody: "",
-    type: "行政区",
-    visible: true
-}, {
-    id: 3,
-    title: "丽江",
-    position: [100.233026, 26.872108],
+    title: "深圳",
+    position: [114.085947,22.547],
     awesomeIcon: "star",
     iconLabel: {style: {color: "salmon", fontSize: "14px"}},
     iconStyle: "black",
@@ -30,8 +20,18 @@ const data = [{
     visible: true
 }, {
     id: 4,
-    title: "昆明长水国际机场",
-    position: [102.931104, 25.098669],
+    title: "深圳宝安国际机场",
+    position: [113.814829,22.633092],
+    awesomeIcon: "plane",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "机场",
+    visible: true
+}, {
+    id: 4,
+    title: "惠州平潭机场",
+    position: [114.607198,23.049473],
     awesomeIcon: "plane",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -60,8 +60,8 @@ const data = [{
     visible: true
 }, {
     id: 7,
-    title: "大理站",
-    position: [100.250631, 25.589423],
+    title: "深圳北站",
+    position: [114.0295,22.609875],
     awesomeIcon: "train",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -70,8 +70,8 @@ const data = [{
     visible: true
 }, {
     id: 8,
-    title: "丽江站",
-    position: [100.252713, 26.810645],
+    title: "深圳坪山站",
+    position: [114.327179,22.707317],
     awesomeIcon: "train",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -80,8 +80,8 @@ const data = [{
     visible: true
 }, {
     id: 9,
-    title: "汉庭昆明呈贡酒店",
-    position: [102.799645, 24.889075],
+    title: "巽寮湾海尚湾畔海景度假酒店",
+    position: [114.755414,22.689786],
     awesomeIcon: "hotel",
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",

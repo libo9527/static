@@ -27,6 +27,7 @@ AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
                 }
             });
             marker.type = item.type;
+            marker.visible = item.visible;
             marker.infoTitle = item.title + "<a style='margin-left: 5px;' target='_blank' href='//uri.amap.com/marker?position=" + item.position[0] + "," + item.position[1] + "&name=" + item.title + "&callnative=1'>高德</a>";
             marker.infoBody = item.infoBody;
             marker.on('mouseover', function () {
@@ -52,28 +53,20 @@ AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
         }
     });
 
-let lastType = null;
-
 function filterMarker(type) {
-    // console.log(level);
     let allMarkers = map.getAllOverlays('marker');
     allMarkers.forEach((marker) => {
-        // console.log(marker.level);
-        if (lastType === type) {
-            marker.show();
-        } else {
-            marker.show();
-            if (marker.type !== type) {
+        if (marker.type === type) {
+            if (marker.visible) {
                 marker.hide();
+                marker.visible = false;
+            }else {
+                marker.show();
+                marker.visible = true;
             }
         }
     });
     map.setFitView();
-    if (lastType === type) {
-        lastType = null;
-    } else {
-        lastType = type;
-    }
 }
 
 // 地图加载完成

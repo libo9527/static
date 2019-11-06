@@ -1,12 +1,13 @@
 const data = [{
     id: 1,
     title: "惠州",
-    position: [114.412599,23.079404],
+    position: [114.412599, 23.079404],
     awesomeIcon: "star",
     iconLabel: {style: {color: "salmon", fontSize: "14px"}},
     iconStyle: "black",
     infoBody: "",
-    type: "行政区"
+    type: "行政区",
+    visible: true
 }, {
     id: 2,
     title: "大理",
@@ -15,7 +16,8 @@ const data = [{
     iconLabel: {style: {color: "salmon", fontSize: "14px"}},
     iconStyle: "black",
     infoBody: "",
-    type: "行政区"
+    type: "行政区",
+    visible: true
 }, {
     id: 3,
     title: "丽江",
@@ -24,7 +26,8 @@ const data = [{
     iconLabel: {style: {color: "salmon", fontSize: "14px"}},
     iconStyle: "black",
     infoBody: "",
-    type: "行政区"
+    type: "行政区",
+    visible: true
 }, {
     id: 4,
     title: "昆明长水国际机场",
@@ -33,25 +36,28 @@ const data = [{
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
     infoBody: "",
-    type: "机场"
+    type: "机场",
+    visible: true
 }, {
     id: 5,
-    title: "昆明南站",
-    position: [102.861464, 24.870115],
+    title: "惠州南站",
+    position: [114.492196, 22.784638],
     awesomeIcon: "train",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
     infoBody: "",
-    type: "火车站"
+    type: "火车站",
+    visible: true
 }, {
     id: 6,
-    title: "昆明站",
-    position: [102.72225, 25.015288],
+    title: "惠东站",
+    position: [114.794676, 22.844349],
     awesomeIcon: "train",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
     infoBody: "",
-    type: "火车站"
+    type: "火车站",
+    visible: true
 }, {
     id: 7,
     title: "大理站",
@@ -60,7 +66,8 @@ const data = [{
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
     infoBody: "",
-    type: "火车站"
+    type: "火车站",
+    visible: true
 }, {
     id: 8,
     title: "丽江站",
@@ -69,7 +76,8 @@ const data = [{
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
     infoBody: "",
-    type: "火车站"
+    type: "火车站",
+    visible: true
 }, {
     id: 9,
     title: "汉庭昆明呈贡酒店",
@@ -78,7 +86,8 @@ const data = [{
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",
     infoBody: "",
-    type: "酒店"
+    type: "酒店",
+    visible: true
 }, {
     id: 10,
     title: "汉庭昆明北京路酒店",
@@ -87,7 +96,8 @@ const data = [{
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",
     infoBody: "",
-    type: "酒店"
+    type: "酒店",
+    visible: true
 }, {
     id: 11,
     title: "汉庭优佳昆明东华酒店",
@@ -96,7 +106,8 @@ const data = [{
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",
     infoBody: "",
-    type: "酒店"
+    type: "酒店",
+    visible: true
 }, {
     id: 12,
     title: "大理古城米畔·轻宿客栈",
@@ -105,7 +116,8 @@ const data = [{
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",
     infoBody: "",
-    type: "酒店"
+    type: "酒店",
+    visible: true
 }, {
     id: 13,
     title: "汉庭丽江古城福星路酒店",
@@ -114,52 +126,58 @@ const data = [{
     iconLabel: {style: {color: "black", fontSize: "14px"}},
     iconStyle: "salmon",
     infoBody: "",
-    type: "酒店"
+    type: "酒店",
+    visible: true
 }, {
     id: 14,
-    title: "民族村",
-    position: [102.660893, 24.96606],
+    title: "双月湾",
+    position: [114.902514, 22.56517],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 15,
-    title: "滇池",
+    title: "巽寮湾",
+    position: [114.747506, 22.674631],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 16,
+    title: "大亚湾",
+    position: [114.679364, 22.77608],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 16,
+    title: "滇池海埂公园",
     position: [102.660665, 24.959797],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
-}, {
-    id: 16,
-    title: "海埂大坝",
-    position: [102.65082, 24.973585],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区"
-}, {
-    id: 16,
-    title: "滇池海埂公园",
-    position: [102.660665,24.959797],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 17,
     title: "西山风景区",
-    position: [102.623565,24.969733],
+    position: [102.623565, 24.969733],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 18,
     title: "大观楼",
@@ -168,7 +186,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 19,
     title: "云南陆军讲武堂旧址",
@@ -177,7 +196,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 20,
     title: "翠湖公园",
@@ -186,16 +206,18 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 20,
     title: "黑龙潭公园",
-    position: [102.750964,25.141631],
+    position: [102.750964, 25.141631],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 21,
     title: "云南大学",
@@ -204,7 +226,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 22,
     title: "大理古城",
@@ -213,7 +236,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 23,
     title: "苍山景区",
@@ -222,7 +246,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 24,
     title: "崇圣寺三塔",
@@ -231,7 +256,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 25,
     title: "洱海",
@@ -240,7 +266,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 26,
     title: "双廊古镇",
@@ -249,7 +276,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 27,
     title: "玉龙雪山国家级风景名胜区",
@@ -258,7 +286,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 28,
     title: "丽江古城",
@@ -267,7 +296,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 29,
     title: "束河古镇",
@@ -276,7 +306,8 @@ const data = [{
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
     infoBody: "",
-    type: "景区"
+    type: "景区",
+    visible: true
 }, {
     id: 30,
     title: "冰川公园",
@@ -285,7 +316,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 31,
     title: "甘海子",
@@ -294,7 +326,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 32,
     title: "印象丽江",
@@ -303,7 +336,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 33,
     title: "蓝月谷",
@@ -312,7 +346,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 34,
     title: "云杉坪",
@@ -321,7 +356,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 35,
     title: "牦牛坪",
@@ -330,7 +366,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 36,
     title: "东巴纸纺",
@@ -339,7 +376,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 37,
     title: "酒吧街",
@@ -348,7 +386,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 38,
     title: "四方街",
@@ -357,7 +396,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 39,
     title: "大水车",
@@ -366,7 +406,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 40,
     title: "木府",
@@ -375,7 +416,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 41,
     title: "狮子山",
@@ -384,7 +426,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 42,
     title: "万古楼",
@@ -393,7 +436,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 43,
     title: "白龙马谭寺",
@@ -402,7 +446,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 44,
     title: "束河牌坊",
@@ -411,7 +456,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 45,
     title: "四方听音广场",
@@ -420,7 +466,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 46,
     title: "飞花触水",
@@ -429,16 +476,18 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 46,
     title: "三眼井",
-    position: [100.204833,26.917871],
+    position: [100.204833, 26.917871],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 47,
     title: "青龙桥",
@@ -447,7 +496,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 48,
     title: "茶马古道博物馆",
@@ -456,7 +506,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 49,
     title: "九鼎龙潭",
@@ -465,7 +516,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 50,
     title: "龙泉寺",
@@ -474,7 +526,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 51,
     title: "挖色码头",
@@ -483,7 +536,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 52,
     title: "海地拍照点",
@@ -492,7 +546,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 53,
     title: "蟹屿螺洲客栈",
@@ -501,7 +556,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 54,
     title: "红山庙",
@@ -510,7 +566,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 55,
     title: "严家大院",
@@ -519,7 +576,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 56,
     title: "海舌公园停车场 - 夫妻树",
@@ -528,7 +586,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 57,
     title: "海舌coffee - 木栈道",
@@ -537,7 +596,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 58,
     title: "廊桥",
@@ -546,7 +606,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 59,
     title: "玫瑰庄园 - 躺在水里的树",
@@ -555,7 +616,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 60,
     title: "桃溪 - 海西水站",
@@ -564,7 +626,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 61,
     title: "千寻塔",
@@ -573,7 +636,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 62,
     title: "聚影池",
@@ -582,7 +646,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 63,
     title: "南诏建极大钟",
@@ -591,7 +656,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 64,
     title: "崇圣寺",
@@ -600,7 +666,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 65,
     title: "东南门",
@@ -609,7 +676,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 66,
     title: "五华楼",
@@ -618,7 +686,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 67,
     title: "酒吧一条街",
@@ -627,7 +696,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 68,
     title: "人民路",
@@ -636,7 +706,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 69,
     title: "洋人街",
@@ -645,7 +716,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 70,
     title: "总统兵马大元帅府",
@@ -654,7 +726,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 71,
     title: "农村电影博物馆",
@@ -663,7 +736,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 72,
     title: "天主教堂",
@@ -672,7 +746,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 73,
     title: "武庙会",
@@ -681,7 +756,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "段公子餐厅",
@@ -690,7 +766,8 @@ const data = [{
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
     infoBody: "<div>只用去这一家就能吃到大部分的云南特色菜</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食"
+    type: "美食",
+    visible: true
 }, {
     id: 74,
     title: "洗马潭",
@@ -699,7 +776,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "天龙八部影视城",
@@ -708,7 +786,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "感通寺",
@@ -717,7 +796,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "清碧溪",
@@ -726,7 +806,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "七龙女池",
@@ -735,7 +816,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "寂照庵",
@@ -744,7 +826,8 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "玉带云游路",
@@ -753,113 +836,126 @@ const data = [{
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "云南民族博物馆",
-    position: [102.669125,24.965073],
+    position: [102.669125, 24.965073],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "昆明故城",
-    position: [102.667043,24.967601],
+    position: [102.667043, 24.967601],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "白族村",
-    position: [102.658234,24.966677],
+    position: [102.658234, 24.966677],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "佤族村",
-    position: [102.661224,24.963226],
+    position: [102.661224, 24.963226],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "傣寨",
-    position: [102.663472,24.966],
+    position: [102.663472, 24.966],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "彝（/yí/）族村",
-    position: [102.656761,24.967542],
+    position: [102.656761, 24.967542],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "拉祜（/hù/）族寨",
-    position: [102.659788,24.963541],
+    position: [102.659788, 24.963541],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "摩梭之家",
-    position: [102.6552,24.966648],
+    position: [102.6552, 24.966648],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
     infoBody: "",
-    type: "内部景点"
+    type: "内部景点",
+    visible: true
 }, {
     id: 74,
     title: "牛仔王正宗邵通特色小肉串",
-    position: [102.746721,25.057033],
+    position: [102.746721, 25.057033],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
     infoBody: "<div>清真：牛肉串、牛腰子</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食"
+    type: "美食",
+    visible: true
 }, {
     id: 74,
     title: "昭通天麻竹荪（/sūn/）火腿鸡",
-    position: [102.842802,24.860161],
+    position: [102.842802, 24.860161],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
     infoBody: "<div>火锅</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食"
+    type: "美食",
+    visible: true
 }, {
     id: 74,
     title: "醉鼎尖椒鸡(寺瓦路店) ",
-    position: [102.759411,25.045662],
+    position: [102.759411, 25.045662],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
     infoBody: "<div>干锅，又麻又辣超过瘾。还有油焖田螺、炸土豆、炸豌豆粉。</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食"
+    type: "美食",
+    visible: true
 }, {
     id: 74,
     title: "圆西路小吃街",
-    position: [102.705717,25.05528],
+    position: [102.705717, 25.05528],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
     infoBody: "<div>这条街上最出名的是烤猪蹄和烤豆腐。</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食"
-}];
+    type: "美食",
+    visible: true
+}]

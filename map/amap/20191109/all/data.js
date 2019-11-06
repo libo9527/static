@@ -1,4 +1,4 @@
-const data = [{
+const administrativeCenter = [{
     id: 1,
     title: "惠州",
     position: [114.412599, 23.079404],
@@ -18,7 +18,8 @@ const data = [{
     infoBody: "",
     type: "行政区",
     visible: true
-}, {
+}];
+const traffic = [{
     id: 4,
     title: "深圳宝安国际机场",
     position: [113.814829,22.633092],
@@ -80,6 +81,16 @@ const data = [{
     visible: true
 }, {
     id: 8,
+    title: "惠州站",
+    position: [114.416477,23.151477],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 8,
     title: "惠东汽车客运总站",
     position: [114.741853,22.961723],
     awesomeIcon: "bus",
@@ -98,7 +109,8 @@ const data = [{
     infoBody: "",
     type: "汽车站",
     visible: true
-}, {
+}];
+let data = [{
     id: 9,
     title: "巽寮湾海尚湾畔海景度假酒店",
     position: [114.755414,22.689786],
@@ -140,8 +152,8 @@ const data = [{
     visible: true
 }, {
     id: 73,
-    title: "武庙会",
-    position: [100.158944, 25.690294],
+    title: "大亚湾",
+    position: [114.679364, 22.77608],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -158,14 +170,7 @@ const data = [{
     infoBody: "<div>鲜味无比的“海鲜粥”，当地特色马鲛饼（配汤粉）</div><div style='text-align: right'>— — <a href='https://you.ctrip.com/travels/huizhou213/3219655.html'>携程某攻略</a></div>",
     type: "美食",
     visible: true
-}, {
-    id: 74,
-    title: "段公子餐厅",
-    position: [100.159404, 25.691933],
-    awesomeIcon: "cutlery",
-    iconLabel: {style: {color: "gray", fontSize: "14px"}},
-    iconStyle: "lightpink",
-    infoBody: "<div>只用去这一家就能吃到大部分的云南特色菜</div><div style='text-align: right'>— — 小红书某攻略</div>",
-    type: "美食",
-    visible: true
-}]
+}];
+
+data.push(...administrativeCenter);
+data.push(...traffic);

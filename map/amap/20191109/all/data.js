@@ -110,7 +110,7 @@ const traffic = [{
     type: "汽车站",
     visible: true
 }];
-let data = [{
+const hotel = [{
     id: 9,
     title: "巽寮湾海尚湾畔海景度假酒店",
     position: [114.755414,22.689786],
@@ -120,7 +120,19 @@ let data = [{
     infoBody: "",
     type: "酒店",
     visible: true
-}, {
+}];
+const food = [{
+    id: 74,
+    title: "福合埕牛肉店 ",
+    position: [114.90335,22.571374],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>鲜味无比的“海鲜粥”，当地特色马鲛饼（配汤粉）</div><div style='text-align: right'>— — <a href='https://you.ctrip.com/travels/huizhou213/3219655.html'>携程某攻略</a></div>",
+    type: "美食",
+    visible: true
+}];
+const scenery = [{
     id: 14,
     title: "双月湾",
     position: [114.902514, 22.56517],
@@ -150,7 +162,8 @@ let data = [{
     infoBody: "",
     type: "景区",
     visible: true
-}, {
+}];
+const innerScenery = [ {
     id: 73,
     title: "大亚湾",
     position: [114.679364, 22.77608],
@@ -160,17 +173,12 @@ let data = [{
     infoBody: "",
     type: "内部景点",
     visible: true
-}, {
-    id: 74,
-    title: "福合埕牛肉店 ",
-    position: [114.90335,22.571374],
-    awesomeIcon: "cutlery",
-    iconLabel: {style: {color: "gray", fontSize: "14px"}},
-    iconStyle: "lightpink",
-    infoBody: "<div>鲜味无比的“海鲜粥”，当地特色马鲛饼（配汤粉）</div><div style='text-align: right'>— — <a href='https://you.ctrip.com/travels/huizhou213/3219655.html'>携程某攻略</a></div>",
-    type: "美食",
-    visible: true
 }];
 
+let data = [];
 data.push(...administrativeCenter);
 data.push(...traffic);
+data.push(...hotel);
+data.push(...food);
+data.push(...scenery);
+data.push(...innerScenery);

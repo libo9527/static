@@ -55,16 +55,26 @@ AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
 
 function filterMarker(type) {
     // console.log('checkbox', document.getElementById("checkbox").checked);
-    let showOnly =  document.getElementById("checkbox").checked;
+    let showOnly = document.getElementById("checkbox").checked;
     let allMarkers = map.getAllOverlays('marker');
     allMarkers.forEach((marker) => {
-        if (marker.type === type) {
-            if (marker.visible) {
-                marker.hide();
-                marker.visible = false;
-            }else {
+        if (showOnly) {
+            if (marker.type === type) {
                 marker.show();
                 marker.visible = true;
+            } else {
+                marker.hide();
+                marker.visible = false;
+            }
+        } else {
+            if (marker.type === type) {
+                if (marker.visible) {
+                    marker.hide();
+                    marker.visible = false;
+                } else {
+                    marker.show();
+                    marker.visible = true;
+                }
             }
         }
     });

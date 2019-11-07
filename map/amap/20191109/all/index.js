@@ -4,7 +4,7 @@ var map = new AMap.Map('container', {
     center: [114.412599, 23.079404]
 });
 
-map.addControl(new AMap.ToolBar({}));
+map.addControl(new AMap.ToolBar({position: 'RT'}));
 map.addControl(new AMap.Scale({}));
 
 AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
@@ -54,6 +54,8 @@ AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
     });
 
 function filterMarker(type) {
+    // console.log('checkbox', document.getElementById("checkbox").checked);
+    let showOnly =  document.getElementById("checkbox").checked;
     let allMarkers = map.getAllOverlays('marker');
     allMarkers.forEach((marker) => {
         if (marker.type === type) {

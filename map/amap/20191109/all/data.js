@@ -139,6 +139,26 @@ const traffic = [{
     infoBody: "",
     type: "公交站",
     visible: true
+}, {
+    id: 8,
+    title: "巽寮市场",
+    position: [114.756913,22.695392],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
+}, {
+    id: 8,
+    title: "大埔屯",
+    position: [114.837349,22.799307],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
 }];
 const hotel = [{
     id: 9,

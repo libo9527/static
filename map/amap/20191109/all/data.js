@@ -211,6 +211,16 @@ const food = [{
     infoBody: "<div>沙丁鱼干，40元一斤</div><div style='text-align: right'>— — <a href='https://you.ctrip.com/travels/huizhou213/3219655.html'>携程某攻略</a></div>",
     type: "美食",
     visible: true
+}, {
+    id: 74,
+    title: "滑记海鲜饭店(210县道店)",
+    position: [114.900761,22.572712],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>椒盐濑尿虾。30元/一斤<br>大带子，15元一个<br>海胆炒饭，65元一碟<br>扇贝（38元八个）炒菜心（20元）</div><div style='text-align: right'>— — <a href='https://you.ctrip.com/travels/huizhou213/3219655.html'>携程某攻略</a></div>",
+    type: "美食",
+    visible: true
 }];
 const scenery = [{
     id: 14,
@@ -257,6 +267,56 @@ const innerScenery = [{
     id: 73,
     title: "灵山寺",
     position: [114.903359,22.568365],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "三角洲岛",
+    position: [114.734841,22.624812],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "天后宫",
+    position: [114.76059,22.691029],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "黑排角",
+    position: [114.957905,22.666128],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "华家班汽车特技表演",
+    position: [114.75939,22.686958],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "磨子石公园",
+    position: [114.750398,22.643955],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",

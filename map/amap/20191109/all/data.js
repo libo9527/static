@@ -204,7 +204,7 @@ const food = [{
 }, {
     id: 74,
     title: "金记海鲜批发",
-    position: [114.900251,22.573665],
+    position: [114.900251, 22.573665],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
@@ -214,7 +214,7 @@ const food = [{
 }, {
     id: 74,
     title: "滑记海鲜饭店(210县道店)",
-    position: [114.900761,22.572712],
+    position: [114.900761, 22.572712],
     awesomeIcon: "cutlery",
     iconLabel: {style: {color: "gray", fontSize: "14px"}},
     iconStyle: "lightpink",
@@ -266,7 +266,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "灵山寺",
-    position: [114.903359,22.568365],
+    position: [114.903359, 22.568365],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -276,7 +276,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "三角洲岛",
-    position: [114.734841,22.624812],
+    position: [114.734841, 22.624812],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -286,7 +286,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "天后宫",
-    position: [114.76059,22.691029],
+    position: [114.76059, 22.691029],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -296,7 +296,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "黑排角",
-    position: [114.957905,22.666128],
+    position: [114.957905, 22.666128],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -306,7 +306,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "华家班汽车特技表演",
-    position: [114.75939,22.686958],
+    position: [114.75939, 22.686958],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",
@@ -316,7 +316,7 @@ const innerScenery = [{
 }, {
     id: 73,
     title: "磨子石公园",
-    position: [114.750398,22.643955],
+    position: [114.750398, 22.643955],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",

@@ -343,6 +343,16 @@ const innerScenery = [{
     infoBody: "",
     type: "内部景点",
     visible: true
+}, {
+    id: 73,
+    title: "巽寮湾沙滩",
+    position: [114.747506,22.674631],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
 }];
 
 let data = [];

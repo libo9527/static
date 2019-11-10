@@ -333,6 +333,16 @@ const innerScenery = [{
     infoBody: "<div>有“国内小帕劳”之美誉，是双月湾野外海岛浮潜胜地。</div><div style='text-align: right'>— — <a href='https://travel.qunar.com/p-cs300106-huizhou-xianlu?fid=30980#xl_309800'>去哪儿某攻略</a></div>",
     type: "内部景点",
     visible: true
+}, {
+    id: 73,
+    title: "哪都像",
+    position: [114.758252,22.690128],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
 }];
 
 let data = [];

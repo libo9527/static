@@ -99,6 +99,16 @@ const traffic = [{
     infoBody: "",
     type: "港口/口岸",
     visible: true
+}, {
+    id: 4,
+    title: "九洲港口岸",
+    position: [113.59295,22.2389],
+    awesomeIcon: "ship",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "港口/口岸",
+    visible: true
 }];
 const hotel = [];
 const food = [];

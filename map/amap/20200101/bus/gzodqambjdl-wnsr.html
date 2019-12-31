@@ -36,7 +36,7 @@
     </style>
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
     <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值&plugin=AMap.Transfer"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61&plugin=AMap.Transfer"></script>
     <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
 </head>
 <body>
@@ -45,7 +45,7 @@
 <script type="text/javascript">
     var map = new AMap.Map("container", {
         resizeEnable: true,
-        center: [116.397428, 39.90923],
+        center: [113.54913,22.19875],
         zoom: 13
     });
     var transOptions = {
@@ -60,7 +60,7 @@
     transfer.search([
         {keyword: '港珠澳大桥澳门边检大楼',city:'澳门'},
         //第一个元素city缺省时取transOptions的city属性
-        {keyword: '大三巴牌坊',city:'澳门'}
+        {keyword: '澳门威尼斯人',city:'澳门'}
         //第二个元素city缺省时取transOptions的cityd属性
     ], function(status, result) {
         // result即是对应的公交路线数据信息，相关数据结构文档请参考  https://lbs.amap.com/api/javascript-api/reference/route-search#m_TransferResult

@@ -1,15 +1,5 @@
 const administrativeCenter = [{
     id: 1,
-    title: "珠海",
-    position: [113.57668, 22.27073],
-    awesomeIcon: "star",
-    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
-    iconStyle: "black",
-    infoBody: "",
-    type: "行政区",
-    visible: true
-}, {
-    id: 1,
     title: "澳门",
     position: [113.54913, 22.19875],
     awesomeIcon: "star",
@@ -33,16 +23,6 @@ const traffic = [{
     id: 4,
     title: "深圳宝安国际机场",
     position: [113.814829, 22.633092],
-    awesomeIcon: "plane",
-    iconLabel: {style: {color: "#333", fontSize: "14px"}},
-    iconStyle: "orange",
-    infoBody: "",
-    type: "机场",
-    visible: true
-}, {
-    id: 4,
-    title: "珠海金湾机场",
-    position: [113.381892, 22.005797],
     awesomeIcon: "plane",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -100,9 +80,19 @@ const traffic = [{
     type: "港口/口岸",
     visible: true
 }, {
+    id: 8,
+    title: "港珠澳大桥边检大楼",
+    position: [113.579057, 22.197447],
+    awesomeIcon: "bus",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "lightblue",
+    infoBody: "",
+    type: "公交站",
+    visible: true
+}, {
     id: 4,
     title: "九洲港口岸",
-    position: [113.59295,22.2389],
+    position: [113.59295, 22.2389],
     awesomeIcon: "ship",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -111,11 +101,41 @@ const traffic = [{
     visible: true
 }];
 const hotel = [];
-const food = [];
+const food = [{
+    id: 74,
+    title: "安德鲁饼店(官也街店)",
+    position: [113.562058, 22.150629],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>蛋挞</div><div style='text-align: right'></div>",
+    type: "美食",
+    visible: true
+}, {
+    id: 74,
+    title: "诚昌饭店(官也街店)",
+    position: [113.56186, 22.1508],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>水蟹粥</div><div style='text-align: right'></div>",
+    type: "美食",
+    visible: true
+}, {
+    id: 74,
+    title: "大利来记Tai Lei Loi Kei",
+    position: [113.565643, 22.14562],
+    awesomeIcon: "cutlery",
+    iconLabel: {style: {color: "gray", fontSize: "14px"}},
+    iconStyle: "lightpink",
+    infoBody: "<div>猪扒包</div><div style='text-align: right'></div>",
+    type: "美食",
+    visible: true
+}];
 const scenery = [{
     id: 14,
-    title: "珠海横琴长隆国际海洋度假区",
-    position: [113.539725, 22.098549],
+    title: "澳门威尼斯人",
+    position: [113.566661, 22.145351],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -124,8 +144,38 @@ const scenery = [{
     visible: true
 }, {
     id: 14,
-    title: "澳门威尼斯人",
-    position: [113.566661, 22.145351],
+    title: "新濠天地",
+    position: [113.57196, 22.14547],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "妈阁庙",
+    position: [113.53638, 22.18324],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "官也街",
+    position: [113.568639, 22.15641],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "葡京娱乐场",
+    position: [113.555696, 22.192742],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -144,38 +194,8 @@ const scenery = [{
     visible: true
 }, {
     id: 14,
-    title: "珠海渔女",
-    position: [113.58838, 22.26148],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
-    title: "石博园",
-    position: [113.51337, 22.14872],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
     title: "外伶仃岛风景区",
     position: [114.042519, 22.098511],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
-    title: "珠海圆明新园",
-    position: [113.538288, 22.243138],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -196,16 +216,6 @@ const scenery = [{
     id: 14,
     title: "港珠澳大桥",
     position: [113.59402, 22.21292],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
-    title: "野狸岛",
-    position: [113.58675, 22.27594],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -265,8 +275,208 @@ const scenery = [{
 }];
 const innerScenery = [{
     id: 73,
-    title: "长隆海洋王国",
-    position: [113.538202, 22.098459],
+    title: "海事博物馆",
+    position: [113.53574, 22.18305],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "港务局大楼（摩尔兵营）",
+    position: [113.53804, 22.184681],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "大运河购物中心",
+    position: [113.565483, 22.143889],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "亚婆井前地",
+    position: [113.54011, 22.18553],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "西望洋圣母眺望台",
+    position: [113.54023, 22.18366],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "议事亭前地广场",
+    position: [113.551283, 22.196762],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "地堡街",
+    position: [113.566948, 22.155896],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "银河娱乐场",
+    position: [113.55851, 22.14737],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "海边马路",
+    position: [113.564578, 22.200497],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "嘉模圣母教堂",
+    position: [113.570376, 22.156223],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "澳门中央图书馆",
+    position: [113.558424, 22.201486],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "氹仔市政花园",
+    position: [113.56446, 22.15125],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "永利娱乐场",
+    position: [113.557661, 22.191457],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "星际娱乐场",
+    position: [113.559596, 22.1927],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "澳门特别行政区民政总署",
+    position: [113.5511, 22.196454],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "邮政大楼",
+    position: [113.5677, 22.206358],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "大炮台",
+    position: [113.553859, 22.200038],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "恋爱巷",
+    position: [113.551934, 22.200229],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "圣母玫瑰堂",
+    position: [113.551963, 22.197846],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "澳门博物馆",
+    position: [113.553803, 22.200364],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
+    title: "主教山小堂",
+    position: [113.540146, 22.183956],
     awesomeIcon: "arrows",
     iconLabel: {style: {color: "green", fontSize: "14px"}},
     iconStyle: "lightgreen",

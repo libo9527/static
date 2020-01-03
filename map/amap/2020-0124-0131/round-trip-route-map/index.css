@@ -1,0 +1,40 @@
+html,
+body,
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+p.my-desc {
+    margin: 5px 0;
+    line-height: 150%;
+}
+
+.amap-marker-label{
+    border: 0;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(39, 39, 39, 0.85);
+    height: 26px;
+}
+
+.label-content-text {
+    line-height: 26px;
+}
+
+#new-tab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px;
+    background: transparent;
+}
+#new-tab a i{
+    color: black;
+}
+#new-tab a i:hover{
+    color: #212980;
+    font-size: 20px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2020年新春游</title>
+    <script type="text/javascript"
+            src='//webapi.amap.com/maps?v=1.4.15&key=3a710b3a39b36028af42c954d0786d61&&plugin=AMap.Scale,AMap.ToolBar'></script>
+
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div id="new-tab">
+    <a target="_blank" href="#"><i class="fa fa-window-restore"></i></a>
+</div>
+<div id="legend">
+    <div style="display: flex;align-items: center;">
+        <label><input id="checkbox" class="mui-switch mui-switch-animbg" type="checkbox"></label>
+        <strong style="margin-left: 5px;">只显</strong>
+    </div>
+    <div style="display: flex;align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -682px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: salmon; font-size: 14px;"><i
+                    onclick="filterMarker('行政区')"
+                    class="fa fa-star"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">行政区</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i onclick="filterMarker('机场')"
+                                                                                           class="fa fa-plane"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">机场</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i onclick="filterMarker('火车站')"
+                                                                                           class="fa fa-train"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">火车站</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i onclick="filterMarker('港口/口岸')"
+                                                                                           class="fa fa-ship"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">港口/口岸</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -36px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i onclick="filterMarker('汽车站')"
+                                                                                           class="fa fa-bus"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">汽车站</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -468px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: #333; font-size: 14px;"><i onclick="filterMarker('公交站')"
+                                                                                           class="fa fa-bus"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">公交站</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-salmon">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -360px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: black; font-size: 14px;"><i onclick="filterMarker('酒店')"
+                                                                                            class="fa fa-hotel"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">酒店</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-green">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -72px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: lightgreen; font-size: 14px;"><i
+                    onclick="filterMarker('景区')" class="fa fa-photo"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">景区</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-green">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -432px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: green; font-size: 14px;"><i
+                    onclick="filterMarker('内部景点')"
+                    class="fa fa-arrows"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">内部景点</strong>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <div class="amap-simple-marker amap-simple-marker-def-style amap-simple-marker-style-green">
+            <div class="amap-simple-marker-icon"
+                 style="background-position: -540px 0;background-size: 720px 46px;"></div>
+            <div class="amap-simple-marker-label" style="color: gray; font-size: 14px;"><i onclick="filterMarker('美食')"
+                                                                                           class="fa fa-cutlery"></i>
+            </div>
+        </div>
+        <strong style="margin-left: 5px">美食</strong>
+    </div>
+</div>
+<div id="container"></div>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

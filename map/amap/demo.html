@@ -1,75 +1,184 @@
+<!-- 重点参数：changeNavgContent -->
 <!doctype html>
-<html>
+<html lang="zh-CN">
+
 <head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/chang-navg-content.html -->
+    <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" />
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>地点关键字 + 公交路线规划</title>
-    <style type="text/css">
+    <title>动态修改巡航器</title>
+    <style>
         html,
         body,
         #container {
             width: 100%;
             height: 100%;
+            margin: 0px;
+        }
+
+        #loadingTip {
+            position: absolute;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            padding: 3px 10px;
+            background: red;
+            color: #fff;
+            font-size: 14px;
         }
     </style>
-    <style type="text/css">
-        #panel {
-            position: fixed;
-            background-color: white;
-            max-height: 90%;
-            overflow-y: auto;
-            top: 10px;
-            right: 10px;
-            width: 280px;
-        }
-        #panel .amap-call {
-            background-color: #009cf9;
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-        }
-        #panel .amap-lib-transfer {
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-            overflow: hidden;
-        }
-    </style>
-    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
-    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值&plugin=AMap.Transfer"></script>
-    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
 </head>
+
 <body>
 <div id="container"></div>
-<div id="panel"></div>
+<script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
+<!-- UI组件库 1.0 -->
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
 <script type="text/javascript">
-    var map = new AMap.Map("container", {
-        resizeEnable: true,
-        center: [116.397428, 39.90923],
-        zoom: 13
+    //创建地图
+    var map = new AMap.Map('container', {
+        zoom: 4
     });
-    var transOptions = {
-        map: map,
-        city: '澳门',
-        panel: 'panel',
-        policy: AMap.TransferPolicy.LEAST_TIME //乘车策略
-    };
-    //构造公交换乘类
-    var transfer = new AMap.Transfer(transOptions);
-    //根据起、终点名称查询公交换乘路线
-    transfer.search([
-        {keyword: '港珠澳大桥澳门边检大楼',city:'澳门'},
-        //第一个元素city缺省时取transOptions的city属性
-        {keyword: '大三巴牌坊',city:'澳门'}
-        //第二个元素city缺省时取transOptions的cityd属性
-    ], function(status, result) {
-        // result即是对应的公交路线数据信息，相关数据结构文档请参考  https://lbs.amap.com/api/javascript-api/reference/route-search#m_TransferResult
-        if (status === 'complete') {
-            log.success('绘制公交路线完成')
-        } else {
-            log.error('公交路线数据查询失败' + result)
+
+
+    function initPage(PathSimplifier, $) {
+
+        var emptyLineStyle = {
+            lineWidth: 0,
+            fillStyle: null,
+            strokeStyle: null,
+            borderStyle: null
+        };
+
+        var pathSimplifierIns = new PathSimplifier({
+            zIndex: 100,
+            //autoSetFitView:false,
+            map: map, //所属的地图实例
+
+            getPath: function(pathData, pathIndex) {
+
+                return pathData.path;
+            },
+            getHoverTitle: function(pathData, pathIndex, pointIndex) {
+
+                return null;
+            }
+        });
+
+        window.pathSimplifierIns = pathSimplifierIns;
+
+        pathSimplifierIns.setData([{
+            name: '测试',
+            path: [
+                [116.405289, 39.904987],
+                [113.964458, 40.54664],
+                [111.47836, 41.135964],
+                [108.949297, 41.670904],
+                [106.380111, 42.149509],
+                [103.774185, 42.56996],
+                [101.135432, 42.930601],
+                [98.46826, 43.229964],
+                [95.777529, 43.466798],
+                [93.068486, 43.64009],
+                [90.34669, 43.749086],
+                [87.61792, 43.793308]
+            ]
+        }]);
+
+        //initRoutesContainer(d);
+
+        function onload() {
+            pathSimplifierIns.renderLater();
         }
+
+        function onerror(e) {
+            alert('图片加载失败！');
+        }
+
+        var pathNavigatorStyles = [{
+            width: 16,
+            height: 24,
+            content: 'defaultPathNavigator',
+        },
+            {
+                content: 'none',
+            },
+            {
+                width: 24,
+                height: 24,
+                //使用图片
+                content: PathSimplifier.Render.Canvas.getImageContent('./imgs/plane.png', onload, onerror),
+            },
+            {
+                width: 16,
+                height: 32,
+                //使用图片
+                content: PathSimplifier.Render.Canvas.getImageContent('./imgs/car.png', onload, onerror),
+            }
+        ]
+
+
+        function extend(dst) {
+            if (!dst) {
+                dst = {};
+            }
+
+            var slist = Array.prototype.slice.call(arguments, 1);
+
+            for (var i = 0, len = slist.length; i < len; i++) {
+                var source = slist[i];
+
+                if (!source) {
+                    continue;
+                }
+
+                for (var prop in source) {
+                    if (source.hasOwnProperty(prop)) {
+                        dst[prop] = source[prop];
+                    }
+                }
+            }
+            return dst;
+        }
+
+        var idx = 0;
+
+        var navg1 = pathSimplifierIns.createPathNavigator(0, {
+            loop: true,
+            speed: 1000000,
+            pathNavigatorStyle: extend({}, pathNavigatorStyles[0])
+        });
+
+        navg1.start();
+
+        function changeNavgContent() {
+
+            //获取到pathNavigatorStyle的引用
+            var pathNavigatorStyle = navg1.getStyleOptions();
+
+            //覆盖修改
+            extend(pathNavigatorStyle, pathNavigatorStyles[(++idx) % pathNavigatorStyles.length]);
+
+            //重新绘制
+            pathSimplifierIns.renderLater();
+        }
+
+        setInterval(changeNavgContent, 500);
+    }
+
+    AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
+
+        if (!PathSimplifier.supportCanvas) {
+            alert('当前环境不支持 Canvas！');
+            return;
+        }
+
+        initPage(PathSimplifier, $);
+
     });
+
 </script>
 </body>
+
 </html>

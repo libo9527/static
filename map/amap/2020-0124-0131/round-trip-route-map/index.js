@@ -21,7 +21,7 @@ var polyline = new AMap.Polyline({
 
 map.add(polyline);
 
-AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
+AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function (PathSimplifier, $) {
 
     if (!PathSimplifier.supportCanvas) {
         alert('当前环境不支持 Canvas！');
@@ -33,10 +33,10 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
         //autoSetFitView:false,
         map: map, //所属的地图实例
 
-        getPath: function(pathData, pathIndex) {
+        getPath: function (pathData, pathIndex) {
             return pathData.path;
         },
-        getHoverTitle: function(pathData, pathIndex, pointIndex) {
+        getHoverTitle: function (pathData, pathIndex, pointIndex) {
 
             if (pointIndex >= 0) {
                 //point
@@ -46,43 +46,57 @@ AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
             return pathData.name + '，点数量' + pathData.path.length;
         },
         renderOptions: {
-
             renderAllPointsIfNumberBelow: 100 //绘制路线节点，如不需要可设置为-1
         }
     });
 
-    window.pathSimplifierIns = pathSimplifierIns;
-
-    // //设置数据
-    // pathSimplifierIns.setData([{
-    //     name: '路线0',
-    //     path: [
-    //         [116.405289, 39.904987],
-    //         [113.964458, 40.54664],
-    //         [111.47836, 41.135964],
-    //         [108.949297, 41.670904],
-    //         [106.380111, 42.149509],
-    //         [103.774185, 42.56996],
-    //         [101.135432, 42.930601],
-    //         [98.46826, 43.229964],
-    //         [95.777529, 43.466798],
-    //         [93.068486, 43.64009],
-    //         [90.34669, 43.749086],
-    //         [87.61792, 43.793308]
-    //     ]
-    // }]);
-    // console.log('routes[0]', routes[0])
-
     //设置数据
-    pathSimplifierIns.setData([routes[0].routes[0]]);
+    pathSimplifierIns.setData(data.routes);
 
-    //对第一条线路（即索引 0）创建一个巡航器
-    var navg1 = pathSimplifierIns.createPathNavigator(0, {
-        loop: true, //循环播放
-        speed: 500000 //巡航速度，单位千米/小时
+    let navigatorMap = new Map();
+    // for (let i = 0; i < data.routes.length; i++) {
+    for (let route of data.routes) {
+        let navigator = navigatorMap.get(route.startPathIndex);
+        if (!navigator) {
+            navigator = pathSimplifierIns.createPathNavigator(route.startPathIndex, {
+                speed: route.speed // 巡航速度，单位千米/小时
+            });
+            navigator.start();
+            navigatorMap.set(route.startPathIndex, navigator)
+        }
+    }
+
+    function onload() {
+        pathSimplifierIns.renderLater();
+    }
+
+    function onerror(e) {
+    }
+
+    pathSimplifierIns.on('pathClick', function (e, pathInfo) {
     });
 
-    navg1.start();
+    window.pathSimplifierIns = pathSimplifierIns;
+
+    setInterval(function () {
+        for (let [key, value]  of navigatorMap) {
+            let navg = value;
+            if (navg.isCursorAtPathEnd()) {
+                navg.destroy();
+                let currentPathData = pathSimplifierIns.getPathData(navg.getPathIndex());
+                let nextPathData = pathSimplifierIns.getPathData(currentPathData.nextPathIndex);
+                let pathNavigatorStyle = nextPathData.pathNavigatorStyle;
+                pathNavigatorStyle.content = PathSimplifier.Render.Canvas.getImageContent(pathNavigatorStyle.contentImagePath, onload, onerror);
+                navg = pathSimplifierIns.createPathNavigator(currentPathData.nextPathIndex, {
+                    // loop: true, //循环播放
+                    speed: nextPathData.speed, //巡航速度，单位千米/小时
+                    pathNavigatorStyle: pathNavigatorStyle
+                });
+                navigatorMap.set(key, navg);
+                navg.start();
+            }
+        }
+    }, 500)
 });
 
 AMapUI.loadUI(['overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],

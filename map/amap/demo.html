@@ -1,13 +1,12 @@
-<!-- 重点参数：changeNavgContent -->
 <!doctype html>
 <html lang="zh-CN">
 
 <head>
-    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/chang-navg-content.html -->
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/simple-data.html -->
     <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" />
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>动态修改巡航器</title>
+    <title>简单数据附加</title>
     <style>
         html,
         body,
@@ -15,17 +14,6 @@
             width: 100%;
             height: 100%;
             margin: 0px;
-        }
-
-        #loadingTip {
-            position: absolute;
-            z-index: 9999;
-            top: 0;
-            left: 0;
-            padding: 3px 10px;
-            background: red;
-            color: #fff;
-            font-size: 14px;
         }
     </style>
 </head>
@@ -41,15 +29,12 @@
         zoom: 4
     });
 
+    AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
 
-    function initPage(PathSimplifier, $) {
-
-        var emptyLineStyle = {
-            lineWidth: 0,
-            fillStyle: null,
-            strokeStyle: null,
-            borderStyle: null
-        };
+        if (!PathSimplifier.supportCanvas) {
+            alert('当前环境不支持 Canvas！');
+            return;
+        }
 
         var pathSimplifierIns = new PathSimplifier({
             zIndex: 100,
@@ -58,126 +43,82 @@
 
             getPath: function(pathData, pathIndex) {
 
-                return pathData.path;
+                var points = pathData.points,
+                    lnglatList = [];
+
+                for (var i = 0, len = points.length; i < len; i++) {
+                    lnglatList.push(points[i].lnglat);
+                }
+
+                return lnglatList;
             },
             getHoverTitle: function(pathData, pathIndex, pointIndex) {
 
-                return null;
+                if (pointIndex >= 0) {
+                    //point
+                    return pathData.name + '，' + pathData.points[pointIndex].name;
+                }
+
+                return pathData.name + '，点数量' + pathData.points.length;
+            },
+            renderOptions: {
+
+                renderAllPointsIfNumberBelow: 100 //绘制路线节点，如不需要可设置为-1
             }
         });
 
         window.pathSimplifierIns = pathSimplifierIns;
 
+        //设置数据
         pathSimplifierIns.setData([{
-            name: '测试',
-            path: [
-                [116.405289, 39.904987],
-                [113.964458, 40.54664],
-                [111.47836, 41.135964],
-                [108.949297, 41.670904],
-                [106.380111, 42.149509],
-                [103.774185, 42.56996],
-                [101.135432, 42.930601],
-                [98.46826, 43.229964],
-                [95.777529, 43.466798],
-                [93.068486, 43.64009],
-                [90.34669, 43.749086],
-                [87.61792, 43.793308]
-            ]
+            name: '路线0',
+            points: [{
+                name: "点a",
+                lnglat: [116.405289, 39.904987]
+            }, {
+                name: "点b",
+                lnglat: [113.964458, 40.54664]
+            }, {
+                name: "点c",
+                lnglat: [111.47836, 41.135964]
+            }, {
+                name: "点d",
+                lnglat: [108.949297, 41.670904]
+            }, {
+                name: "点e",
+                lnglat: [106.380111, 42.149509]
+            }, {
+                name: "点f",
+                lnglat: [103.774185, 42.56996]
+            }, {
+                name: "点g",
+                lnglat: [101.135432, 42.930601]
+            }, {
+                name: "点h",
+                lnglat: [98.46826, 43.229964]
+            }, {
+                name: "点i",
+                lnglat: [95.777529, 43.466798]
+            }, {
+                name: "点j",
+                lnglat: [93.068486, 43.64009]
+            }, {
+                name: "点k",
+                lnglat: [90.34669, 43.749086]
+            }, {
+                name: "点l",
+                lnglat: [87.61792, 43.793308]
+            }]
         }]);
 
-        //initRoutesContainer(d);
+        //选中路线0
+        pathSimplifierIns.setSelectedPathIndex(0);
 
-        function onload() {
-            pathSimplifierIns.renderLater();
-        }
+        pathSimplifierIns.on('pointClick', function(e, info) {
 
-        function onerror(e) {
-            alert('图片加载失败！');
-        }
-
-        var pathNavigatorStyles = [{
-            width: 16,
-            height: 24,
-            content: 'defaultPathNavigator',
-        },
-            {
-                content: 'none',
-            },
-            {
-                width: 24,
-                height: 24,
-                //使用图片
-                content: PathSimplifier.Render.Canvas.getImageContent('./imgs/plane.png', onload, onerror),
-            },
-            {
-                width: 16,
-                height: 32,
-                //使用图片
-                content: PathSimplifier.Render.Canvas.getImageContent('./imgs/car.png', onload, onerror),
-            }
-        ]
-
-
-        function extend(dst) {
-            if (!dst) {
-                dst = {};
-            }
-
-            var slist = Array.prototype.slice.call(arguments, 1);
-
-            for (var i = 0, len = slist.length; i < len; i++) {
-                var source = slist[i];
-
-                if (!source) {
-                    continue;
-                }
-
-                for (var prop in source) {
-                    if (source.hasOwnProperty(prop)) {
-                        dst[prop] = source[prop];
-                    }
-                }
-            }
-            return dst;
-        }
-
-        var idx = 0;
-
-        var navg1 = pathSimplifierIns.createPathNavigator(0, {
-            loop: true,
-            speed: 1000000,
-            pathNavigatorStyle: extend({}, pathNavigatorStyles[0])
+            console.log('Click: ' + info.pathData.points[info.pointIndex].name);
         });
-
-        navg1.start();
-
-        function changeNavgContent() {
-
-            //获取到pathNavigatorStyle的引用
-            var pathNavigatorStyle = navg1.getStyleOptions();
-
-            //覆盖修改
-            extend(pathNavigatorStyle, pathNavigatorStyles[(++idx) % pathNavigatorStyles.length]);
-
-            //重新绘制
-            pathSimplifierIns.renderLater();
-        }
-
-        setInterval(changeNavgContent, 500);
-    }
-
-    AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
-
-        if (!PathSimplifier.supportCanvas) {
-            alert('当前环境不支持 Canvas！');
-            return;
-        }
-
-        initPage(PathSimplifier, $);
-
     });
-
 </script>
 </body>
 

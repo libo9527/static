@@ -1,125 +1,97 @@
-<!doctype html>
-<html lang="zh-CN">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/simple-data.html -->
-    <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>简单数据附加</title>
-    <style>
-        html,
-        body,
-        #container {
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>往返线路图</title>
+
 </head>
-
 <body>
-<div id="container"></div>
-<script type="text/javascript" src='//webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
-<!-- UI组件库 1.0 -->
-<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+
+<div style="position:absolute;left:0;top:0;width:500px;height:300px;overflow:hidden;">
+    <svg id="root" width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+        <title>svg</title>
+        <path d="M20,100 c80 -200 280 200 380 0 h-400" fill="none" stroke-width="1" stroke="gray" stroke-dasharray="3,3" />
+    </svg>
+</div>
+
+<div id="dotMove" style="position:absolute;width:6px;height:6px;overflow:hidden;background-color:#FF0000;"></div>
+
 <script type="text/javascript">
-    //创建地图
-    var map = new AMap.Map('container', {
-        zoom: 4
-    });
+    /*
+    参考维基百科
+    http://zh.wikipedia.org/wiki/%E8%B2%9D%E8%8C%B2%E6%9B%B2%E7%B7%9A
+    */
+    function Point2D(x,y){
+        this.x=x||0.0;
+        this.y=y||0.0;
+    }
+    /*
+     cp在此是四個元素的陣列:
+     cp[0]為起始點，或上圖中的P0
+     cp[1]為第一個控制點，或上圖中的P1
+     cp[2]為第二個控制點，或上圖中的P2
+     cp[3]為結束點，或上圖中的P3
+     t為參數值，0 <= t <= 1
+    */
+    function PointOnCubicBezier( cp, t )
+    {
+        var   ax, bx, cx;
+        var   ay, by, cy;
+        var   tSquared, tCubed;
+        var	  result = new Point2D ;
 
-    AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function(PathSimplifier, $) {
+        /*計算多項式係數*/
 
-        if (!PathSimplifier.supportCanvas) {
-            alert('当前环境不支持 Canvas！');
-            return;
-        }
+        cx = 3.0 * (cp[1].x - cp[0].x);
+        bx = 3.0 * (cp[2].x - cp[1].x) - cx;
+        ax = cp[3].x - cp[0].x - cx - bx;
 
-        var pathSimplifierIns = new PathSimplifier({
-            zIndex: 100,
-            //autoSetFitView:false,
-            map: map, //所属的地图实例
+        cy = 3.0 * (cp[1].y - cp[0].y);
+        by = 3.0 * (cp[2].y - cp[1].y) - cy;
+        ay = cp[3].y - cp[0].y - cy - by;
 
-            getPath: function(pathData, pathIndex) {
+        /*計算位於參數值t的曲線點*/
 
-                var points = pathData.points,
-                    lnglatList = [];
+        tSquared = t * t;
+        tCubed = tSquared * t;
 
-                for (var i = 0, len = points.length; i < len; i++) {
-                    lnglatList.push(points[i].lnglat);
-                }
+        result.x = (ax * tCubed) + (bx * tSquared) + (cx * t) + cp[0].x;
+        result.y = (ay * tCubed) + (by * tSquared) + (cy * t) + cp[0].y;
 
-                return lnglatList;
-            },
-            getHoverTitle: function(pathData, pathIndex, pointIndex) {
+        return result;
+    }
 
-                if (pointIndex >= 0) {
-                    //point
-                    return pathData.name + '，' + pathData.points[pointIndex].name;
-                }
+    /*
+     ComputeBezier以控制點cp所產生的曲線點，填入Point2D結構的陣列。
+     呼叫者必須分配足夠的記憶體以供輸出結果，其為<sizeof(Point2D) numberOfPoints>
+    */
 
-                return pathData.name + '，点数量' + pathData.points.length;
-            },
-            renderOptions: {
+    function ComputeBezier( cp, numberOfPoints, curve )
+    {
+        var   dt;
+        var   i;
 
-                renderAllPointsIfNumberBelow: 100 //绘制路线节点，如不需要可设置为-1
-            }
-        });
+        dt = 1.0 / ( numberOfPoints - 1 );
 
-        window.pathSimplifierIns = pathSimplifierIns;
+        for( i = 0; i < numberOfPoints; i++)
+            curve[i] = PointOnCubicBezier( cp, i*dt );
+    }
 
-        //设置数据
-        pathSimplifierIns.setData([{
-            name: '路线0',
-            points: [{
-                name: "点a",
-                lnglat: [116.405289, 39.904987]
-            }, {
-                name: "点b",
-                lnglat: [113.964458, 40.54664]
-            }, {
-                name: "点c",
-                lnglat: [111.47836, 41.135964]
-            }, {
-                name: "点d",
-                lnglat: [108.949297, 41.670904]
-            }, {
-                name: "点e",
-                lnglat: [106.380111, 42.149509]
-            }, {
-                name: "点f",
-                lnglat: [103.774185, 42.56996]
-            }, {
-                name: "点g",
-                lnglat: [101.135432, 42.930601]
-            }, {
-                name: "点h",
-                lnglat: [98.46826, 43.229964]
-            }, {
-                name: "点i",
-                lnglat: [95.777529, 43.466798]
-            }, {
-                name: "点j",
-                lnglat: [93.068486, 43.64009]
-            }, {
-                name: "点k",
-                lnglat: [90.34669, 43.749086]
-            }, {
-                name: "点l",
-                lnglat: [87.61792, 43.793308]
-            }]
-        }]);
+    var cp=[
+        // new Point2D(20, 0), new Point2D(100, 200), new Point2D(300, -200), new Point2D(400, 0)
+        // new Point2D(112.93886, 28.22778), new Point2D(114, 31), new Point2D(115, 36), new Point2D(116.40717, 39.90469)
+    ];
+    var numberOfPoints=100;
+    var curve=[];
+    ComputeBezier( cp, numberOfPoints, curve );
 
-        //选中路线0
-        pathSimplifierIns.setSelectedPathIndex(0);
-
-        pathSimplifierIns.on('pointClick', function(e, info) {
-
-            console.log('Click: ' + info.pathData.points[info.pointIndex].name);
-        });
-    });
+    var i=0, dot=document.getElementById("dotMove");
+    setInterval(function (){
+        var j = (i<100)?i:(199-i);
+        dot.style.left=curve[j].x+'px';
+        dot.style.top=100-curve[j].y+'px';
+        if(++i==200)i=0;
+    }, 50);
 </script>
 </body>
-
 </html>

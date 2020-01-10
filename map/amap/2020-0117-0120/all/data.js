@@ -32,7 +32,147 @@ const traffic = [{
 }];
 const hotel = [];
 const food = [];
-const scenery = [];
+const scenery = [{
+    id: 14,
+    title: "凤凰古城",
+    position: [109.604645, 27.948287],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "橘子洲景区",
+    position: [112.962093, 28.186914],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "岳阳楼",
+    position: [113.094155, 29.381168],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "湖南大学",
+    position: [112.944754, 28.178127],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "岳麓山风景名胜区",
+    position: [112.9364, 28.183543],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "石牛寨国家地质公园",
+    position: [113.987735, 28.903034],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "洞庭湖旅游度假区",
+    position: [113.096825, 29.349197],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "太平街",
+    position: [112.972123, 28.193566],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "火宫殿(坡子街总店)",
+    position: [112.973763, 28.190555],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "岳麓山风景名胜区",
+    position: [112.9364, 28.183543],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "张家界国家森林公园",
+    position: [110.434767, 29.315305],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "湖南省博物馆",
+    position: [112.9935, 28.211872],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "东江湖",
+    position: [113.398601, 25.851574],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "天门山国家森林公园",
+    position: [110.478686, 29.032962],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}];
 const innerScenery = [];
 
 let data = [];

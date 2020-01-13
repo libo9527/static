@@ -94,6 +94,36 @@ const scenery = [{
     visible: true
 }, {
     id: 14,
+    title: "南岳衡山",
+    position: [112.71785, 27.271047],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "张家界天门山",
+    position: [110.47937393, 29.04746604],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
+    title: "桃花源",
+    position: [111.44201, 28.79133],
+    awesomeIcon: "photo",
+    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+    iconStyle: "green",
+    infoBody: "",
+    type: "景区",
+    visible: true
+}, {
+    id: 14,
     title: "洞庭湖旅游度假区",
     position: [113.096825, 29.349197],
     awesomeIcon: "photo",

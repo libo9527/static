@@ -90,6 +90,26 @@ const traffic = [{
     type: "机场",
     visible: true
 }, {
+    id: 4,
+    title: "岳阳三荷机场",
+    position: [113.28285, 29.310699],
+    awesomeIcon: "plane",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "机场",
+    visible: true
+}, {
+    id: 4,
+    title: "北京大兴国际机场",
+    position: [116.416854, 39.511136],
+    awesomeIcon: "plane",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "机场",
+    visible: true
+}, {
     id: 6,
     title: "长沙站",
     position: [113.013206, 28.194104],

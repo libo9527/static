@@ -1,7 +1,7 @@
 //创建地图
 var map = new AMap.Map('container', {
-    zoom: 12,
-    center: [116.40717,39.90469]
+    zoom: 8,
+    center: [113.13396, 27.82767]
 });
 
 map.addControl(new AMap.ToolBar({position: 'RT'}));

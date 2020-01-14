@@ -1,7 +1,77 @@
 const administrativeCenter = [{
     id: 1,
-    title: "长沙",
+    title: "长沙市",
     position: [112.938888, 28.228272],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "衡山县",
+    position: [112.86831, 27.23022],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "凤凰县",
+    position: [109.58067, 27.95744],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "株洲市",
+    position: [113.13396, 27.82767],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "岳阳市",
+    position: [113.12896729, 29.35571468],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "张家界市",
+    position: [110.47891259, 29.11692478],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "衡阳市",
+    position: [112.57195, 26.89324],
+    awesomeIcon: "star",
+    iconLabel: {style: {color: "salmon", fontSize: "14px"}},
+    iconStyle: "black",
+    infoBody: "",
+    type: "行政区",
+    visible: true
+}, {
+    id: 1,
+    title: "怀化市",
+    position: [110.0016, 27.56974],
     awesomeIcon: "star",
     iconLabel: {style: {color: "salmon", fontSize: "14px"}},
     iconStyle: "black",
@@ -23,6 +93,66 @@ const traffic = [{
     id: 6,
     title: "长沙站",
     position: [113.013206, 28.194104],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "衡山站",
+    position: [112.88731, 27.21877],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "衡阳站",
+    position: [112.63134, 26.88922],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "怀化站",
+    position: [109.96733, 27.55724],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "株洲站",
+    position: [113.15673, 27.83548],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "张家界站",
+    position: [110.4861, 29.1046],
+    awesomeIcon: "train",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "火车站",
+    visible: true
+}, {
+    id: 6,
+    title: "岳阳站",
+    position: [113.119357, 29.376445],
     awesomeIcon: "train",
     iconLabel: {style: {color: "#333", fontSize: "14px"}},
     iconStyle: "orange",
@@ -84,16 +214,6 @@ const scenery = [{
     visible: true
 }, {
     id: 14,
-    title: "石牛寨国家地质公园",
-    position: [113.987735, 28.903034],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
     title: "南岳衡山",
     position: [112.71785, 27.271047],
     awesomeIcon: "photo",
@@ -106,16 +226,6 @@ const scenery = [{
     id: 14,
     title: "张家界天门山",
     position: [110.47937393, 29.04746604],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
-    title: "桃花源",
-    position: [111.44201, 28.79133],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",
@@ -176,16 +286,6 @@ const scenery = [{
     id: 14,
     title: "湖南省博物馆",
     position: [112.9935, 28.211872],
-    awesomeIcon: "photo",
-    iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
-    iconStyle: "green",
-    infoBody: "",
-    type: "景区",
-    visible: true
-}, {
-    id: 14,
-    title: "东江湖",
-    position: [113.398601, 25.851574],
     awesomeIcon: "photo",
     iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
     iconStyle: "green",

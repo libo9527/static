@@ -46,6 +46,13 @@ const data = [{
     title: '中国联合航空KN5806 岳阳三荷机场 - 北京大兴国际机场',
     members: '李',
     content: '到达北京大兴国际机场'
+}, {
+    timestamp: '2020-01-17 22:00:00',
+    imgUrls: [],
+    title: '金地花园 - 深圳站',
+    members: '李',
+    content: '从金地花园出发，前往深圳站',
+    amapUrl: 'https://surl.amap.com/1jfRJGk1x2Qm'
 },
 
 

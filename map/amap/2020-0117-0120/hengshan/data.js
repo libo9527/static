@@ -99,6 +99,14 @@ const data = [{
     },
     {
         id: 13,
+        position: [112.69264, 27.293391],
+        name: '会仙桥',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '会仙桥',
+        listDesc: '会仙桥'
+    },
+    {
+        id: 14,
         position: [112.69951, 27.273648],
         name: '麻姑仙境',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -106,12 +114,20 @@ const data = [{
         listDesc: '麻姑仙境'
     },
     {
-        id: 14,
+        id: 15,
         position: [112.70317, 27.266967],
         name: '磨镜台',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
         infoWinContent: '磨镜台',
         listDesc: '磨镜台'
+    },
+    {
+        id: 16,
+        position: [112.710143, 27.259234],
+        name: '南台寺',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '南台寺',
+        listDesc: '南台寺'
     }];
 
 // data.forEach((item, index) => {

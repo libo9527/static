@@ -1,13 +1,13 @@
 const data = [{
-    timestamp: '2020-01-17 01:05:00',
+    timestamp: '2020-01-18 01:05:00',
     imgUrls: [],
-    title: 'K6618 深圳站 - 长沙站',
+    title: 'K6618 深圳站 - 株洲站',
     members: '李',
     content: '从深圳站出发，前往株洲'
 }, {
     timestamp: '2020-01-18 10:43:00',
     imgUrls: [],
-    title: 'K6618 深圳站 - 长沙站',
+    title: 'K6618 深圳站 - 株洲站',
     members: '李',
     content: '到达株洲站'
 }, {
@@ -51,7 +51,10 @@ const data = [{
     imgUrls: [],
     title: '金地花园 - 深圳站',
     members: '李',
-    content: '从金地花园出发，前往深圳站',
+    content: '从金地花园出发，前往深圳站<br>' +
+        '7号线（太安方向）上沙站 - 石厦站<br>' +
+        '3号线（双龙方向）石厦站 - 老街站<br>' +
+        '1号线（罗湖方向）老街站 - 罗湖站',
     amapUrl: 'https://surl.amap.com/1jfRJGk1x2Qm'
 },
 

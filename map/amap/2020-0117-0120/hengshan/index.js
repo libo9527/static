@@ -4,6 +4,67 @@ var map = new AMap.Map('container', {
     center: center
 });
 
+AMapUI.load(['ui/misc/PathSimplifier', 'lib/$'], function (PathSimplifier, $) {
+
+    if (!PathSimplifier.supportCanvas) {
+        alert('当前环境不支持 Canvas！');
+        return;
+    }
+
+    var pathSimplifierIns = new PathSimplifier({
+        zIndex: 100,
+        //autoSetFitView:false,
+        map: map, //所属的地图实例
+
+        getPath: function (pathData, pathIndex) {
+
+            return pathData.path;
+        },
+        getHoverTitle: function (pathData, pathIndex, pointIndex) {
+
+            if (pointIndex >= 0) {
+                //point
+                return pathData.name + '，点：' + pointIndex + '/' + pathData.path.length;
+            }
+
+            return pathData.name + '，点数量' + pathData.path.length;
+        },
+        renderOptions: {
+
+            renderAllPointsIfNumberBelow: 100 //绘制路线节点，如不需要可设置为-1
+        }
+    });
+
+    window.pathSimplifierIns = pathSimplifierIns;
+
+    //设置数据
+    pathSimplifierIns.setData([{
+        name: '路线0',
+        path: path
+    }]);
+
+    //对第一条线路（即索引 0）创建一个巡航器
+    var navg1 = pathSimplifierIns.createPathNavigator(0, {
+        loop: true, //循环播放
+        speed: 1000, //巡航速度，单位千米/小时
+        pathNavigatorStyle: {
+            width: 100,
+            height: 100,
+            content: PathSimplifier.Render.Canvas.getImageContent(
+                './climb.png',
+                function onload() {
+                    pathSimplifierIns.renderLater();
+                },
+                function onerror(e) {
+                    alert('图片加载失败！');
+                })
+            // contentImagePath: './climb.png'
+        }
+    });
+
+    navg1.start();
+});
+
 AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
     function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
 
@@ -46,16 +107,16 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
             //选中状态（通过点击列表或者marker）时在Marker和列表节点上添加的class，可以借此编写css控制选中时的展示效果
             selectedClassNames: 'selected',
             //返回数据项的Id
-            getDataId: function(dataItem, index) {
+            getDataId: function (dataItem, index) {
                 //index表示该数据项在数组中的索引位置，从0开始，如果确实没有id，可以返回index代替
                 return dataItem.id;
             },
             //返回数据项的位置信息，需要是AMap.LngLat实例，或者是经纬度数组，比如[116.789806, 39.904989]
-            getPosition: function(dataItem) {
+            getPosition: function (dataItem) {
                 return dataItem.position;
             },
             //返回数据项对应的Marker
-            getMarker: function(dataItem, context, recycledMarker) {
+            getMarker: function (dataItem, context, recycledMarker) {
 
                 //存在可回收利用的marker
                 if (recycledMarker) {
@@ -75,7 +136,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
                 });
             },
             //返回数据项对应的infoWindow
-            getInfoWindow: function(dataItem, context, recycledInfoWindow) {
+            getInfoWindow: function (dataItem, context, recycledInfoWindow) {
 
                 var tpl = '<p><%- dataItem.id %>：<%- dataItem.infoWinContent %><p>';
 
@@ -106,7 +167,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
                 // });
             },
             //返回数据项对应的列表节点
-            getListElement: function(dataItem, context, recycledListElement) {
+            getListElement: function (dataItem, context, recycledListElement) {
 
                 var tpl = '<p><%- dataItem.id %>：<%- dataItem.listDesc %><p>';
 
@@ -131,7 +192,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
         });
 
         //监听选中改变
-        markerList.on('selectedChanged', function(event, info) {
+        markerList.on('selectedChanged', function (event, info) {
             //console.log(event, info);
             if (info.selected) {
 
@@ -160,7 +221,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
         });
 
         // 监听Marker的鼠标移入和ListElement上的鼠标悬浮
-        markerList.on('listElementMouseenter markerMouseover', function(event, record) {
+        markerList.on('listElementMouseenter markerMouseover', function (event, record) {
 
             if (record && record.marker) {
 
@@ -179,7 +240,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
         });
 
         //监听Marker的鼠标移出和ListElement上的鼠标悬出
-        markerList.on('listElementMouseleave markerMouseout', function(event, record) {
+        markerList.on('listElementMouseleave markerMouseout', function (event, record) {
 
             if (record && record.marker) {
 
@@ -192,10 +253,9 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
         });
 
         //监听Marker和ListElement上的点击
-        markerList.on('markerClick listElementClick', function(event, record) {
+        markerList.on('markerClick listElementClick', function (event, record) {
             //console.log(event, record);
         });
-
 
 
         //展示该数据
@@ -232,7 +292,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
             //闪动一下
             $listEle
                 .one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-                    function(e) {
+                    function (e) {
                         $(this).removeClass('flash animated');
                     }).addClass('flash animated');
         }

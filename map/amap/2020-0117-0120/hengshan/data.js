@@ -130,6 +130,11 @@ const data = [{
         listDesc: '南台寺'
     }];
 
+const path = data.map(item => {
+    return item.position
+});
+path.push(data[0].position);
+
 // data.forEach((item, index) => {
 //     item.id = index + 1;
 // });

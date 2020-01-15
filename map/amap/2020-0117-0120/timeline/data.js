@@ -11,6 +11,12 @@ const data = [{
     members: '李',
     content: '到达株洲站'
 }, {
+    timestamp: '2020-01-18 10:59:00',
+    imgUrls: [],
+    title: 'K9001 株洲站 - 衡山站',
+    members: '李',
+    content: '从株洲站出发，前往衡山'
+}, {
     timestamp: '2020-01-18 11:49:00',
     imgUrls: [],
     title: 'K9001 株洲站 - 衡山站',
@@ -20,12 +26,6 @@ const data = [{
 
 
     {
-        timestamp: '2020-01-18 10:59:00',
-        imgUrls: [],
-        title: 'K9001 株洲站 - 衡山站',
-        members: '李',
-        content: '从株洲站出发，前往衡山'
-    }, {
         timestamp: '2020-01-19 09:33:00',
         imgUrls: [],
         title: 'K458 衡山站 - 长沙站',

@@ -1,56 +1,11 @@
 //创建地图
 var map = new AMap.Map('container', {
     zoom: 11,
-    center: [102.833722, 24.881539] // 云南昆明
+    center: center
 });
 
 AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWindow'],
     function (MarkerList, AwesomeMarker, SimpleInfoWindow) {
-
-        var changshuiMarker = new AwesomeMarker({
-            //设置awesomeIcon
-            awesomeIcon: 'plane',
-            iconLabel: {
-                style: {
-                    color: '#333',
-                    fontSize: '14px'
-                }
-            },
-            iconStyle: 'orange',
-            map: map,
-            position: [102.9299020000,25.0981700000], // 昆明长水国际机场
-            title: '昆明长水国际机场'
-        });
-
-        var nanzhanMarker = new AwesomeMarker({
-            //设置awesomeIcon
-            awesomeIcon: 'train',
-            iconLabel: {
-                style: {
-                    color: '#333',
-                    fontSize: '14px'
-                }
-            },
-            iconStyle: 'orange',
-            map: map,
-            position: [102.8609280000,24.8701020000], // 昆明南站
-            title: '昆明南站'
-        });
-
-        var trainMarker = new AwesomeMarker({
-            //设置awesomeIcon
-            awesomeIcon: 'train',
-            iconLabel: {
-                style: {
-                    color: '#333',
-                    fontSize: '14px'
-                }
-            },
-            iconStyle: 'orange',
-            map: map,
-            position: [102.7226614952,25.0155009785], // 昆明站
-            title: '昆明站'
-        });
 
         //即jQuery/Zepto
         var $ = MarkerList.utils.$;
@@ -241,64 +196,7 @@ AMapUI.loadUI(['misc/MarkerList', 'overlay/AwesomeMarker', 'overlay/SimpleInfoWi
             //console.log(event, record);
         });
 
-        //构建一个数据项数组，数据项本身没有格式要求，但需要支持getDataId和getPosition
-        var data = [{
-            id: 1,
-            position: [102.6613080000,24.9657120000],
-            name: '民族村',
-            address: '云南省昆明市西山区滇池路1310号',
-            infoWinContent: '民族村',
-            listDesc: '民族村'
-        }, {
-            id: 2,
-            position: [102.6654860000,24.9597200000],
-            name: '滇池',
-            address: '云南省昆明市西山区滇池路与湖滨西路交叉口南侧',
-            infoWinContent: '滇池',
-            listDesc: '滇池'
-        }, {
-            id: 3,
-            position: [102.6508250000,24.9731590000], // 海埂大坝
-            name: '海埂大坝',
-            address: '云南省昆明市西山区观景路和红塔西路交叉口西侧',
-            infoWinContent: '海埂大坝',
-            listDesc: '海埂大坝'
-        }, {
-            id: 4,
-            position: [102.6342770000, 24.9522900000], // 西山
-            name: '西山',
-            address: '云南省昆明市西山区西山旅游专线与猫猫箐路交汇处东北侧',
-            infoWinContent: '西山',
-            listDesc: '西山'
-        }, {
-            id: 5,
-            position: [102.6726860000, 25.0231280000], // 大观公园
-            name: '大观公园',
-            address: '云南省昆明市西山区大观路284号',
-            infoWinContent: '大观公园',
-            listDesc: '大观公园'
-        }, {
-            id: 6,
-            position: [102.7008800000, 25.0478400000], // 云南陆军讲武堂旧址
-            name: '云南陆军讲武堂旧址',
-            address: '云南省昆明市五华区翠湖西路22号',
-            infoWinContent: '云南陆军讲武堂旧址',
-            listDesc: '云南陆军讲武堂旧址'
-        }, {
-            id: 7,
-            position: [102.7039890000, 25.0485380000], // 翠湖公园
-            name: '翠湖公园',
-            address: '云南省昆明市五华区翠湖南路67号',
-            infoWinContent: '翠湖公园',
-            listDesc: '翠湖公园'
-        }, {
-            id: 8,
-            position: [102.7028100000, 25.0544200000], // 云南大学
-            name: '云南大学',
-            address: '云南省昆明市五华区翠湖北路2',
-            infoWinContent: '云南大学',
-            listDesc: '云南大学'
-        }];
+
 
         //展示该数据
         markerList.render(data);

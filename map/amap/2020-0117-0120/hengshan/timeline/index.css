@@ -1,0 +1,38 @@
+@import url("//unpkg.com/element-ui@2.12.0/lib/theme-chalk/index.css");
+
+.el-card__body {
+    padding: 5px 20px;
+}
+
+.block .image-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #f5f7fa;
+    color: #909399;
+    font-size: 30px;
+}
+
+.el-card__body {
+    display: flex;
+    align-items: center;
+}
+
+.index {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    background: #409EFF;
+    opacity: 0.9;
+    border-radius: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+}
+
+.index.expired{
+    background: #F56C6C;
+    opacity: 0.3;
+}

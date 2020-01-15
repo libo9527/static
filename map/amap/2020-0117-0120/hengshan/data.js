@@ -53,12 +53,36 @@ var data = [{
         id: 7,
         position: [112.701851, 27.287317],
         name: '南天门',
-        address: '南天门',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
         infoWinContent: '南天门',
         listDesc: '南天门'
     },
     {
         id: 8,
+        position: [112.701736, 27.288548],
+        name: '狮子岩',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '狮子岩',
+        listDesc: '狮子岩'
+    },
+    {
+        id: 9,
+        position: [112.699042, 27.290603],
+        name: '高台古寺',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '高台古寺',
+        listDesc: '高台古寺'
+    },
+    {
+        id: 10,
+        position: [112.69953, 27.291558],
+        name: '上峰寺',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '上峰寺',
+        listDesc: '上峰寺'
+    },
+    {
+        id: 11,
         position: [112.695149, 27.293783],
         name: '祝融峰',
         address: '祝融峰',
@@ -67,6 +91,6 @@ var data = [{
     }];
 
 // data.forEach((item, index) => {
-// //     item.id = index + 1;
-// // });
-// // console.log(data);
+//     item.id = index + 1;
+// });
+// console.log(data);

@@ -35,6 +35,14 @@ const data = [{
     },
     {
         id: 5,
+        position: [112.719218, 27.267401],
+        name: '梵音谷',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '梵音谷',
+        listDesc: '梵音谷'
+    },
+    {
+        id: 6,
         position: [112.708272, 27.271616],
         name: '半山亭索道站',
         address: '半山亭索道站',
@@ -42,7 +50,7 @@ const data = [{
         listDesc: '半山亭索道站'
     },
     {
-        id: 6,
+        id: 7,
         position: [112.701851, 27.287317],
         name: '南天门',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -50,7 +58,7 @@ const data = [{
         listDesc: '南天门'
     },
     {
-        id: 7,
+        id: 8,
         position: [112.701736, 27.288548],
         name: '狮子岩',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -58,7 +66,7 @@ const data = [{
         listDesc: '狮子岩'
     },
     {
-        id: 8,
+        id: 9,
         position: [112.699042, 27.290603],
         name: '高台古寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -66,7 +74,7 @@ const data = [{
         listDesc: '高台古寺'
     },
     {
-        id: 9,
+        id: 10,
         position: [112.69953, 27.291558],
         name: '上峰寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -74,15 +82,31 @@ const data = [{
         listDesc: '上峰寺'
     },
     {
-        id: 10,
+        id: 11,
         position: [112.695149, 27.293783],
         name: '祝融峰',
-        address: '祝融峰',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
         infoWinContent: '祝融峰',
         listDesc: '祝融峰'
+    },
+    {
+        id: 12,
+        position: [112.69951, 27.273648],
+        name: '麻姑仙境',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '麻姑仙境',
+        listDesc: '麻姑仙境'
+    },
+    {
+        id: 13,
+        position: [112.70317, 27.266967],
+        name: '磨镜台',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '磨镜台',
+        listDesc: '磨镜台'
     }];
 
-data.forEach((item, index) => {
-    item.id = index + 1;
-});
-console.log(data);
+// data.forEach((item, index) => {
+//     item.id = index + 1;
+// });
+// console.log(data);

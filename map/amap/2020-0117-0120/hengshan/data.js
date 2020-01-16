@@ -115,6 +115,14 @@ const data = [{
     },
     {
         id: 15,
+        position: [112.687248, 27.277239],
+        name: '民俗文化城',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '民俗文化城',
+        listDesc: '民俗文化城'
+    },
+    {
+        id: 16,
         position: [112.69951, 27.273648],
         name: '麻姑仙境',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -122,7 +130,7 @@ const data = [{
         listDesc: '麻姑仙境'
     },
     {
-        id: 16,
+        id: 17,
         position: [112.70317, 27.266967],
         name: '磨镜台',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -130,7 +138,7 @@ const data = [{
         listDesc: '磨镜台'
     },
     {
-        id: 17,
+        id: 18,
         position: [112.710143, 27.259234],
         name: '南台寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',

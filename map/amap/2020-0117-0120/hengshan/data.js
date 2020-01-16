@@ -27,6 +27,14 @@ const data = [{
     },
     {
         id: 4,
+        position: [112.7229, 27.265181],
+        name: '中桎木潭',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '中桎木潭',
+        listDesc: '中桎木潭'
+    },
+    {
+        id: 5,
         position: [112.718337, 27.264839],
         name: '南岳忠烈祠',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -34,20 +42,12 @@ const data = [{
         listDesc: '南岳忠烈祠'
     },
     {
-        id: 5,
+        id: 6,
         position: [112.719218, 27.267401],
         name: '梵音谷',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
         infoWinContent: '梵音谷',
         listDesc: '梵音谷'
-    },
-    {
-        id: 6,
-        position: [112.7229, 27.265181],
-        name: '中桎木潭',
-        address: '南岳镇金沙路南岳衡山风景名胜区内',
-        infoWinContent: '中桎木潭',
-        listDesc: '中桎木潭'
     },
     {
         id: 7,

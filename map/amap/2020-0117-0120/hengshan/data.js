@@ -43,6 +43,14 @@ const data = [{
     },
     {
         id: 6,
+        position: [112.7229, 27.265181],
+        name: '中桎木潭',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '中桎木潭',
+        listDesc: '中桎木潭'
+    },
+    {
+        id: 7,
         position: [112.71077, 27.269931],
         name: '穿岩诗林',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -50,7 +58,7 @@ const data = [{
         listDesc: '穿岩诗林'
     },
     {
-        id: 7,
+        id: 8,
         position: [112.708272, 27.271616],
         name: '半山亭索道站',
         address: '半山亭索道站',
@@ -58,7 +66,7 @@ const data = [{
         listDesc: '半山亭索道站'
     },
     {
-        id: 8,
+        id: 9,
         position: [112.701851, 27.287317],
         name: '南天门',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -66,7 +74,7 @@ const data = [{
         listDesc: '南天门'
     },
     {
-        id: 9,
+        id: 10,
         position: [112.701736, 27.288548],
         name: '狮子岩',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -74,7 +82,7 @@ const data = [{
         listDesc: '狮子岩'
     },
     {
-        id: 10,
+        id: 11,
         position: [112.699042, 27.290603],
         name: '高台古寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -82,7 +90,7 @@ const data = [{
         listDesc: '高台古寺'
     },
     {
-        id: 11,
+        id: 12,
         position: [112.69953, 27.291558],
         name: '上峰寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -90,7 +98,7 @@ const data = [{
         listDesc: '上峰寺'
     },
     {
-        id: 12,
+        id: 13,
         position: [112.695149, 27.293783],
         name: '祝融峰',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -98,7 +106,7 @@ const data = [{
         listDesc: '祝融峰'
     },
     {
-        id: 13,
+        id: 14,
         position: [112.69264, 27.293391],
         name: '会仙桥',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -106,7 +114,7 @@ const data = [{
         listDesc: '会仙桥'
     },
     {
-        id: 14,
+        id: 15,
         position: [112.69951, 27.273648],
         name: '麻姑仙境',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -114,7 +122,7 @@ const data = [{
         listDesc: '麻姑仙境'
     },
     {
-        id: 15,
+        id: 16,
         position: [112.70317, 27.266967],
         name: '磨镜台',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -122,7 +130,7 @@ const data = [{
         listDesc: '磨镜台'
     },
     {
-        id: 16,
+        id: 17,
         position: [112.710143, 27.259234],
         name: '南台寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',

@@ -99,46 +99,4 @@ const data = [{
             '3号线（双龙方向）石厦站 - 老街站<br>' +
             '1号线（罗湖方向）老街站 - 罗湖站',
         amapUrl: 'https://surl.amap.com/1jfRJGk1x2Qm'
-    },
-
-
-    {
-        timestamp: '2019/10/03 07:00:00',
-        imgUrls: [
-            '../images/ylxs-mp.png',
-            '../images/ylxs-mp-01.png',
-            '../images/ylxs-mp-02.png'
-        ],
-        title: '<strong style="color: orangered;">抢票</strong> 玉龙雪山景点门票',
-        members: '李、浮、谭、党',
-        content: '提前抢票<br>' +
-            '官方订票(只能订当日)：丽江旅游集团公众号(7:00 - 21:00)<br>' +
-            '进山费：景区大门口购买，¥100/人'
-    }, {
-        timestamp: '2019/10/03 11:40:00',
-        imgUrls: [
-            '../images/ht-ylxs.png',
-            '../images/ht-ylxs-02.png',
-            '../images/ylxsjqzx.png'
-        ],
-        title: '打车 汉庭丽江古城福星路酒店 - 玉龙雪山游客中心',
-        members: '李、浮、谭、党',
-        content: '从汉庭丽江古城福星路酒店出发，前往玉龙雪山。<br>' +
-            '打车：大约 ¥80～100，40~50 分钟。<br>' +
-            '公交：大约 ¥15/人，1 小时 31 分钟。<br>' +
-            '建议坐<a href="http://www.sohu.com/a/307119287_123580">旅游专线的公交</a>，在车上就可以买进山的大门票。',
-    }, {
-        timestamp: '2019/10/03 19:20:00',
-        imgUrls: [
-            '../images/ylxs-ht-01.png',
-            '../images/ylxs-ht-02.png'
-        ],
-        title: '打车 景区门口 - 汉庭丽江古城福星路酒店',
-        members: '李、浮、谭、党',
-        content: '从景区门口出发，前往汉庭丽江古城福星路酒店。<br>' +
-            '打车：大约 ¥80 ～ 100，40 ～ 60 分钟<br>' +
-            '黑车：大约 ¥20 ～ 40/人，40 ～ 60 分钟<br>' +
-            '回程路上可以<br><a href="https://surl.amap.com/1Obea9Nf7ZN" style="color: orangered;">1. 提前预定</a>第二天早上从酒店到火车站的车<br>' +
-            '2. 挑选回古城后吃饭的地方 <a href="http://www.dianping.com/lijiang/ch10/r8330o3" style="color: orangered;">大众点评</a>',
-        amapUrl: 'https://surl.amap.com/1Qqh3tt1lfjq'
     }];

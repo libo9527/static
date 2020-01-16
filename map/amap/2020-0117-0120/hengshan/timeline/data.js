@@ -143,6 +143,20 @@ const data = [{
     content: '到达上峰寺<br>' +
         '<span style="color: orangered">逗留 10～20 分钟</span>',
     amapUrl: 'https://surl.amap.com/eJvXus16bXr'
+}, {
+    timestamp: '2020-01-18 17:30:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '从上峰寺出发，前往祝融峰<br>' +
+        '<span style="color: orange">走路大约需要 9 分钟</span>',
+    amapUrl: 'https://surl.amap.com/f0xe8432TF'
+}, {
+    timestamp: '2020-01-18 17:40:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '到达祝融峰<br>' +
+        '<span style="color: orangered">逗留 10～20 分钟</span>',
+    amapUrl: 'https://surl.amap.com/f0xe8432TF'
 },
 
     {

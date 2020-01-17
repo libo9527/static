@@ -333,6 +333,20 @@ const data = [{
     content: '到达麻姑仙境<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/ptcuuYS9WM'
+}, {
+    timestamp: '2020-01-19 11:55:00',
+    imgUrls: [],
+    title: '麻姑仙境 - 灵芝泉',
+    content: '从麻姑仙境出发，前往麻姑仙境<br>' +
+        '<span style="color: orange">走路大约需要 3 分钟</span>',
+    amapUrl: 'https://surl.amap.com/pILy0oUatx'
+}, {
+    timestamp: '2020-01-19 12:00:00',
+    imgUrls: [],
+    title: '麻姑仙境 - 灵芝泉',
+    content: '到达灵芝泉<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/pILy0oUatx'
 },
 
     {

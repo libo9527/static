@@ -1,12 +1,22 @@
 const data = [{
     timestamp: '2020-01-17 22:00:00',
     imgUrls: [],
-    title: '金地花园 - 深圳站',
+    title: '金地花园 - 深圳站<span style="color: orangered;"> 地铁 46 分钟</span>',
     content:
         '从金地花园出发，前往深圳站<br>7号线（太安方向）上沙站 - 石厦站<br>3号线（双龙方向）石厦站 - 老街站<br>1号线（罗湖方向）老街站 - 罗湖站',
     amapUrl: 'https://surl.amap.com/1jfRJGk1x2Qm'
 },
     {
+        timestamp: '2020-01-17 22:50:00',
+        imgUrls: [],
+        title: '深圳站附近超市购物',
+        content: '在深圳站附近超市买些补给：<br>' +
+            '1. 两桶泡面、火腿肠<br>' +
+            '2. 巧克力<br>' +
+            '3. 烟<br>' +
+            '4. 取现金<br>' +
+            ''
+    }, {
         timestamp: '2020-01-18 01:05:00',
         imgUrls: [],
         title: 'K6618 深圳站 - 株洲站',

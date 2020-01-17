@@ -235,6 +235,20 @@ const data = [{
     content: '到达会仙桥<br>' +
         '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/nAeiHC1c2bp'
+}, {
+    timestamp: '2020-01-19 07:55:00',
+    imgUrls: [],
+    title: '会仙桥 - 上封寺',
+    content: '从会仙桥出发，前往上封寺<br>' +
+        '<span style="color: orange">走路大约需要 11 分钟</span>',
+    amapUrl: 'https://surl.amap.com/nXFl9u4236'
+}, {
+    timestamp: '2020-01-19 08:10:00',
+    imgUrls: [],
+    title: '会仙桥 - 上封寺',
+    content: '到达上封寺<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/nXFl9u4236'
 },
 
     {

@@ -13,8 +13,9 @@ const data = [{
         content: '在深圳站附近超市买些补给：<br>' +
             '1. 两桶泡面、火腿肠<br>' +
             '2. 巧克力<br>' +
-            '3. 烟<br>' +
-            '4. 取现金<br>' +
+            '3. 功能饮料<br>' +
+            '4. 烟<br>' +
+            '5. 取现金<br>' +
             ''
     }, {
         timestamp: '2020-01-18 01:05:00',
@@ -106,6 +107,34 @@ const data = [{
         imgUrls: [],
         title: 'K9002 衡山站 - 长沙站',
         content: '到达长沙站'
+    },
+    {
+        timestamp: '2020-01-19 17:25:00',
+        imgUrls: [],
+        title: '地铁2号线 长沙站 - 橘子洲<span style="color: orangered;"> 25 分钟</span>',
+        content: '从长沙站出发，前往橘子洲',
+        amapUrl: 'https://surl.amap.com/lReSADX40w'
+    },
+    {
+        timestamp: '2020-01-19 17:50:00',
+        imgUrls: [],
+        title: '地铁2号线 长沙站 - 橘子洲<span style="color: orangered;"> 25 分钟</span>',
+        content: '到达橘子洲，游览<span style="color: #e99b47;"> 20～30 分钟</span>',
+        amapUrl: 'https://surl.amap.com/lReSADX40w'
+    },
+    {
+        timestamp: '2020-01-19 18:20:00',
+        imgUrls: [],
+        title: '地铁2号线 橘子洲 - 路飞青年旅舍<span style="color: orangered;"> 12 分钟</span>',
+        content: '从橘子洲出发，前往路飞青年旅舍',
+        amapUrl: 'https://surl.amap.com/PicQT6685i'
+    },
+    {
+        timestamp: '2020-01-19 18:30:00',
+        imgUrls: [],
+        title: '地铁2号线 橘子洲 - 路飞青年旅舍<span style="color: orangered;"> 12 分钟</span>',
+        content: '到达路飞青年旅舍',
+        amapUrl: 'https://surl.amap.com/PicQT6685i'
     },
     {
         timestamp: '2020-01-20 07:45:00',

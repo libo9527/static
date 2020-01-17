@@ -361,6 +361,20 @@ const data = [{
     content: '到达磨镜台<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/pTHBy014dis'
+}, {
+    timestamp: '2020-01-19 12:35:00',
+    imgUrls: [],
+    title: '磨镜台 - 福严寺',
+    content: '从磨镜台出发，前往福严寺<br>' +
+        '<span style="color: orange">走路大约需要 8 分钟</span>',
+    amapUrl: 'https://surl.amap.com/qaVSDC1s5Vs'
+}, {
+    timestamp: '2020-01-19 12:25:00',
+    imgUrls: [],
+    title: '磨镜台 - 福严寺',
+    content: '到达福严寺<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/qaVSDC1s5Vs'
 },
 
     {

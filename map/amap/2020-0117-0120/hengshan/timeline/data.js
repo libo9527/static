@@ -277,6 +277,20 @@ const data = [{
     content: '到达狮子岩<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/ox3Nlm1a3FX'
+}, {
+    timestamp: '2020-01-19 08:55:00',
+    imgUrls: [],
+    title: '狮子岩 - 南天门',
+    content: '从狮子岩出发，前往南天门<br>' +
+        '<span style="color: orange">走路大约需要 2 分钟</span>',
+    amapUrl: 'https://surl.amap.com/oJhZFu170aD'
+}, {
+    timestamp: '2020-01-19 09:00:00',
+    imgUrls: [],
+    title: '狮子岩 - 南天门',
+    content: '到达南天门<br>' +
+        '<span style="color: orangered">取行李，逗留 10～15 分钟</span>',
+    amapUrl: 'https://surl.amap.com/oJhZFu170aD'
 },
 
     {

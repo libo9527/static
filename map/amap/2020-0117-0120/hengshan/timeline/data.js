@@ -207,8 +207,35 @@ const data = [{
     content: '到达上峰寺<br>' +
         '<span style="color: #777dff">休息</span>',
     amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-19 06:30:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '上峰寺吃早饭，吃完后出发前往祝融峰<br>' +
+        '<span style="color: orange">吃饭 10～15 分钟，走路大约需要 9 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-19 06:55:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '到达祝融峰<br>' +
+        '<span style="color: orangered">看日出 20～30 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-19 07:30:00',
+    imgUrls: [],
+    title: '祝融峰 - 会仙桥',
+    content: '从祝融峰出发，前往会仙桥<br>' +
+        '<span style="color: orange">走路大约需要 11 分钟</span>',
+    amapUrl: 'https://surl.amap.com/nAeiHC1c2bp'
+}, {
+    timestamp: '2020-01-19 07:45:00',
+    imgUrls: [],
+    title: '祝融峰 - 会仙桥',
+    content: '到达会仙桥<br>' +
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/nAeiHC1c2bp'
 },
-
 
     {
         timestamp: '2020-01-18 16:30:00',

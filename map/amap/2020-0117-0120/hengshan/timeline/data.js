@@ -249,6 +249,20 @@ const data = [{
     content: '到达上封寺<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/nXFl9u4236'
+}, {
+    timestamp: '2020-01-19 08:20:00',
+    imgUrls: [],
+    title: '上封寺 - 高台古寺',
+    content: '从上封寺出发，前往高台古寺<br>' +
+        '<span style="color: orange">走路大约需要 2 分钟</span>',
+    amapUrl: 'https://surl.amap.com/olRnew1q6o8'
+}, {
+    timestamp: '2020-01-19 08:25:00',
+    imgUrls: [],
+    title: '上封寺 - 高台古寺',
+    content: '到达高台古寺<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/olRnew1q6o8'
 },
 
     {

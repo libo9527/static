@@ -389,6 +389,20 @@ const data = [{
     content: '到达舍利塔<br>' +
         '<span style="color: orangered">逗留 10～15 分钟</span>',
     amapUrl: 'https://surl.amap.com/qBsFKgLa83'
+}, {
+    timestamp: '2020-01-19 13:25:00',
+    imgUrls: [],
+    title: '舍利塔 - 南台寺',
+    content: '从舍利塔出发，前往南台寺<br>' +
+        '<span style="color: orange">走路大约需要 3 分钟</span>',
+    amapUrl: 'https://surl.amap.com/r0hjao1hcKE'
+}, {
+    timestamp: '2020-01-19 13:30:00',
+    imgUrls: [],
+    title: '舍利塔 - 南台寺',
+    content: '到达南台寺<br>' +
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/r0hjao1hcKE'
 },
 
     {

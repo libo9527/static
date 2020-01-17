@@ -313,12 +313,26 @@ const data = [{
         '<span style="color: orange">走路大约需要 23 分钟</span>',
     amapUrl: 'https://surl.amap.com/piT2is13gNW'
 }, {
-    timestamp: '2020-01-19 09:50:00',
+    timestamp: '2020-01-19 10:45:00',
     imgUrls: [],
     title: '民俗文化城 - 藏经殿',
     content: '到达藏经殿<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/piT2is13gNW'
+}, {
+    timestamp: '2020-01-19 10:55:00',
+    imgUrls: [],
+    title: '藏经殿 - 麻姑仙境',
+    content: '从藏经殿出发，前往麻姑仙境<br>' +
+        '<span style="color: orange">走路大约需要 40 分钟</span>',
+    amapUrl: 'https://surl.amap.com/ptcuuYS9WM'
+}, {
+    timestamp: '2020-01-19 11:30:00',
+    imgUrls: [],
+    title: '藏经殿 - 麻姑仙境',
+    content: '到达麻姑仙境<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/ptcuuYS9WM'
 },
 
     {

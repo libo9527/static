@@ -263,6 +263,20 @@ const data = [{
     content: '到达高台古寺<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/olRnew1q6o8'
+}, {
+    timestamp: '2020-01-19 08:35:00',
+    imgUrls: [],
+    title: '高台古寺 - 狮子岩',
+    content: '从高台古寺出发，前往狮子岩<br>' +
+        '<span style="color: orange">走路大约需要 6 分钟</span>',
+    amapUrl: 'https://surl.amap.com/ox3Nlm1a3FX'
+}, {
+    timestamp: '2020-01-19 08:45:00',
+    imgUrls: [],
+    title: '高台古寺 - 狮子岩',
+    content: '到达狮子岩<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/ox3Nlm1a3FX'
 },
 
     {

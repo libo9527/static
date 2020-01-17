@@ -261,7 +261,7 @@ const data = [{
     imgUrls: [],
     title: '上封寺 - 高台古寺',
     content: '到达高台古寺<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/olRnew1q6o8'
 }, {
     timestamp: '2020-01-19 08:35:00',
@@ -275,7 +275,7 @@ const data = [{
     imgUrls: [],
     title: '高台古寺 - 狮子岩',
     content: '到达狮子岩<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/ox3Nlm1a3FX'
 }, {
     timestamp: '2020-01-19 08:55:00',
@@ -289,7 +289,7 @@ const data = [{
     imgUrls: [],
     title: '狮子岩 - 南天门',
     content: '到达南天门<br>' +
-        '<span style="color: orangered">取行李，逗留 10～15 分钟</span>',
+        '<span style="color: orangered">逗留 10～15 分钟</span>',
     amapUrl: 'https://surl.amap.com/oJhZFu170aD'
 }, {
     timestamp: '2020-01-19 09:15:00',
@@ -303,7 +303,7 @@ const data = [{
     imgUrls: [],
     title: '南天门 - 民俗文化城',
     content: '到达民俗文化城<br>' +
-        '<span style="color: orangered">取行李，逗留 20～30 分钟</span>',
+        '<span style="color: orangered">逗留 20～30 分钟</span>',
     amapUrl: 'https://surl.amap.com/oXi7Og1q64e'
 }, {
     timestamp: '2020-01-19 10:20:00',
@@ -317,7 +317,7 @@ const data = [{
     imgUrls: [],
     title: '民俗文化城 - 藏经殿',
     content: '到达藏经殿<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/piT2is13gNW'
 }, {
     timestamp: '2020-01-19 10:55:00',
@@ -331,7 +331,7 @@ const data = [{
     imgUrls: [],
     title: '藏经殿 - 麻姑仙境',
     content: '到达麻姑仙境<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/ptcuuYS9WM'
 }, {
     timestamp: '2020-01-19 11:55:00',
@@ -345,7 +345,7 @@ const data = [{
     imgUrls: [],
     title: '麻姑仙境 - 灵芝泉',
     content: '到达灵芝泉<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/pILy0oUatx'
 }, {
     timestamp: '2020-01-19 12:10:00',
@@ -359,7 +359,7 @@ const data = [{
     imgUrls: [],
     title: '灵芝泉 - 磨镜台',
     content: '到达磨镜台<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/pTHBy014dis'
 }, {
     timestamp: '2020-01-19 12:35:00',
@@ -369,12 +369,26 @@ const data = [{
         '<span style="color: orange">走路大约需要 8 分钟</span>',
     amapUrl: 'https://surl.amap.com/qaVSDC1s5Vs'
 }, {
-    timestamp: '2020-01-19 12:25:00',
+    timestamp: '2020-01-19 12:45:00',
     imgUrls: [],
     title: '磨镜台 - 福严寺',
     content: '到达福严寺<br>' +
-        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/qaVSDC1s5Vs'
+}, {
+    timestamp: '2020-01-19 12:55:00',
+    imgUrls: [],
+    title: '福严寺 - 舍利塔',
+    content: '从福严寺出发，前往舍利塔<br>' +
+        '<span style="color: orange">走路大约需要 12 分钟</span>',
+    amapUrl: 'https://surl.amap.com/qBsFKgLa83'
+}, {
+    timestamp: '2020-01-19 13:10:00',
+    imgUrls: [],
+    title: '福严寺 - 舍利塔',
+    content: '到达舍利塔<br>' +
+        '<span style="color: orangered">逗留 10～15 分钟</span>',
+    amapUrl: 'https://surl.amap.com/qBsFKgLa83'
 },
 
     {

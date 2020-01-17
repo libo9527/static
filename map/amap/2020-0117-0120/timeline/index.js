@@ -1,8 +1,8 @@
 var Main = {
     created() {
-        this.list.sort((a, b) => {
-            return new Date(a.timestamp) - new Date(b.timestamp);
-        });
+        // this.list.sort((a, b) => {
+        //     return new Date(a.timestamp) - new Date(b.timestamp);
+        // });
     },
     data() {
         return {

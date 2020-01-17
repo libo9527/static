@@ -139,6 +139,14 @@ const data = [{
     },
     {
         id: 18,
+        position: [112.69963, 27.272074],
+        name: '灵芝泉',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '灵芝泉',
+        listDesc: '灵芝泉'
+    },
+    {
+        id: 19,
         position: [112.70317, 27.266967],
         name: '磨镜台',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -146,7 +154,7 @@ const data = [{
         listDesc: '磨镜台'
     },
     {
-        id: 19,
+        id: 20,
         position: [112.703155, 27.263337],
         name: '福严寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',
@@ -154,7 +162,15 @@ const data = [{
         listDesc: '福严寺'
     },
     {
-        id: 20,
+        id: 21,
+        position: [112.710012, 27.260463],
+        name: '舍利塔',
+        address: '南岳镇金沙路南岳衡山风景名胜区内',
+        infoWinContent: '舍利塔',
+        listDesc: '舍利塔'
+    },
+    {
+        id: 22,
         position: [112.710143, 27.259234],
         name: '南台寺',
         address: '南岳镇金沙路南岳衡山风景名胜区内',

@@ -347,6 +347,20 @@ const data = [{
     content: '到达灵芝泉<br>' +
         '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/pILy0oUatx'
+}, {
+    timestamp: '2020-01-19 12:10:00',
+    imgUrls: [],
+    title: '灵芝泉 - 磨镜台',
+    content: '从灵芝泉出发，前往磨镜台<br>' +
+        '<span style="color: orange">走路大约需要 11 分钟</span>',
+    amapUrl: 'https://surl.amap.com/pTHBy014dis'
+}, {
+    timestamp: '2020-01-19 12:25:00',
+    imgUrls: [],
+    title: '灵芝泉 - 磨镜台',
+    content: '到达磨镜台<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/pTHBy014dis'
 },
 
     {

@@ -134,77 +134,111 @@ const data = [{
     ],
     title: '半山亭 - 南天门',
     content: '到达南天门<br>' +
-        '<span style="color: orangered">逗留 10～15 分钟</span>',
+        '<span style="color: orangered">逗留 3～5 分钟</span>',
     amapUrl: 'https://surl.amap.com/1BHUYrmm7V0'
 }, {
-    timestamp: '2020-01-18 16:30:00',
+    timestamp: '2020-01-18 15:20:00',
     imgUrls: [],
-    title: '南天门 - 狮子岩',
-    content: '从南天门出发，前往狮子岩<br>' +
-        '<span style="color: orange">走路大约需要 2 分钟</span>',
-    amapUrl: 'https://surl.amap.com/efSZI81y0Ud'
-}, {
-    timestamp: '2020-01-18 16:35:00',
-    imgUrls: [
-        'http://n1-q.mafengwo.net/s10/M00/BA/A4/wKgBZ1k4DgqAZYnlAAsO8gbhiro82.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
-    ],
-    title: '南天门 - 狮子岩',
-    content: '到达狮子岩<br>' +
-        '<span style="color: orangered">逗留 5～10 分钟</span>',
-    amapUrl: 'https://surl.amap.com/efSZI81y0Ud'
-}, {
-    timestamp: '2020-01-18 16:45:00',
-    imgUrls: [],
-    title: '狮子岩 - 高台古寺',
-    content: '从狮子岩出发，前往高台古寺<br>' +
-        '<span style="color: orange">走路大约需要 6 分钟</span>',
-    amapUrl: 'https://surl.amap.com/esXDRaL43N'
-}, {
-    timestamp: '2020-01-18 16:55:00',
-    imgUrls: [
-        'http://b1-q.mafengwo.net/s10/M00/BA/A6/wKgBZ1k4DgqATWjzAAeq3y6Gzvk60.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
-    ],
-    title: '狮子岩 - 高台古寺',
-    content: '到达高台古寺<br>' +
-        '<span style="color: orangered">逗留 5～10 分钟</span>',
-    amapUrl: 'https://surl.amap.com/esXDRaL43N'
-}, {
-    timestamp: '2020-01-18 17:05:00',
-    imgUrls: [],
-    title: '高台古寺 - 上峰寺',
-    content: '从高台古寺出发，前往上峰寺<br>' +
-        '<span style="color: orange">走路大约需要 3 分钟</span>',
-    amapUrl: 'https://surl.amap.com/eJvXus16bXr'
-}, {
-    timestamp: '2020-01-18 17:10:00',
-    imgUrls: [
-        'http://n1-q.mafengwo.net/s11/M00/09/D6/wKgBEFpUmFGATiZEABP3vWkiLUk36.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
-        'http://n1-q.mafengwo.net/s11/M00/09/D4/wKgBEFpUmFCAQZh-ABIcEj0suls76.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
-        'http://b1-q.mafengwo.net/s11/M00/F6/C3/wKgBEFpWKf6AdONFAAG2epkib7032.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
-        'http://n1-q.mafengwo.net/s11/M00/EE/83/wKgBEFpWHYmAHpOCAAYDo3BiZ8w11.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
-        'http://n1-q.mafengwo.net/s11/M00/F6/CD/wKgBEFpWKgaALWsZAAG3YU7VNdg68.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90'
-    ],
-    title: '高台古寺 - 上峰寺',
-    content: '到达上峰寺<br>' +
-        '<span style="color: orangered">逗留到 18：00 吃斋饭</span>',
-    amapUrl: 'https://surl.amap.com/eJvXus16bXr'
-}, {
-    timestamp: '2020-01-18 18:10:00',
-    imgUrls: [],
-    title: '上峰寺 - 祝融峰',
-    content: '从上峰寺出发，前往祝融峰<br>' +
+    title: '南天门 - 上峰寺',
+    content: '从南天门出发，前往上峰寺<br>' +
         '<span style="color: orange">走路大约需要 9 分钟</span>',
-    amapUrl: 'https://surl.amap.com/f0xe8432TF'
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
 }, {
-    timestamp: '2020-01-18 18:20:00',
-    imgUrls: [
-        'http://p1-q.mafengwo.net/s10/M00/BA/A8/wKgBZ1k4DgyAZ0lEAA4c47ClIv096.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
-    ],
-    title: '上峰寺 - 祝融峰',
-    content: '到达祝融峰<br>' +
-        '<span style="color: orangered">逗留 10～20 分钟</span>',
-    amapUrl: 'https://surl.amap.com/f0xe8432TF'
+    timestamp: '2020-01-18 15:30:00',
+    imgUrls: [],
+    title: '南天门 - 上峰寺',
+    content: '到达上峰寺<br>' +
+        '<span style="color: orangered">放行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
 },
+
+
+    {
+        timestamp: '2020-01-18 15:40:00',
+        imgUrls: [],
+        title: '上峰寺 - 祝融峰',
+        content: '从上峰寺出发，前往祝融峰<br>' +
+            '<span style="color: orange">走路大约需要 9 分钟</span>',
+        amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+    }, {
+        timestamp: '2020-01-18 15:50:00',
+        imgUrls: [],
+        title: '上峰寺 - 祝融峰',
+        content: '到达祝融峰<br>' +
+            '<span style="color: orangered">观日落，逗留 5～10 分钟</span>',
+        amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+    },
+
+
+    {
+        timestamp: '2020-01-18 16:30:00',
+        imgUrls: [],
+        title: '南天门 - 狮子岩',
+        content: '从南天门出发，前往狮子岩<br>' +
+            '<span style="color: orange">走路大约需要 2 分钟</span>',
+        amapUrl: 'https://surl.amap.com/efSZI81y0Ud'
+    }, {
+        timestamp: '2020-01-18 16:35:00',
+        imgUrls: [
+            'http://n1-q.mafengwo.net/s10/M00/BA/A4/wKgBZ1k4DgqAZYnlAAsO8gbhiro82.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
+        ],
+        title: '南天门 - 狮子岩',
+        content: '到达狮子岩<br>' +
+            '<span style="color: orangered">逗留 5～10 分钟</span>',
+        amapUrl: 'https://surl.amap.com/efSZI81y0Ud'
+    }, {
+        timestamp: '2020-01-18 16:45:00',
+        imgUrls: [],
+        title: '狮子岩 - 高台古寺',
+        content: '从狮子岩出发，前往高台古寺<br>' +
+            '<span style="color: orange">走路大约需要 6 分钟</span>',
+        amapUrl: 'https://surl.amap.com/esXDRaL43N'
+    }, {
+        timestamp: '2020-01-18 16:55:00',
+        imgUrls: [
+            'http://b1-q.mafengwo.net/s10/M00/BA/A6/wKgBZ1k4DgqATWjzAAeq3y6Gzvk60.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
+        ],
+        title: '狮子岩 - 高台古寺',
+        content: '到达高台古寺<br>' +
+            '<span style="color: orangered">逗留 5～10 分钟</span>',
+        amapUrl: 'https://surl.amap.com/esXDRaL43N'
+    }, {
+        timestamp: '2020-01-18 17:05:00',
+        imgUrls: [],
+        title: '高台古寺 - 上峰寺',
+        content: '从高台古寺出发，前往上峰寺<br>' +
+            '<span style="color: orange">走路大约需要 3 分钟</span>',
+        amapUrl: 'https://surl.amap.com/eJvXus16bXr'
+    }, {
+        timestamp: '2020-01-18 17:10:00',
+        imgUrls: [
+            'http://n1-q.mafengwo.net/s11/M00/09/D6/wKgBEFpUmFGATiZEABP3vWkiLUk36.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
+            'http://n1-q.mafengwo.net/s11/M00/09/D4/wKgBEFpUmFCAQZh-ABIcEj0suls76.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
+            'http://b1-q.mafengwo.net/s11/M00/F6/C3/wKgBEFpWKf6AdONFAAG2epkib7032.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
+            'http://n1-q.mafengwo.net/s11/M00/EE/83/wKgBEFpWHYmAHpOCAAYDo3BiZ8w11.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90',
+            'http://n1-q.mafengwo.net/s11/M00/F6/CD/wKgBEFpWKgaALWsZAAG3YU7VNdg68.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90'
+        ],
+        title: '高台古寺 - 上峰寺',
+        content: '到达上峰寺<br>' +
+            '<span style="color: orangered">逗留到 18：00 吃斋饭</span>',
+        amapUrl: 'https://surl.amap.com/eJvXus16bXr'
+    }, {
+        timestamp: '2020-01-18 18:10:00',
+        imgUrls: [],
+        title: '上峰寺 - 祝融峰',
+        content: '从上峰寺出发，前往祝融峰<br>' +
+            '<span style="color: orange">走路大约需要 9 分钟</span>',
+        amapUrl: 'https://surl.amap.com/f0xe8432TF'
+    }, {
+        timestamp: '2020-01-18 18:20:00',
+        imgUrls: [
+            'http://p1-q.mafengwo.net/s10/M00/BA/A8/wKgBZ1k4DgyAZ0lEAA4c47ClIv096.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90'
+        ],
+        title: '上峰寺 - 祝融峰',
+        content: '到达祝融峰<br>' +
+            '<span style="color: orangered">逗留 10～20 分钟</span>',
+        amapUrl: 'https://surl.amap.com/f0xe8432TF'
+    },
 
 
     {

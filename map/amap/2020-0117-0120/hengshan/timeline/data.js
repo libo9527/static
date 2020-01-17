@@ -49,15 +49,15 @@ const data = [{
     ],
     title: '华严湖 - 中桎木潭',
     content: '到达中桎木潭<br>' +
-        '<span style="color: orangered">逗留 3～5 分钟</span>'
+        '<span style="color: orangered">逗留 5～10 分钟</span>'
 }, {
-    timestamp: '2020-01-18 14:15:00',
+    timestamp: '2020-01-18 14:20:00',
     imgUrls: [],
     title: '中桎木潭 - 忠烈祠',
     content: '从中桎木潭出发，前往忠烈祠<br>' +
         '<span style="color: orange">走路大约需要 9 分钟</span>'
 }, {
-    timestamp: '2020-01-18 14:25:00',
+    timestamp: '2020-01-18 14:30:00',
     imgUrls: [
         'http://n1-q.mafengwo.net/s10/M00/BA/7D/wKgBZ1k4DeqAff94AAnDho1G5TY94.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90',
         'http://pic.lvmama.com//uploads/pc/place2/2016-12-22/e3ddcf94-5431-4989-9715-5b9de84160e6.jpg',
@@ -69,14 +69,14 @@ const data = [{
     content: '到达忠烈祠<br>' +
         '<span style="color: orangered">逗留 10～15 分钟</span>'
 }, {
-    timestamp: '2020-01-18 14:40:00',
+    timestamp: '2020-01-18 14:45:00',
     imgUrls: [],
     title: '忠烈祠 - 梵音谷',
     content: '从忠烈祠出发，前往梵音谷<br>' +
         '<span style="color: orange">走路大约需要 5 分钟</span>',
     amapUrl: 'https://surl.amap.com/1wMObEkk5Ys'
 }, {
-    timestamp: '2020-01-18 14:45:00',
+    timestamp: '2020-01-18 14:50:00',
     imgUrls: [
         'http://n1-q.mafengwo.net/s10/M00/BA/60/wKgBZ1k4DdCAV3erABAgalA5Q3Y22.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90',
         'http://pic.lvmama.com//uploads/pc/place2/2016-11-10/0d24a7ff-8793-4815-a43e-e86d390be2a2.jpg',
@@ -85,47 +85,47 @@ const data = [{
     ],
     title: '忠烈祠 - 梵音谷',
     content: '到达梵音谷<br>' +
-        '<span style="color: orangered">逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 10～20 分钟</span>',
     amapUrl: 'https://surl.amap.com/1wMObEkk5Ys'
 }, {
-    timestamp: '2020-01-18 14:55:00',
+    timestamp: '2020-01-18 15:10:00',
     imgUrls: [],
     title: '梵音谷 - 穿岩诗林',
     content: '从梵音谷出发，前往穿岩诗林<br>' +
         '<span style="color: orange">走路大约需要 15 分钟</span>',
     amapUrl: 'https://surl.amap.com/1AxVnsQ128v'
 }, {
-    timestamp: '2020-01-18 15:10:00',
+    timestamp: '2020-01-18 15:25:00',
     imgUrls: [
         'http://b1-q.mafengwo.net/s8/M00/BC/DA/wKgBpVXxeWyAB0qoAAxEftev2JQ06.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90'
     ],
     title: '梵音谷 - 穿岩诗林',
     content: '到达穿岩诗林<br>' +
-        '<span style="color: orangered">逗留 3～5 分钟</span>',
+        '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/1wMObEkk5Ys'
 }, {
-    timestamp: '2020-01-18 15:15:00',
+    timestamp: '2020-01-18 15:35:00',
     imgUrls: [],
     title: '穿岩诗林 - 半山亭',
     content: '从穿岩诗林出发，前往半山亭<br>' +
         '<span style="color: orange">走路大约需要 6 分钟</span>',
     amapUrl: 'https://surl.amap.com/1B3pJfy187KN'
 }, {
-    timestamp: '2020-01-18 15:20:00',
+    timestamp: '2020-01-18 15:45:00',
     imgUrls: [],
     title: '穿岩诗林 - 半山亭',
     content: '到达半山亭<br>' +
-        '<span style="color: orangered">逗留 5～10 分钟</span>',
+        '<span style="color: orangered">逗留 10～15 分钟</span>',
     amapUrl: 'https://surl.amap.com/1B3pJfy187KN'
 }, {
-    timestamp: '2020-01-18 15:30:00',
+    timestamp: '2020-01-18 16:00:00',
     imgUrls: [],
     title: '半山亭 - 南天门',
     content: '从半山亭出发，前往南天门<br>' +
         '<span style="color: orange">走路大约需要 46 分钟</span>',
     amapUrl: 'https://surl.amap.com/1BHUYrmm7V0'
 }, {
-    timestamp: '2020-01-18 16:15:00',
+    timestamp: '2020-01-18 16:45:00',
     imgUrls: [
         'http://n1-q.mafengwo.net/s10/M00/BA/9C/wKgBZ1k4DgKAfQk5AA7bxv6jhAA08.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90',
         'http://n1-q.mafengwo.net/s10/M00/BA/9E/wKgBZ1k4DgOASrzLAA3-6mxY6Ys06.jpeg?imageView2%2F2%2Fw%2F1360%2Fq%2F90',
@@ -137,37 +137,48 @@ const data = [{
         '<span style="color: orangered">逗留 3～5 分钟</span>',
     amapUrl: 'https://surl.amap.com/1BHUYrmm7V0'
 }, {
-    timestamp: '2020-01-18 15:20:00',
+    timestamp: '2020-01-18 16:50:00',
     imgUrls: [],
     title: '南天门 - 上峰寺',
     content: '从南天门出发，前往上峰寺<br>' +
         '<span style="color: orange">走路大约需要 9 分钟</span>',
     amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
 }, {
-    timestamp: '2020-01-18 15:30:00',
+    timestamp: '2020-01-18 17:00:00',
     imgUrls: [],
     title: '南天门 - 上峰寺',
     content: '到达上峰寺<br>' +
         '<span style="color: orangered">放行李，逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-18 17:10:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '从上峰寺出发，前往祝融峰<br>' +
+        '<span style="color: orange">走路大约需要 9 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-18 17:20:00',
+    imgUrls: [],
+    title: '上峰寺 - 祝融峰',
+    content: '到达祝融峰<br>' +
+        '<span style="color: orangered">观日落，逗留 20～30 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-18 17:50:00',
+    imgUrls: [],
+    title: '祝融峰 - 上峰寺',
+    content: '从祝融峰出发，回上峰寺<br>' +
+        '<span style="color: orange">走路大约需要 9 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
+}, {
+    timestamp: '2020-01-18 18:00:00',
+    imgUrls: [],
+    title: '祝融峰 - 上峰寺',
+    content: '到达上峰寺<br>' +
+        '<span style="color: orangered">吃完饭，逗留 20～30 分钟</span>',
+    amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
 },
-
-
-    {
-        timestamp: '2020-01-18 15:40:00',
-        imgUrls: [],
-        title: '上峰寺 - 祝融峰',
-        content: '从上峰寺出发，前往祝融峰<br>' +
-            '<span style="color: orange">走路大约需要 9 分钟</span>',
-        amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
-    }, {
-        timestamp: '2020-01-18 15:50:00',
-        imgUrls: [],
-        title: '上峰寺 - 祝融峰',
-        content: '到达祝融峰<br>' +
-            '<span style="color: orangered">观日落，逗留 5～10 分钟</span>',
-        amapUrl: 'https://surl.amap.com/hEQRS0Ud2t'
-    },
 
 
     {

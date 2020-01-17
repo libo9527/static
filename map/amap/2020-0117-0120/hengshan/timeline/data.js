@@ -291,6 +291,20 @@ const data = [{
     content: '到达南天门<br>' +
         '<span style="color: orangered">取行李，逗留 10～15 分钟</span>',
     amapUrl: 'https://surl.amap.com/oJhZFu170aD'
+}, {
+    timestamp: '2020-01-19 09:15:00',
+    imgUrls: [],
+    title: '南天门 - 民俗文化城',
+    content: '从南天门出发，前往民俗文化城<br>' +
+        '<span style="color: orange">走路大约需要 34 分钟</span>',
+    amapUrl: 'https://surl.amap.com/oXi7Og1q64e'
+}, {
+    timestamp: '2020-01-19 09:50:00',
+    imgUrls: [],
+    title: '南天门 - 民俗文化城',
+    content: '到达民俗文化城<br>' +
+        '<span style="color: orangered">取行李，逗留 20～30 分钟</span>',
+    amapUrl: 'https://surl.amap.com/oXi7Og1q64e'
 },
 
     {

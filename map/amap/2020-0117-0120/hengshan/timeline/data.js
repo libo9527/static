@@ -403,6 +403,19 @@ const data = [{
     content: '到达南台寺<br>' +
         '<span style="color: orangered">逗留 5～10 分钟</span>',
     amapUrl: 'https://surl.amap.com/r0hjao1hcKE'
+}, {
+    timestamp: '2020-01-19 13:40:00',
+    imgUrls: [],
+    title: '南台寺 - 游客中心',
+    content: '从南台寺出发，前往游客中心<br>' +
+        '<span style="color: orange">走路大约需要 51 分钟</span>',
+    amapUrl: 'https://surl.amap.com/rcbmNaP0zF'
+}, {
+    timestamp: '2020-01-19 14:35:00',
+    imgUrls: [],
+    title: '南台寺 - 游客中心',
+    content: '到达游客中心',
+    amapUrl: 'https://surl.amap.com/rcbmNaP0zF'
 },
 
     {

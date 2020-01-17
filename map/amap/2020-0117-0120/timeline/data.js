@@ -68,8 +68,22 @@ const data = [{
             '免费1路公交车 衡山游客中心 - 南岳汽车站<span style="color: orangered;"> 24 分钟</span>',
         imgUrls:
             ['http://p1-q.mafengwo.net/s11/M00/EC/67/wKgBEFpWGtiANE_-AAU3WkmS0_g24.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90'],
-        content: '从衡山游客中心出发，前往南岳汽车站',
+        content: '到达南岳汽车站',
         amapUrl: 'https://surl.amap.com/tnhDCgi2OA'
+    },
+    {
+        timestamp: '2020-01-19 14:40:00',
+        title:
+            '城际巴士 南岳汽车站 - 衡山站<span style="color: orangered;"> 40 分钟</span>',
+        imgUrls: [],
+        content: '从南岳汽车站出发，前往衡山站'
+    },
+    {
+        timestamp: '2020-01-19 15:20:00',
+        title:
+            '城际巴士 南岳汽车站 - 衡山站<span style="color: orangered;"> 40 分钟</span>',
+        imgUrls: [],
+        content: '到达衡山站'
     },
     {
         timestamp: '2020-01-19 15:35:00',

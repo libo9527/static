@@ -305,6 +305,20 @@ const data = [{
     content: '到达民俗文化城<br>' +
         '<span style="color: orangered">取行李，逗留 20～30 分钟</span>',
     amapUrl: 'https://surl.amap.com/oXi7Og1q64e'
+}, {
+    timestamp: '2020-01-19 10:20:00',
+    imgUrls: [],
+    title: '民俗文化城 - 藏经殿',
+    content: '从民俗文化城出发，前往藏经殿<br>' +
+        '<span style="color: orange">走路大约需要 23 分钟</span>',
+    amapUrl: 'https://surl.amap.com/piT2is13gNW'
+}, {
+    timestamp: '2020-01-19 09:50:00',
+    imgUrls: [],
+    title: '民俗文化城 - 藏经殿',
+    content: '到达藏经殿<br>' +
+        '<span style="color: orangered">取行李，逗留 5～10 分钟</span>',
+    amapUrl: 'https://surl.amap.com/piT2is13gNW'
 },
 
     {

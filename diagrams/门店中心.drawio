@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T02:21:19.426Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="AQ1Laa87WFpjJNxwdBJY" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-07T02:30:35.348Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="MYEVJBVD030Ru8K_tTkU" version="14.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="关闭要货单">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry y="20" width="380" height="230" as="geometry" />
         </mxCell>
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-5" value="ShopPurchaseController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="_y9LpxyYnaiCuJYHgKzP-2" vertex="1">
-          <mxGeometry x="7.5" y="110" width="362.5" height="86" as="geometry" />
+          <mxGeometry x="7.5" y="110" width="362.5" height="100" as="geometry" />
         </mxCell>
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-6" value="+ fShopPurchaseServiceClient: FShopPurchaseServiceClient" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
           <mxGeometry y="26" width="362.5" height="26" as="geometry" />
@@ -19,8 +19,8 @@
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
           <mxGeometry y="52" width="362.5" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-8" value="+ closeShopPurchaseOrder(ShopPurchaseOrderDto): Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
-          <mxGeometry y="60" width="362.5" height="26" as="geometry" />
+        <mxCell id="_y9LpxyYnaiCuJYHgKzP-8" value="+ closeShopPurchaseOrder(ShopPurchaseOrderDto): Integer&#xa;- checkShopPurchaseOrderOperator(Long, ErpShopPurchaseOrderOperatorEnum): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
+          <mxGeometry y="60" width="362.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#CC0000;" edge="1" parent="1" source="_y9LpxyYnaiCuJYHgKzP-14" target="xdQ87shJHs2RGg50tQHQ-30">
           <mxGeometry relative="1" as="geometry">
@@ -55,7 +55,7 @@
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-19" value="查询门店要货单详情" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="130" y="980" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_y9LpxyYnaiCuJYHgKzP-20" target="_y9LpxyYnaiCuJYHgKzP-22" edge="1">
+        <mxCell id="_y9LpxyYnaiCuJYHgKzP-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_y9LpxyYnaiCuJYHgKzP-20" target="_y9LpxyYnaiCuJYHgKzP-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-24" value="&lt;pre style=&quot;background-color: rgb(43 , 43 , 43) ; font-family: , monospace ; font-size: 9.8pt ; color: rgb(169 , 183 , 198)&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_y9LpxyYnaiCuJYHgKzP-23" vertex="1" connectable="0">
@@ -68,7 +68,7 @@
             <mxPoint y="26" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;endArrow=none;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_y9LpxyYnaiCuJYHgKzP-20" target="xdQ87shJHs2RGg50tQHQ-1" edge="1">
+        <mxCell id="_y9LpxyYnaiCuJYHgKzP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_y9LpxyYnaiCuJYHgKzP-20" target="xdQ87shJHs2RGg50tQHQ-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="260" y="1105" />
@@ -85,8 +85,26 @@
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-20" value="要货单类型" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="140" y="1080" width="100" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#CC0000;" edge="1" parent="1" source="_y9LpxyYnaiCuJYHgKzP-22" target="xdQ87shJHs2RGg50tQHQ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-48" value="&lt;font color=&quot;#000000&quot;&gt;是&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CC0000;" vertex="1" connectable="0" parent="xdQ87shJHs2RGg50tQHQ-38">
+          <mxGeometry x="-0.2581" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-22" value="是否为&lt;br&gt;【待提交】&lt;br&gt;状态" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="55" y="1190" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#CC0000;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-49" value="&lt;font color=&quot;#000000&quot;&gt;是&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CC0000;" vertex="1" connectable="0" parent="xdQ87shJHs2RGg50tQHQ-39">
+          <mxGeometry x="-0.2748" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-1" value="是否为&lt;br&gt;【已驳回】&lt;br&gt;状态" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="190" y="1240" width="135" height="60" as="geometry" />
@@ -143,6 +161,34 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="100" y="645" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#CC0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="xdQ87shJHs2RGg50tQHQ-44" source="_y9LpxyYnaiCuJYHgKzP-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="1465" as="sourcePoint" />
+            <mxPoint x="449.25" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-43" value="当要货单类型为【要货单】时，&lt;br&gt;只有【待提交】状态的要货单才可以关闭" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CC0000;" vertex="1" connectable="0" parent="xdQ87shJHs2RGg50tQHQ-42">
+          <mxGeometry x="-0.177" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-44" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="1450" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#CC0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="xdQ87shJHs2RGg50tQHQ-47" source="xdQ87shJHs2RGg50tQHQ-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="558.75" y="1465" as="sourcePoint" />
+            <mxPoint x="768" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-46" value="当要货单类型不是【要货单】时，&lt;br&gt;只有【已驳回】状态的要货单才可以关闭" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#CC0000;" vertex="1" connectable="0" parent="xdQ87shJHs2RGg50tQHQ-45">
+          <mxGeometry x="-0.177" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-47" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="1450" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

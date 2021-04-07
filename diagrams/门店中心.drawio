@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T07:54:56.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="O0wU25N-WwVp8zdMc9JM" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-07T08:21:41.423Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="rZuV3fsbCOxfv237jtQy" version="14.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="关闭要货单">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -99,7 +99,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-22" value="是否为&lt;br&gt;【待提交】&lt;br&gt;状态" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="120" y="1190" width="135" height="60" as="geometry" />
+          <mxGeometry x="120" y="1180" width="135" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#CC0000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-1" target="xdQ87shJHs2RGg50tQHQ-22">
           <mxGeometry relative="1" as="geometry">
@@ -334,9 +334,6 @@
         <mxCell id="xdQ87shJHs2RGg50tQHQ-95" value="&lt;font color=&quot;#cc0000&quot;&gt;null&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontColor=#000000;strokeColor=#CC0000;" vertex="1" parent="1">
           <mxGeometry x="610" y="915" width="51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xdQ87shJHs2RGg50tQHQ-96" value="&lt;font color=&quot;#cc0000&quot;&gt;throw&amp;nbsp;Exception&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontColor=#000000;strokeColor=#CC0000;" vertex="1" parent="1">
-          <mxGeometry x="210" y="1650" width="100" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-97" value="&lt;font color=&quot;#cc0000&quot;&gt;throw&lt;br&gt;GenericBusinessException&lt;br&gt;&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontColor=#000000;strokeColor=#CC0000;" vertex="1" parent="1">
           <mxGeometry x="450" y="790" width="170" height="40" as="geometry" />
         </mxCell>
@@ -348,6 +345,9 @@
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-102" value="查询门店要货单详情" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="600" y="870" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-103" value="关闭要货单" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="228.75" y="1550" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

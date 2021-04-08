@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-08T02:57:21.546Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="e4isBuIeqbl6wNkS1An1" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-08T02:59:45.195Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="Hw1sp-NpX2lPy8FXp3UK" version="14.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="关闭要货单">
-    <mxGraphModel dx="1673" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="7110" dy="3970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,17 +56,8 @@
         <mxCell id="_y9LpxyYnaiCuJYHgKzP-2" value="Controller" style="swimlane;html=1;startSize=20;" parent="_y9LpxyYnaiCuJYHgKzP-1" vertex="1">
           <mxGeometry y="20" width="380" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-5" value="ShopPurchaseController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="_y9LpxyYnaiCuJYHgKzP-2" vertex="1">
-          <mxGeometry x="7.5" y="110" width="362.5" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-6" value="+ fShopPurchaseServiceClient: FShopPurchaseServiceClient" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
-          <mxGeometry y="26" width="362.5" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
-          <mxGeometry y="52" width="362.5" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="_y9LpxyYnaiCuJYHgKzP-8" value="+ closeShopPurchaseOrder(ShopPurchaseOrderDto): Integer&#xa;- checkShopPurchaseOrderOperator(Long, ErpShopPurchaseOrderOperatorEnum): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_y9LpxyYnaiCuJYHgKzP-5" vertex="1">
-          <mxGeometry y="60" width="362.5" height="40" as="geometry" />
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-265" value="&lt;span style=&quot;font-weight: 700&quot;&gt;ShopPurchaseController&lt;/span&gt;" style="html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="_y9LpxyYnaiCuJYHgKzP-2">
+          <mxGeometry x="103.75" y="180" width="170" height="24" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#CC0000;entryPerimeter=0;" edge="1" parent="1" source="_y9LpxyYnaiCuJYHgKzP-14" target="xdQ87shJHs2RGg50tQHQ-97">
           <mxGeometry relative="1" as="geometry">
@@ -164,7 +155,7 @@
           <mxGeometry y="20" width="380" height="240" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-16" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 700&quot;&gt;FShopPurchaseService&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="xdQ87shJHs2RGg50tQHQ-3">
-          <mxGeometry x="15" y="30" width="350" height="40" as="geometry" />
+          <mxGeometry x="15" y="90" width="350" height="40" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-21" value="" style="endArrow=classicThin;dashed=1;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="xdQ87shJHs2RGg50tQHQ-3" source="xdQ87shJHs2RGg50tQHQ-263" target="xdQ87shJHs2RGg50tQHQ-16">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -173,7 +164,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-263" value="&lt;b&gt;FShopPurchaseServiceImpl&lt;/b&gt;" style="html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="xdQ87shJHs2RGg50tQHQ-3">
-          <mxGeometry x="105" y="160" width="170" height="24" as="geometry" />
+          <mxGeometry x="105" y="180" width="170" height="24" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-10" value="Service" style="swimlane;html=1;startSize=20;" vertex="1" parent="xdQ87shJHs2RGg50tQHQ-2">
           <mxGeometry x="380" y="20" width="1440" height="240" as="geometry" />

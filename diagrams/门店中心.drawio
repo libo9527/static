@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-08T01:05:14.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="i5G_1HgSlcOXnUg3KJmw" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-08T01:10:24.657Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="cyQBWr8e4TRFvIJYMedA" version="14.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="关闭要货单">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -555,6 +555,24 @@
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-178" value="return 1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1490" y="2080" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-183" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#000000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;entryX=0.875;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.007;exitY=0.161;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-158" target="xdQ87shJHs2RGg50tQHQ-79">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="1569" as="sourcePoint" />
+            <mxPoint x="1460" y="1600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1210" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-184" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#000000;fontColor=#000000;entryX=0.014;entryY=0.606;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryPerimeter=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-79" target="xdQ87shJHs2RGg50tQHQ-158">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="928.75" y="1490" as="targetPoint" />
+            <mxPoint x="1460" y="1590" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1180" y="1596" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

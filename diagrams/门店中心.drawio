@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-08T01:38:18.506Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="Im_M0vaSUyDASpkQUXGE" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-08T01:39:45.551Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="SRZwB6mBYcHRqW5waPg9" version="14.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="关闭要货单">
-    <mxGraphModel dx="2031" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -523,8 +523,10 @@
         <mxCell id="xdQ87shJHs2RGg50tQHQ-171" value="更新要货单" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1440" y="1860" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xdQ87shJHs2RGg50tQHQ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-172" target="xdQ87shJHs2RGg50tQHQ-176">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-172" target="xdQ87shJHs2RGg50tQHQ-176">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-181" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="xdQ87shJHs2RGg50tQHQ-177">
           <mxGeometry x="-0.3455" y="-1" relative="1" as="geometry">
@@ -547,11 +549,11 @@
         <mxCell id="xdQ87shJHs2RGg50tQHQ-172" value="状态是否为&lt;br&gt;【待发货】" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1445" y="1950" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xdQ87shJHs2RGg50tQHQ-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-176" target="xdQ87shJHs2RGg50tQHQ-178">
+        <mxCell id="xdQ87shJHs2RGg50tQHQ-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;strokeColor=#000000;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xdQ87shJHs2RGg50tQHQ-176" target="xdQ87shJHs2RGg50tQHQ-178">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-176" value="关闭配送单" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="2000" width="120" height="60" as="geometry" />
+          <mxGeometry x="1555" y="2000" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xdQ87shJHs2RGg50tQHQ-178" value="return 1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#ffffff;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1470" y="2080" width="60" height="30" as="geometry" />

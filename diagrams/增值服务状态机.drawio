@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-23T10:05:15.149Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="5dwE285JHWCBN5LjzVSu" version="17.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-23T10:23:30.508Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="K8ilx-hL94hMaPsunO6z" version="17.1.5" type="github">
   <diagram id="U0Ij1V0p5JDlju-0zzSe" name="Page-1">
     <mxGraphModel dx="1645" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,8 +44,19 @@
         <mxCell id="g_3mnamMZzHjE8bFM4xw-6" value="已确认" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="530" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="g_3mnamMZzHjE8bFM4xw-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="g_3mnamMZzHjE8bFM4xw-8" target="g_3mnamMZzHjE8bFM4xw-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="g_3mnamMZzHjE8bFM4xw-8" value="完结" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g_3mnamMZzHjE8bFM4xw-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="g_3mnamMZzHjE8bFM4xw-12" target="g_3mnamMZzHjE8bFM4xw-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="420" />
+              <mxPoint x="60" y="840" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="g_3mnamMZzHjE8bFM4xw-12" value="作废" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="390" width="120" height="60" as="geometry" />
@@ -60,6 +71,9 @@
         </mxCell>
         <mxCell id="g_3mnamMZzHjE8bFM4xw-14" value="驳回" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g_3mnamMZzHjE8bFM4xw-21" value="over" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="810" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

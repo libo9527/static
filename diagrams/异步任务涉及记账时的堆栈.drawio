@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T09:26:13.982Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="77NyGRKvlyFy2wnZiKqr" version="17.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-14T09:30:08.838Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="x3mYxBVEIF9NA8wiqrJv" version="17.4.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1773" dy="1792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,6 +52,9 @@
         </mxCell>
         <mxCell id="7bVZhgkibLFdzbTQ7wJk-10" value="executeTask:128, WmsOnlineTaskListController &lt;i&gt;(com.belle.wms.api.controller)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-750" y="220" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-11" value="mongoTransactions:53, AsynStkBookAspect&amp;nbsp;&lt;i&gt;(com.belle.wms.core.Aspect)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-750" y="90" width="680" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

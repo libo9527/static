@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T08:51:58.982Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="_mbGa4xs66xE99M3AVwM" version="17.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-14T08:54:39.303Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="TknHVWkOGNtlH2HbpugH" version="17.4.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2225" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2225" dy="1826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -78,6 +78,9 @@
         </mxCell>
         <mxCell id="7bVZhgkibLFdzbTQ7wJk-5" value="public Map&lt;String, Object&gt; executeTask(@RequestBody List&lt;WmsTaskListRequestVO&gt; requestVOList, HttpServletRequest req)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7bVZhgkibLFdzbTQ7wJk-1">
           <mxGeometry y="84" width="730" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-6" value="&lt;h1&gt;异步任务涉及记账时的核心堆栈&lt;/h1&gt;&lt;p&gt;线上项目：wms-e&lt;/p&gt;&lt;p&gt;主题：网销制单异步处理预上库存（1005）&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-420" y="-180" width="650" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

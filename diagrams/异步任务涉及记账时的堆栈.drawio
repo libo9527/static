@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-15T05:45:02.666Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="b9-1sqIo64RDpycqYmj1" version="17.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-15T05:50:50.277Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="rIMaDI9K6M1u4r1BQtcw" version="17.4.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1773" dy="1792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,7 +42,7 @@
           <mxGeometry x="-770" y="-280" width="1000" height="190" as="geometry" />
         </mxCell>
         <mxCell id="7bVZhgkibLFdzbTQ7wJk-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-750" y="-80" width="710" height="560" as="geometry" />
+          <mxGeometry x="-750" y="10" width="710" height="440" as="geometry" />
         </mxCell>
         <mxCell id="7bVZhgkibLFdzbTQ7wJk-8" value="executeWmsTaskAudit:221, ExecuteWmsTaskListService&amp;nbsp;&lt;i&gt;(com.belle.wms.core.other.job)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-750" y="290" width="710" height="30" as="geometry" />
@@ -67,6 +67,15 @@
         </mxCell>
         <mxCell id="yvDGjQ9unioEGIqqoInE-3" value="afterCommit:135, AsynStkBookRegTransaction&amp;nbsp;&lt;i&gt;(com.belle.wms.core.utils.stkbook)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-750" y="60" width="710" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yvDGjQ9unioEGIqqoInE-4" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-790" y="155" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yvDGjQ9unioEGIqqoInE-5" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-790" y="115" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yvDGjQ9unioEGIqqoInE-6" value="第1出提前清理了ThreadLocal中的数据，导致第2处的获取不到，丢失账目" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-710" y="540" width="430" height="15" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

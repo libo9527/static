@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T09:30:08.838Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="x3mYxBVEIF9NA8wiqrJv" version="17.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-15T03:41:45.881Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="O5b94zSIAL1CRvGbOVlI" version="17.4.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1773" dy="1792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -9,7 +9,7 @@
             <mxRectangle x="220" y="120" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-0" value="&lt;font style=&quot;font-size: 12px&quot;&gt;com.belle.wms.api.controller.WmsOnlineTaskListController&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-0" value="&lt;font style=&quot;font-size: 12px&quot;&gt;com.belle.wms.api.controller.WmsOnlineTaskListController&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="30" width="730" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="ExecuteWmsTaskListService executeWmsTaskListService" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
@@ -21,40 +21,46 @@
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--5" value="public Map&lt;String, Object&gt; executeTask(@RequestBody List&lt;WmsTaskListRequestVO&gt; requestVOList, HttpServletRequest req)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="84" width="730" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-1" value="WmsOnlineTaskListController" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-1" value="WmsOnlineTaskListController" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="70" y="240" width="730" height="120" as="geometry">
             <mxRectangle x="220" y="120" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-2" value="&lt;font style=&quot;font-size: 12px&quot;&gt;com.belle.wms.api.controller.WmsOnlineTaskListController&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="7bVZhgkibLFdzbTQ7wJk-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-2" value="&lt;font style=&quot;font-size: 12px&quot;&gt;com.belle.wms.api.controller.WmsOnlineTaskListController&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="7bVZhgkibLFdzbTQ7wJk-1" vertex="1">
           <mxGeometry y="30" width="730" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-3" value="ExecuteWmsTaskListService executeWmsTaskListService" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7bVZhgkibLFdzbTQ7wJk-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-3" value="ExecuteWmsTaskListService executeWmsTaskListService" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7bVZhgkibLFdzbTQ7wJk-1" vertex="1">
           <mxGeometry y="50" width="730" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="7bVZhgkibLFdzbTQ7wJk-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="7bVZhgkibLFdzbTQ7wJk-1" vertex="1">
           <mxGeometry y="76" width="730" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-5" value="public Map&lt;String, Object&gt; executeTask(@RequestBody List&lt;WmsTaskListRequestVO&gt; requestVOList, HttpServletRequest req)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7bVZhgkibLFdzbTQ7wJk-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-5" value="public Map&lt;String, Object&gt; executeTask(@RequestBody List&lt;WmsTaskListRequestVO&gt; requestVOList, HttpServletRequest req)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7bVZhgkibLFdzbTQ7wJk-1" vertex="1">
           <mxGeometry y="84" width="730" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-6" value="&lt;h1&gt;异步任务涉及记账时的核心堆栈&lt;/h1&gt;&lt;p&gt;线上项目：wms-e&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;分支：(tag)&lt;a href=&quot;https://codeup.aliyun.com/611f154703f23adfbed10829/lesoon-sce-group/lesoon-wms-group/wms-e/tree/V20220401.001&quot;&gt;V20220401.001&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;主题：网销制单异步处理预上库存（1005）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-6" value="&lt;h1&gt;异步任务涉及记账时的核心堆栈&lt;/h1&gt;&lt;p&gt;线上项目：wms-e&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 15px&quot;&gt;分支：(tag)&lt;a href=&quot;https://codeup.aliyun.com/611f154703f23adfbed10829/lesoon-sce-group/lesoon-wms-group/wms-e/tree/V20220401.001&quot;&gt;V20220401.001&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;主题：网销制单异步处理预上库存（1005）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-770" y="-280" width="1000" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-750" y="60" width="680" height="830" as="geometry" />
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-750" y="-80" width="710" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-8" value="executeWmsTaskAudit:221, ExecuteWmsTaskListService&amp;nbsp;&lt;i&gt;(com.belle.wms.core.other.job)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-750" y="130" width="680" height="30" as="geometry" />
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-8" value="executeWmsTaskAudit:221, ExecuteWmsTaskListService&amp;nbsp;&lt;i&gt;(com.belle.wms.core.other.job)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-750" y="130" width="710" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-9" value="executeTask:109, ExecuteWmsTaskListService&amp;nbsp;&lt;i&gt;(com.belle.wms.core.other.job)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-750" y="170" width="680" height="30" as="geometry" />
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-9" value="executeTask:109, ExecuteWmsTaskListService&amp;nbsp;&lt;i&gt;(com.belle.wms.core.other.job)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-750" y="170" width="710" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-10" value="executeTask:128, WmsOnlineTaskListController &lt;i&gt;(com.belle.wms.api.controller)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-750" y="220" width="680" height="30" as="geometry" />
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-10" value="executeTask:128, WmsOnlineTaskListController &lt;i&gt;(com.belle.wms.api.controller)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-750" y="220" width="710" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7bVZhgkibLFdzbTQ7wJk-11" value="mongoTransactions:53, AsynStkBookAspect&amp;nbsp;&lt;i&gt;(com.belle.wms.core.Aspect)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-750" y="90" width="680" height="30" as="geometry" />
+        <mxCell id="7bVZhgkibLFdzbTQ7wJk-11" value="mongoTransactions:53, AsynStkBookAspect&amp;nbsp;&lt;i&gt;(com.belle.wms.core.Aspect)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-750" y="90" width="710" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yvDGjQ9unioEGIqqoInE-0" value="asynDealOutStockStkBook:2741, BlOmOnlineNotifyServiceImpl&amp;nbsp;&lt;i&gt;(com.belle.wms.core.service.impl)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-750" y="40" width="710" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yvDGjQ9unioEGIqqoInE-1" value="restoreDataSource:64, AsynStkBookAspect&amp;nbsp;&lt;i&gt;(com.belle.wms.core.Aspect)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-750" y="-10" width="710" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

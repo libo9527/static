@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-27T02:47:02.509Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="fzrY0N3r04gKz8jzq46a" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-27T03:23:40.164Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="bs3yaEbFFIzbRE_wUGEv" version="17.4.6" type="github">
   <diagram id="gJ_cgM---_HPUhZc0SHn" name="Page-1">
     <mxGraphModel dx="1186" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,11 +90,24 @@
         <mxCell id="Ept4Bm89zjwvbwGGOBD6-21" value="快递异常件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
           <mxGeometry x="300" y="10" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-23" target="Ept4Bm89zjwvbwGGOBD6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Ept4Bm89zjwvbwGGOBD6-23" value="审核通过" style="ellipse;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="840" y="710" width="120" height="80" as="geometry" />
+          <mxGeometry x="840" y="690" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-26" target="Ept4Bm89zjwvbwGGOBD6-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="880" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Ept4Bm89zjwvbwGGOBD6-26" value="审核不通过" style="ellipse;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
           <mxGeometry x="1130" y="710" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-30" value="已驳回" style="ellipse;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="580" y="840" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

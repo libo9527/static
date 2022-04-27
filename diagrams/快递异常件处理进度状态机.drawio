@@ -1,1 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2022-04-27T02:15:36.433Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" version="17.4.6" etag="lRivNNCX_TsFAqjH6iAM" type="github"><diagram id="gJ_cgM---_HPUhZc0SHn">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-27T02:21:50.261Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="2xoG5gQe_f0RM2JnkXX7" version="17.4.6" type="github">
+  <diagram id="gJ_cgM---_HPUhZc0SHn" name="Page-1">
+    <mxGraphModel dx="946" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-3" value="运营审核通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-1" target="Ept4Bm89zjwvbwGGOBD6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-10" value="运营审核不通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-1" target="Ept4Bm89zjwvbwGGOBD6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-1" value="&lt;font style=&quot;font-size: 19px&quot;&gt;新建&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-2" target="Ept4Bm89zjwvbwGGOBD6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-12" value="承运处理&lt;br&gt;（标记为配送延迟、丢件、客诉属实）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;" vertex="1" connectable="0" parent="Ept4Bm89zjwvbwGGOBD6-5">
+          <mxGeometry x="-0.125" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-2" value="&lt;font style=&quot;font-size: 19px&quot;&gt;待承运处理&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-7" value="运营复核通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-4" target="Ept4Bm89zjwvbwGGOBD6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-4" value="&lt;font style=&quot;font-size: 19px&quot;&gt;待运营复核&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="540" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-6" value="&lt;span style=&quot;font-size: 19px&quot;&gt;已完结&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-11" value="运营审核通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;" edge="1" parent="1" source="Ept4Bm89zjwvbwGGOBD6-9" target="Ept4Bm89zjwvbwGGOBD6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ept4Bm89zjwvbwGGOBD6-9" value="&lt;font style=&quot;font-size: 19px&quot;&gt;审核不通过&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

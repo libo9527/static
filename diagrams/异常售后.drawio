@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-09T08:39:30.715Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="dkSKNJ-kHxSBg8ylhzzz" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-09T08:53:29.066Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="zWfKNANjqJKNs5LFzz7Y" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="2013" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1706" dy="1630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,6 +8,9 @@
           <mxGeometry x="-650" y="740" width="970" height="440" as="geometry">
             <mxRectangle x="110" y="80" width="30" height="50" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-7" value="鞋" style="swimlane;horizontal=0;" vertex="1" parent="4VdLajxk7bhCev_ChRC8-2">
+          <mxGeometry x="24" width="946" height="200" as="geometry" />
         </mxCell>
         <mxCell id="4VdLajxk7bhCev_ChRC8-3" value="分页查询" style="swimlane;horizontal=0;" vertex="1" parent="1">
           <mxGeometry x="-650" y="1260" width="970" height="440" as="geometry">
@@ -22,6 +25,50 @@
         </mxCell>
         <mxCell id="4VdLajxk7bhCev_ChRC8-6" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="4VdLajxk7bhCev_ChRC8-4">
           <mxGeometry x="160" y="40" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-9" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-647" y="-770" width="54" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4VdLajxk7bhCev_ChRC8-9" target="4VdLajxk7bhCev_ChRC8-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-17" value="单据是否已存在" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="-685" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4VdLajxk7bhCev_ChRC8-17" target="4VdLajxk7bhCev_ChRC8-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-620" y="-515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-21" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4VdLajxk7bhCev_ChRC8-20">
+          <mxGeometry x="-0.1786" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-22" value="状态是否是&lt;br&gt;【作废】/【审核不通过】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-642" y="-480" width="145" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-23" value="删除主表和明细表旧数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-404.5" y="-475" width="147.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4VdLajxk7bhCev_ChRC8-22" target="4VdLajxk7bhCev_ChRC8-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-28" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4VdLajxk7bhCev_ChRC8-24">
+          <mxGeometry x="-0.2809" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4VdLajxk7bhCev_ChRC8-22" target="4VdLajxk7bhCev_ChRC8-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-27" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4VdLajxk7bhCev_ChRC8-26">
+          <mxGeometry x="-0.3002" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4VdLajxk7bhCev_ChRC8-25" value="报错" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-629.5" y="-325" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

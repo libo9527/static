@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T09:20:01.108Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="YEtQzKy__oBXGcSe5Ddy" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T09:22:11.040Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="QiA7AELnm6g5EqduRUOo" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="3157" dy="3433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -528,17 +528,18 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-57" value="构建物流索赔主表明细表数据" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="2025.1000000000001" y="-1100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="su_oZva-haXfQI1Y8N-j-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" parent="1" source="su_oZva-haXfQI1Y8N-j-70" target="su_oZva-haXfQI1Y8N-j-72" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="su_oZva-haXfQI1Y8N-j-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="su_oZva-haXfQI1Y8N-j-70" target="B7z1tM6jT_hRv7tLj4Sx-138" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2370" y="-874" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-70" value="审核操作写入操作日志表（bl_logistics_claim_log）" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="2134.9" y="-904" width="185.1" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-72" target="B7z1tM6jT_hRv7tLj4Sx-65">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="su_oZva-haXfQI1Y8N-j-72" value="单号写入异步任务表" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="2370" y="-904" width="152.55" height="60" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-138" target="B7z1tM6jT_hRv7tLj4Sx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2446.333333333334" y="-844" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-1" target="B7z1tM6jT_hRv7tLj4Sx-2">
           <mxGeometry relative="1" as="geometry" />
@@ -692,11 +693,13 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-41" value="审核操作写入操作日志表（bl_logistics_claim_log）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1213" y="-591" width="185.1" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-42" target="B7z1tM6jT_hRv7tLj4Sx-65">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-42" target="B7z1tM6jT_hRv7tLj4Sx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2368" y="-561" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-42" value="单号写入异步任务表" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1448.1" y="-591" width="152.55" height="60" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-42" value="单号写入异步任务表&lt;br&gt;（同步审核状态到优购）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1448.1" y="-591" width="181.9" height="60" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-45" target="B7z1tM6jT_hRv7tLj4Sx-112">
           <mxGeometry relative="1" as="geometry">
@@ -715,14 +718,8 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-61" value="结束" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="45" y="570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-65" target="B7z1tM6jT_hRv7tLj4Sx-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-65" value="同步审核状态到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="2368" y="-591" width="156.07" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-67" value="结束" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="2604.035" y="-591" width="120" height="60" as="geometry" />
+          <mxGeometry x="2386.035" y="-590" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-73" target="B7z1tM6jT_hRv7tLj4Sx-74">
           <mxGeometry relative="1" as="geometry" />
@@ -887,17 +884,25 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-132" value="写操作日志" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2471.075" y="-1210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" source="B7z1tM6jT_hRv7tLj4Sx-134" target="B7z1tM6jT_hRv7tLj4Sx-135" parent="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="B7z1tM6jT_hRv7tLj4Sx-134" target="B7z1tM6jT_hRv7tLj4Sx-139" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980.1000000000004" y="-31" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-134" value="审核操作写入操作日志表（bl_logistics_claim_log）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="745" y="-61" width="185.1" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-135" target="B7z1tM6jT_hRv7tLj4Sx-65">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-139" target="B7z1tM6jT_hRv7tLj4Sx-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1132.6500000000005" y="-31" as="sourcePoint" />
+            <mxPoint x="2446.035" y="-531" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-135" value="单号写入异步任务表" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="980.0999999999999" y="-61" width="152.55" height="60" as="geometry" />
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-138" value="单号写入异步任务表&lt;br&gt;（同步审核状态到优购）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2355.08" y="-905" width="181.9" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-139" value="单号写入异步任务表&lt;br&gt;（同步审核状态到优购）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="-61" width="181.9" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T09:18:40.771Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="jLYFROgKgdx577WUv3yu" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T09:20:01.108Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="YEtQzKy__oBXGcSe5Ddy" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="3157" dy="3433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -719,7 +719,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-65" value="同步审核状态到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="2370" y="-591" width="156.07" height="60" as="geometry" />
+          <mxGeometry x="2368" y="-591" width="156.07" height="60" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-67" value="结束" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2604.035" y="-591" width="120" height="60" as="geometry" />
@@ -748,6 +748,9 @@
           <mxGeometry x="0.0033" y="-3" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-78" target="B7z1tM6jT_hRv7tLj4Sx-134">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-78" value="操作为【审核通过】" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FF6666;" vertex="1" parent="1">
           <mxGeometry x="506.25" y="-77" width="160" height="92" as="geometry" />
@@ -883,6 +886,18 @@
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-132" value="写操作日志" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2471.075" y="-1210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" source="B7z1tM6jT_hRv7tLj4Sx-134" target="B7z1tM6jT_hRv7tLj4Sx-135" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-134" value="审核操作写入操作日志表（bl_logistics_claim_log）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="745" y="-61" width="185.1" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-135" target="B7z1tM6jT_hRv7tLj4Sx-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-135" value="单号写入异步任务表" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="980.0999999999999" y="-61" width="152.55" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

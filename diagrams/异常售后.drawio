@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T02:45:28.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="o_S5vFq2cPFOlPsRdKlZ" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T02:51:48.808Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="z1ygsTTTGWxFc7vfbrct" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="4322" dy="3981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2521" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -339,6 +339,71 @@
         </mxCell>
         <mxCell id="4VdLajxk7bhCev_ChRC8-7" value="鞋" style="swimlane;horizontal=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-656" y="-120" width="2230" height="586" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-2" target="su_oZva-haXfQI1Y8N-j-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-2" value="开始" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-574" y="-1050" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-3" target="su_oZva-haXfQI1Y8N-j-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-3" value="是否是同一个货主" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-354" y="-1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-5" target="su_oZva-haXfQI1Y8N-j-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-5" value="查询货主类型" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-214" y="-1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-7" target="su_oZva-haXfQI1Y8N-j-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-18" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-10">
+          <mxGeometry x="-0.0857" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-7" target="su_oZva-haXfQI1Y8N-j-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-17" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-12">
+          <mxGeometry x="-0.0349" y="-2" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-7" value="是否是鞋类" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="6" y="-1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-9" target="su_oZva-haXfQI1Y8N-j-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-19" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-14">
+          <mxGeometry x="-0.346" y="-2" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-9" target="su_oZva-haXfQI1Y8N-j-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-20" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-16">
+          <mxGeometry x="-0.019" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-9" value="是否是体育" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="166" y="-1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-11" value="鞋类审核" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-14" y="-1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-13" value="体育类审核" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="146" y="-880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-15" value="工单审核" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="306" y="-1040" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T07:23:36.990Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="AZYd4wkXU9QEevNd7tNk" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T07:25:26.363Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="p1j8mz008t4KlW5_U2kk" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2824" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -514,7 +514,7 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" parent="1" source="su_oZva-haXfQI1Y8N-j-55" target="su_oZva-haXfQI1Y8N-j-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="su_oZva-haXfQI1Y8N-j-55" value="创建物流索赔单" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="su_oZva-haXfQI1Y8N-j-55" value="生成物流索赔单" style="whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1645.1000000000001" y="-1089" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" parent="1" source="su_oZva-haXfQI1Y8N-j-57" target="su_oZva-haXfQI1Y8N-j-59" edge="1">
@@ -677,8 +677,20 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-31" value="报错：审核数据不完整，单号，内部订单号，状态值不正确" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="461.40999999999997" y="-414" width="240.18" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-34" target="B7z1tM6jT_hRv7tLj4Sx-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-34" value="修改单据状态为【审核通过】/【审核不通过】" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="860" y="-574" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-36" target="B7z1tM6jT_hRv7tLj4Sx-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-36" value="操作为【审核通过】" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="-590" width="210" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-37" value="&lt;span&gt;生成物流索赔单&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="-402" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

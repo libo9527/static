@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T09:22:11.040Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="QiA7AELnm6g5EqduRUOo" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T09:37:59.181Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="R1xsLV2CJ1_jR3rj3YOS" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="3157" dy="3433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -586,6 +586,9 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-7" value="体育" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-325" y="570" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-9" target="B7z1tM6jT_hRv7tLj4Sx-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-9" value="其他" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-485" y="730" width="120" height="60" as="geometry" />
         </mxCell>
@@ -611,7 +614,7 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-16" target="B7z1tM6jT_hRv7tLj4Sx-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-16" value="dop同步异常售后单到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-16" value="dop同步异常售后单状态到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-125" y="410" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-18" target="B7z1tM6jT_hRv7tLj4Sx-61">
@@ -712,7 +715,7 @@
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-58" target="B7z1tM6jT_hRv7tLj4Sx-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-58" value="dop同步异常售后单到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-58" value="dop同步异常售后单状态到优购" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-125" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-61" value="结束" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
@@ -903,6 +906,12 @@
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-139" value="单号写入异步任务表&lt;br&gt;（同步审核状态到优购）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1060" y="-61" width="181.9" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;fontColor=#000000;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-140" target="B7z1tM6jT_hRv7tLj4Sx-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-140" value="feign同步异常售后单审核状态到LCP" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="730" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

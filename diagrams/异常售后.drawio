@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T03:13:42.727Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="5bvos6impDIRLZuK29BO" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T03:17:42.556Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="_hXKy-MhsL8oKHX0NLjs" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -464,11 +464,28 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-42" target="su_oZva-haXfQI1Y8N-j-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-42" target="su_oZva-haXfQI1Y8N-j-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-42" value="登记类型是否为【超时未质检】" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="791.75" y="-904" width="105.25" height="80" as="geometry" />
         </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-44" value="设置同步LCP标示为true" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="792.875" y="-1021" width="103" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-46" target="su_oZva-haXfQI1Y8N-j-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-50" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-49">
+          <mxGeometry x="-0.1378" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-46" value="ID、billNo、ygReqNo(异常售后单)其一为空或者操作不是【审核通过】/【审核不通过】" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="989.63" y="-904" width="220.38" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-48" value="报错：审核数据不完整，单号，内部订单号，状态值不正确" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="979.8199999999999" y="-1024" width="240.18" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

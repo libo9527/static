@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T02:51:48.808Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="z1ygsTTTGWxFc7vfbrct" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T02:57:42.411Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="aOpB6timKwWM7BlsOa7B" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -396,6 +396,9 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-9" value="是否是体育" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="166" y="-1050" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-11" target="su_oZva-haXfQI1Y8N-j-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-11" value="鞋类审核" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-14" y="-1200" width="120" height="60" as="geometry" />
         </mxCell>
@@ -404,6 +407,28 @@
         </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-15" value="工单审核" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="306" y="-1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-21" target="su_oZva-haXfQI1Y8N-j-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="-1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-25" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="su_oZva-haXfQI1Y8N-j-24">
+          <mxGeometry x="-0.1728" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-21" value="是否审核通过" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="206" y="-1210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-26" target="su_oZva-haXfQI1Y8N-j-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-26" value="登记类型是否已更改" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-1290" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-27" value="报错：审核不通过时不可更改登记类型" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="675" y="-1280" width="155" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

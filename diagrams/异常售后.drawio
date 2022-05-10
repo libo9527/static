@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T03:54:35.957Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="b7MgLfBOZ281x6puKUIw" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T03:56:12.531Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="0I1YkgcGkEG2oJQuF5Vq" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -551,8 +551,14 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-65" value="主档/明细插入数据库" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2239.995" y="-1090" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="su_oZva-haXfQI1Y8N-j-70" target="su_oZva-haXfQI1Y8N-j-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="su_oZva-haXfQI1Y8N-j-70" value="审核操作写入操作日志表（bl_logistics_claim_log）" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="2054.9" y="-893" width="185.1" height="60" as="geometry" />
+          <mxGeometry x="1924.9" y="-893" width="185.1" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="su_oZva-haXfQI1Y8N-j-72" value="单号写入异步任务表" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="-893" width="152.55" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

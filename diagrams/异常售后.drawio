@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T09:11:37.658Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Yb54rrq2ZSt-AnI2uepg" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T09:12:19.847Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="sv3x0QYWpoKpGWg2O0Np" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="4322" dy="3981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3157" dy="3433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -784,6 +784,23 @@
         </mxCell>
         <mxCell id="B7z1tM6jT_hRv7tLj4Sx-67" value="结束" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2604.035" y="-591" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B7z1tM6jT_hRv7tLj4Sx-73" target="B7z1tM6jT_hRv7tLj4Sx-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-71" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="B7z1tM6jT_hRv7tLj4Sx-70">
+          <mxGeometry x="-0.2413" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-72" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="460.0033333333335" y="-22" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-73" value="登记类型是否已修改" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="326.67" y="-60" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B7z1tM6jT_hRv7tLj4Sx-74" value="报错：不可以修改登记状态！" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="316.66999999999996" y="110" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,15 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T01:54:25.858Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="U_ybJVDMAd4KSQclbWA2" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T01:56:46.365Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="ifAjHV-g3qvLHsCUr9s3" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="3934" dy="3798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4322" dy="3981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4VdLajxk7bhCev_ChRC8-2" value="创建" style="swimlane;horizontal=0;" parent="1" vertex="1">
+        <mxCell id="4VdLajxk7bhCev_ChRC8-2" value="创建" style="swimlane;horizontal=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-690" y="-810" width="2254" height="1030" as="geometry">
             <mxRectangle x="110" y="80" width="30" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4VdLajxk7bhCev_ChRC8-70" value="优购" style="swimlane;horizontal=0;" parent="4VdLajxk7bhCev_ChRC8-2" vertex="1">
+        <mxCell id="4VdLajxk7bhCev_ChRC8-70" value="优购" style="swimlane;horizontal=0;fontSize=16;" parent="4VdLajxk7bhCev_ChRC8-2" vertex="1">
           <mxGeometry x="24" y="540" width="2230" height="490" as="geometry" />
         </mxCell>
         <mxCell id="4VdLajxk7bhCev_ChRC8-71" value="开始" style="ellipse;whiteSpace=wrap;html=1;" parent="4VdLajxk7bhCev_ChRC8-70" vertex="1">
@@ -337,7 +337,7 @@
         <mxCell id="4VdLajxk7bhCev_ChRC8-64" value="结束" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1420" y="-654" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4VdLajxk7bhCev_ChRC8-7" value="鞋" style="swimlane;horizontal=0;" parent="1" vertex="1">
+        <mxCell id="4VdLajxk7bhCev_ChRC8-7" value="鞋" style="swimlane;horizontal=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-666" y="-810" width="2230" height="540" as="geometry" />
         </mxCell>
       </root>

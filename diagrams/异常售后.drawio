@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-10T03:33:36.316Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="KbppbaNPEhPcq23Qdrzm" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-10T03:33:39.299Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="68xUvv7NMIg-SsTm-xdc" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="3277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -502,7 +502,7 @@
         <mxCell id="su_oZva-haXfQI1Y8N-j-53" value="操作为【审核通过】，并且登记类型为【未收到】【发货少件】【超时未质检】【退货少件】【退货错误】【未经签收】其中的一种" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1540.2" y="-921" width="329.8" height="116" as="geometry" />
         </mxCell>
-        <mxCell id="su_oZva-haXfQI1Y8N-j-55" value="" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="su_oZva-haXfQI1Y8N-j-55" value="创建物流索赔单" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="1645.1000000000001" y="-1089" width="120" height="60" as="geometry" />
         </mxCell>
       </root>

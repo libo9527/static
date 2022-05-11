@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-11T09:45:48.938Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="KGy9_JbR49NQ_1u4h1Db" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-11T09:49:45.628Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="evMq2-MoxygEhXd8GyT0" version="17.4.6" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2472" dy="3111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -990,6 +990,27 @@
         </mxCell>
         <mxCell id="H45FWg4XIIRnXyOKp0UL-9" value="回传" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="115" y="-1590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H45FWg4XIIRnXyOKp0UL-11" target="H45FWg4XIIRnXyOKp0UL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-11" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="-1045" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H45FWg4XIIRnXyOKp0UL-12" target="H45FWg4XIIRnXyOKp0UL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H45FWg4XIIRnXyOKp0UL-12" target="H45FWg4XIIRnXyOKp0UL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-12" value="状态是否为【待处理】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="-1060" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-14" value="报错：单据不是未处理状态，无法进行确认处理" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-575" y="-1210" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-16" value="设置损失原因" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-415" y="-1050" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

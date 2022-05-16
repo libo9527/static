@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T01:20:12.612Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="njBA4RK4eUd1Sgi8Zptv" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T01:42:34.781Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="h7O3h3p9vrGlSI6n3nXH" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1295,8 +1295,20 @@
         <mxCell id="H45FWg4XIIRnXyOKp0UL-101" value="确认" style="swimlane;horizontal=0;" parent="1" vertex="1">
           <mxGeometry x="-660" y="5020" width="2600" height="880" as="geometry" />
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--1" target="vgd6_2sEj4YolWIMcD3--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--1" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-295" y="6480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--2" target="vgd6_2sEj4YolWIMcD3--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--2" value="状态是否为【已处理】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="6480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--4" value="报错：单据不是已处理状态，无法进行提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-95" y="6330" width="125" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

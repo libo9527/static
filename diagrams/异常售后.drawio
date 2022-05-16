@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T02:15:43.869Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="--WTnYGqrbOVGhy-HoWU" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T02:29:26.880Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="tnzP_9g7SnC1iAVTPT8B" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1304,6 +1304,11 @@
         <mxCell id="vgd6_2sEj4YolWIMcD3--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--2" target="vgd6_2sEj4YolWIMcD3--4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--76" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--5">
+          <mxGeometry x="-0.1049" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--2" target="vgd6_2sEj4YolWIMcD3--6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -1311,7 +1316,7 @@
           <mxGeometry x="-75" y="6480" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--4" value="报错：单据不是已处理状态，无法进行提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-95" y="6330" width="125" height="60" as="geometry" />
+          <mxGeometry x="-97" y="6357" width="125" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--6" target="vgd6_2sEj4YolWIMcD3--8">
           <mxGeometry relative="1" as="geometry" />
@@ -1328,6 +1333,11 @@
         <mxCell id="vgd6_2sEj4YolWIMcD3--13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--10" target="vgd6_2sEj4YolWIMcD3--12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--75" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--13">
+          <mxGeometry x="0.018" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--10" target="vgd6_2sEj4YolWIMcD3--14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -1335,7 +1345,7 @@
           <mxGeometry x="467.5" y="6480" width="102.5" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--12" value="报错：内部订单号未质检、不能提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="458.75" y="6330" width="120" height="60" as="geometry" />
+          <mxGeometry x="458.75" y="6360" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--14" target="vgd6_2sEj4YolWIMcD3--16">
           <mxGeometry relative="1" as="geometry" />

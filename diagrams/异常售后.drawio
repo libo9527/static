@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T01:54:25.566Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="ChkSctLzhbKGFkIrh6_m" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T01:55:34.640Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="l3BkHqyd0vXKlxZ7X6oh" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1374,11 +1374,17 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--22" target="vgd6_2sEj4YolWIMcD3--28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--22" value="索赔数量是否大于质检数量" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1279.375" y="6480" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--24" value="报错：索赔数量大于质检数量、不能提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1259.375" y="6330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--28" value="更新状态为【已提报】" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1419.38" y="6490" width="130.63" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

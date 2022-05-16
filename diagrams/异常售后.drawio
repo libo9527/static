@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T01:42:34.781Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="h7O3h3p9vrGlSI6n3nXH" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T01:48:35.828Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="FIG13KJPnaBF2uqdQ0J2" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1304,11 +1304,35 @@
         <mxCell id="vgd6_2sEj4YolWIMcD3--5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--2" target="vgd6_2sEj4YolWIMcD3--4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--2" target="vgd6_2sEj4YolWIMcD3--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--2" value="状态是否为【已处理】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-75" y="6480" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--4" value="报错：单据不是已处理状态，无法进行提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-95" y="6330" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--6" target="vgd6_2sEj4YolWIMcD3--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--6" value="跟进结果是否为【实物追回】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="6480" width="95" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--8" target="vgd6_2sEj4YolWIMcD3--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--8" value="根据内部订单号查询质检明细，并合并" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="247.5" y="6490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--10" target="vgd6_2sEj4YolWIMcD3--12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--10" value="是否存在质检单" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="467.5" y="6480" width="102.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--12" value="报错：内部订单号未质检、不能提报" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="458.75" y="6330" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

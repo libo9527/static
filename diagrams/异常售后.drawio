@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T02:13:08.570Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="rrhJfHbaG6Ln5kDN4MsF" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T02:15:43.869Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="--WTnYGqrbOVGhy-HoWU" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
     <mxGraphModel dx="2521" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1419,7 +1419,7 @@
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--38" target="vgd6_2sEj4YolWIMcD3--49">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2015.3250000000007" y="6360.000000000001" as="targetPoint" />
+            <mxPoint x="2166.495000000001" y="6520.000000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--48" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--47">
@@ -1428,31 +1428,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--38" value="损失原因是否为空" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1855.3250000000003" y="6320" width="80" height="80" as="geometry" />
+          <mxGeometry x="2006.4950000000003" y="6480" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--41" value="报错：损失原因不正确" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1835.33" y="6170" width="124.67" height="60" as="geometry" />
+          <mxGeometry x="1984.1599999999999" y="6350" width="124.67" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--49" target="vgd6_2sEj4YolWIMcD3--51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--49" value="设置提报明细" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2045.1950000000002" y="6330" width="120" height="60" as="geometry" />
+          <mxGeometry x="2196.3650000000002" y="6490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vgd6_2sEj4YolWIMcD3--54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--51" target="vgd6_2sEj4YolWIMcD3--53">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="vgd6_2sEj4YolWIMcD3--54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--51" target="vgd6_2sEj4YolWIMcD3--61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2482.3999999999996" y="6360.000000000001" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--51" value="通过dop同步索赔单给优购" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2245.2" y="6330" width="144.8" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="vgd6_2sEj4YolWIMcD3--53" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2482.4" y="6330" width="120" height="60" as="geometry" />
+          <mxGeometry x="2396.37" y="6490" width="144.8" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--55" target="vgd6_2sEj4YolWIMcD3--67">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2130" y="6520" />
-              <mxPoint x="2130" y="6520" />
+              <mxPoint x="2010" y="6660" />
+              <mxPoint x="2010" y="6660" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1461,20 +1460,28 @@
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--55" target="vgd6_2sEj4YolWIMcD3--71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--74" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--72">
+          <mxGeometry x="-0.1837" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--55" value="&lt;span style=&quot;&quot;&gt;货主类型是否为体育类货主&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2015.3250000000003" y="6480" width="80" height="80" as="geometry" />
+          <mxGeometry x="1851.1750000000002" y="6620" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--58" target="vgd6_2sEj4YolWIMcD3--60">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--58" value="设置提报明细" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2320.005" y="6490" width="120" height="60" as="geometry" />
+          <mxGeometry x="2213.715" y="6630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--60" target="vgd6_2sEj4YolWIMcD3--61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--60" value="通过dop同步索赔单给优购" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2520.0099999999998" y="6490" width="144.8" height="60" as="geometry" />
+          <mxGeometry x="2413.72" y="6630" width="144.8" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--61" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2757.21" y="6490" width="120" height="60" as="geometry" />
@@ -1496,10 +1503,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--67" value="损失原因是否为空" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2165.195" y="6480" width="80" height="80" as="geometry" />
+          <mxGeometry x="2058.905" y="6620" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--68" value="报错：损失原因不正确" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2141.56" y="6680" width="124.67" height="60" as="geometry" />
+          <mxGeometry x="2036.5700000000002" y="6770" width="124.67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--71" target="vgd6_2sEj4YolWIMcD3--61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--71" value="通过feign同步索赔单给LCP-WO" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1831.1750000000002" y="6830" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

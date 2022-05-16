@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T06:02:06.533Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="2ppzBimNltmGY7x_nG4Z" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T06:28:34.745Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="Kyu6pc2WZ7CHXmDUjARr" version="18.0.2" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="4821" dy="4215" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3157" dy="3433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1990,9 +1990,84 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vgd6_2sEj4YolWIMcD3--81" value="物流索赔单" style="swimlane;startSize=23;" vertex="1" parent="1">
-          <mxGeometry x="-720" y="7290" width="3610" height="2061" as="geometry">
+          <mxGeometry x="-720" y="7290" width="3610" height="3660" as="geometry">
             <mxRectangle x="-730" y="5349" width="90" height="23" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--219" value="导入" style="swimlane;horizontal=0;" vertex="1" parent="vgd6_2sEj4YolWIMcD3--81">
+          <mxGeometry x="62" y="2180" width="3195" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--220" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vgd6_2sEj4YolWIMcD3--219">
+          <mxGeometry x="2982.08" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--221" value="确认导入" style="swimlane;horizontal=0;" vertex="1" parent="vgd6_2sEj4YolWIMcD3--219">
+          <mxGeometry x="24" width="3165" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--222" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vgd6_2sEj4YolWIMcD3--221">
+          <mxGeometry x="59" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--226" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--223" target="vgd6_2sEj4YolWIMcD3--225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--228" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--223" target="vgd6_2sEj4YolWIMcD3--227">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--223" value="是否是一单多包裹" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-355" y="9830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--224" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--222" target="vgd6_2sEj4YolWIMcD3--223">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--225" value="报错：导入不支持一单多包裹" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-375" y="9680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--230" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--227" target="vgd6_2sEj4YolWIMcD3--229">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--231" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--230">
+          <mxGeometry x="-0.137" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--233" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--227" target="vgd6_2sEj4YolWIMcD3--232">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--227" value="单据状态是否为【待处理】/【已处理】" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-195" y="9830" width="115" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--229" value="报错：单据状态错误" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-197.5" y="9680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--235" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--232" target="vgd6_2sEj4YolWIMcD3--234">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--241" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--235">
+          <mxGeometry x="-0.0622" y="-3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--237" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--232" target="vgd6_2sEj4YolWIMcD3--236">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--232" value="【是否结算物流费用】标记是否为0、1、2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="17.5" y="9830" width="102.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--234" value="报错：是否结算物流费用状态不正确" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="8.75" y="9680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--239" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vgd6_2sEj4YolWIMcD3--236" target="vgd6_2sEj4YolWIMcD3--238">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--240" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vgd6_2sEj4YolWIMcD3--239">
+          <mxGeometry x="-0.0028" y="3" relative="1" as="geometry">
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--236" value="跟进结果是否为空" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="211.25" y="9830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgd6_2sEj4YolWIMcD3--238" value="报错：索赔状态不正确" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="187.25" y="9680" width="128.75" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

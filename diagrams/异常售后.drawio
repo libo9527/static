@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-23T08:10:21.432Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="__gsqHTSp5GLOMxskzz6" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-23T08:12:24.330Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="OJ0V1S6pOUilNAgpiOjP" version="18.0.7" type="github">
   <diagram id="0QxMf9gSCAv1vqsq4knW" name="Page-1">
-    <mxGraphModel dx="2013" dy="2961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2225" dy="2995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1110,8 +1110,14 @@
         <mxCell id="H45FWg4XIIRnXyOKp0UL-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-42" target="H45FWg4XIIRnXyOKp0UL-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-42" target="H45FWg4XIIRnXyOKp0UL-63" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-42" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="7061" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="7061" />
+              <mxPoint x="1080" y="7441" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="H45FWg4XIIRnXyOKp0UL-42" value="&lt;span&gt;提报数量总和是否大于申请数量&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="824.5" y="7021" width="80" height="80" as="geometry" />
@@ -1134,8 +1140,14 @@
         <mxCell id="H45FWg4XIIRnXyOKp0UL-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-51" target="H45FWg4XIIRnXyOKp0UL-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-51" target="H45FWg4XIIRnXyOKp0UL-57" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="H45FWg4XIIRnXyOKp0UL-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-51" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="985.1199999999999" y="7201" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="7201" />
+              <mxPoint x="1010" y="7441" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="H45FWg4XIIRnXyOKp0UL-51" value="&lt;span&gt;提报数量是否大于申请数量&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="830.73" y="7161" width="80" height="80" as="geometry" />
@@ -1145,137 +1157,6 @@
         </mxCell>
         <mxCell id="H45FWg4XIIRnXyOKp0UL-54" value="报错：提报数量不能大于申请数量" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="811" y="7291" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-57" target="H45FWg4XIIRnXyOKp0UL-61" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-72" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-62" vertex="1" connectable="0">
-          <mxGeometry x="-0.038" y="-3" relative="1" as="geometry">
-            <mxPoint x="-10" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-57" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-100" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-97" vertex="1" connectable="0">
-          <mxGeometry x="-0.8747" y="-1" relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-57" value="跟进结果是否为【实物追回】" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="985.1199999999999" y="7161" width="93.23" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-61" target="H45FWg4XIIRnXyOKp0UL-64" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-61" value="根据内部订单号查询质检明细，汇总质检数量" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1139.99" y="7171" width="130.01" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-63" target="H45FWg4XIIRnXyOKp0UL-73" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-75" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-74" vertex="1" connectable="0">
-          <mxGeometry x="-0.0209" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-63" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540" y="7601" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-99" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-98" vertex="1" connectable="0">
-          <mxGeometry x="-0.94" relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-63" value="跟进结果是否为【实物追回】" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1070" y="7021" width="93.23" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-64" target="H45FWg4XIIRnXyOKp0UL-66" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-87" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-67" vertex="1" connectable="0">
-          <mxGeometry x="-0.1072" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-64" target="H45FWg4XIIRnXyOKp0UL-68" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-64" value="质检明细和索赔明细单商品信息（商品编码、尺码、品牌）是否一致" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1375.01" y="7161" width="164.99" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-66" value="报错：无质检信息，无法确认" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1397.505" y="7331" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-68" target="H45FWg4XIIRnXyOKp0UL-70" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-86" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-71" vertex="1" connectable="0">
-          <mxGeometry x="-0.1072" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-68" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1790" y="7201" />
-              <mxPoint x="1790" y="7441" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-68" value="提报数量是否大于质检数量" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1662.495" y="7161" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-70" value="报错：索赔数量不能大于质检数量" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1642.495" y="7331" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-73" target="H45FWg4XIIRnXyOKp0UL-78" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-73" value="根据内部订单号和快递单号查询质检明细，汇总质检数量" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1229.845" y="7031" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-78" target="H45FWg4XIIRnXyOKp0UL-79" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-84" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-76" vertex="1" connectable="0">
-          <mxGeometry x="0.1742" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-78" target="H45FWg4XIIRnXyOKp0UL-81" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-78" value="质检明细和索赔明细单商品信息（商品编码、尺码、品牌）是否一致" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1458" y="7021" width="164.99" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-79" value="报错：无质检信息，无法确认" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1480.345" y="6911" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-81" target="H45FWg4XIIRnXyOKp0UL-82" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-85" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="H45FWg4XIIRnXyOKp0UL-80" vertex="1" connectable="0">
-          <mxGeometry x="0.084" y="-4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H45FWg4XIIRnXyOKp0UL-81" target="H45FWg4XIIRnXyOKp0UL-88" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="560" y="7501" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1850" y="7061" />
-              <mxPoint x="1850" y="7441" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-81" value="提报数量是否大于质检数量" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1745.485" y="7021" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="H45FWg4XIIRnXyOKp0UL-82" value="报错：索赔数量不能大于质检数量" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1725.0049999999999" y="6911" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H45FWg4XIIRnXyOKp0UL-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H45FWg4XIIRnXyOKp0UL-88" target="H45FWg4XIIRnXyOKp0UL-90" edge="1">
           <mxGeometry relative="1" as="geometry" />

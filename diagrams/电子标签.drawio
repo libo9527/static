@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-01T07:10:45.981Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="F8L3PSWiqN9EpXKrctKv" version="24.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-01T07:11:02.203Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2phkTQxrYCOOSf-qu2je" version="24.0.0" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1709" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -79,7 +79,7 @@
           <mxGeometry y="20" width="230" height="390" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-2" value="扫描拣货单号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-1">
-          <mxGeometry x="55" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="55" y="40" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-4" value="lesoon-sce-wms-e-api" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="tjXnVJBQ9HKJjdVD9FGJ-2">
           <mxGeometry x="230" y="20" width="330" height="390" as="geometry" />

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-01T07:02:42.793Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="C7XQzB3DQvQDPn2999b1" version="24.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-01T07:07:17.943Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="29GSf3YcIO9vBGkSjson" version="24.0.0" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1709" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -104,6 +104,9 @@
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-6" value="PC" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="tjXnVJBQ9HKJjdVD9FGJ-2">
           <mxGeometry x="560" y="20" width="130" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="FaZC592zvoWZjne6oMdN-14" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;lesoon-sce-wms-e-api/rfapi/blOmOnlineRecheck/getPickOutStockBill&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1590" width="490" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

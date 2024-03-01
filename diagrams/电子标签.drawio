@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-01T07:48:09.761Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="MNYCu-13p-852w61t7wp" version="24.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-01T08:22:03.976Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="RNT0nSuk8p3-wjlRgC2b" version="24.0.0" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2536" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,11 +119,23 @@
         <mxCell id="FaZC592zvoWZjne6oMdN-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="FaZC592zvoWZjne6oMdN-34" target="FaZC592zvoWZjne6oMdN-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="FaZC592zvoWZjne6oMdN-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="FaZC592zvoWZjne6oMdN-34" target="FaZC592zvoWZjne6oMdN-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-34" value="状态是否小于20" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="124.5" y="400" width="115" height="56" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-35" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;宋体, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;拣货单还未拣货!&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="330" y="399" width="122.5" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="FaZC592zvoWZjne6oMdN-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="FaZC592zvoWZjne6oMdN-37" target="FaZC592zvoWZjne6oMdN-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FaZC592zvoWZjne6oMdN-37" value="状态是否=100" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+          <mxGeometry x="125" y="516" width="115" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="FaZC592zvoWZjne6oMdN-38" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;宋体, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;拣货单已完结!&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+          <mxGeometry x="327" y="515" width="122.5" height="58" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="FaZC592zvoWZjne6oMdN-2" target="FaZC592zvoWZjne6oMdN-14">
           <mxGeometry relative="1" as="geometry" />

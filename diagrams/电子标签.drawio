@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-03T13:24:47.314Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="55SZSZpv17HcWRejNOVm" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-03T13:41:22.375Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="VKxX9ol2-oDr-7chBlYQ" version="24.0.1" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2233" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -237,13 +237,13 @@
         <mxCell id="Yv0LOf2NeITes6On473w-64" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;查询商品信息&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="130" y="1730" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-68" value="拣货单是否存在" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="Yv0LOf2NeITes6On473w-68" value="当前商品是否&lt;div&gt;属于当前波次&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="217.25" y="1881" width="115" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-64" target="Yv0LOf2NeITes6On473w-68">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-69" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: 宋体, monospace; font-size: 10.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;拣货单号不存在&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;!&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="Yv0LOf2NeITes6On473w-69" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: 宋体, monospace; font-size: 10.5pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;拣货单不存在该商品&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="412.25" y="1880" width="122.5" height="58" as="geometry" />
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-68" target="Yv0LOf2NeITes6On473w-69">
@@ -299,46 +299,18 @@
         <mxCell id="Yv0LOf2NeITes6On473w-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-84" target="Yv0LOf2NeITes6On473w-85">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-88" value="是否有格口预占" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="217.25" y="2503" width="115" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-84" target="Yv0LOf2NeITes6On473w-88">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-90" value="预占的格口所在工作台&lt;div&gt;是否是当前工作台&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="421.25" y="2499" width="180" height="64" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-88" target="Yv0LOf2NeITes6On473w-90">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-91" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;宋体, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;当前波次已在其他工作台&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt;&quot;&gt;进行分播&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="652.25" y="2502" width="160" height="58" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-90" target="Yv0LOf2NeITes6On473w-91">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Yv0LOf2NeITes6On473w-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="274.25" y="2502" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-93" value="预占格口" style="whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="214.75" y="2637" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-88" target="Yv0LOf2NeITes6On473w-93">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-94" target="Yv0LOf2NeITes6On473w-99">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-94" value="查询当前波次&lt;span style=&quot;background-color: initial;&quot;&gt;待分播数&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;量大于 0 的流道&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="414.75" y="2637" width="127.5" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-95" value="sql" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" collapsed="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="542.25" y="2637" width="60" height="60" as="geometry">
-            <mxRectangle x="450" y="880" width="359.5" height="160" as="alternateBounds" />
+        <mxCell id="Yv0LOf2NeITes6On473w-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" target="Yv0LOf2NeITes6On473w-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="478.5" y="2697" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-96" value="&lt;div&gt;SELECT DISTINCT&amp;nbsp; `store_no`, `bill_no`, `serial_no`&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; `bl_om_online_outstock_dtl`&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; `store_no` = &#39;Z752Y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and `bill_no` = &#39;Z752YHO2403030000532&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and `outstock_qty` - `recheck_qty` - `diff_qty` - `sort_qty` &amp;gt; 0;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Yv0LOf2NeITes6On473w-95">
-          <mxGeometry x="14" y="40" width="350" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="Yv0LOf2NeITes6On473w-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-93" target="Yv0LOf2NeITes6On473w-94">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-99" value="查询当前工作台对应的分播墙未被占用的格口" style="whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="414" y="2770" width="129" height="60" as="geometry" />

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-04T12:39:54.616Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="-0ZkP-2OFet49gqmIQ6-" version="24.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-04T13:00:47.174Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="KFSb9HUJFl_nUHEBNTA2" version="24.0.1" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2683" dy="-241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -295,8 +295,8 @@
         <mxCell id="saPdWObUAmixJngYpiTu-1" value="打标签：工作台、拣货单号、流道号" style="whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="154" y="4819" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-12" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取当前&lt;/span&gt;&lt;font face=&quot;Segoe UI, tahoma, sans-serif&quot; color=&quot;#191d17&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;工作台对应分播墙信息&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
-          <mxGeometry x="222" y="340" width="195" height="60" as="geometry" />
+        <mxCell id="saPdWObUAmixJngYpiTu-12" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;/rfapi/blOmOnlineRecheck/getDistributionWall&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+          <mxGeometry x="222" y="340" width="398" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="FaZC592zvoWZjne6oMdN-2" target="FaZC592zvoWZjne6oMdN-14" edge="1">
           <mxGeometry relative="1" as="geometry">

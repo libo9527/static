@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-04T02:47:30.399Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="UZz2hoZwVkaa2uldrQiV" version="24.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-04T02:48:54.029Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="mveROqApB5pkROlU8Ogu" version="24.0.1" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2536" dy="-229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -356,18 +356,6 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="lf4q9DslaleRkPASU9yI-1" value="bm_workbench_manage&lt;div&gt;工作台&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-590" y="520" width="390" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;`workbench_no` varchar(50) NOT NULL COMMENT &#39;工作台编码&#39;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-1">
-          <mxGeometry y="30" width="390" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-3" value="`workbench_facility_no` varchar(50) DEFAULT NULL COMMENT &#39;工作台设备ID(PC写入MAC地址)&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-1">
-          <mxGeometry y="60" width="390" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-4" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-1">
-          <mxGeometry y="100" width="390" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="lf4q9DslaleRkPASU9yI-5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;orphans: 4; white-space-collapse: preserve; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; text-align: start; background-color: initial;&quot;&gt;bm_wcs_line&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; orphans: 4; white-space-collapse: preserve; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; text-align: start;&quot;&gt;线路资料表&lt;/span&gt;&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="170" width="370" height="120" as="geometry" />
         </mxCell>
@@ -379,33 +367,6 @@
         </mxCell>
         <mxCell id="lf4q9DslaleRkPASU9yI-8" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-5">
           <mxGeometry y="90" width="370" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-9" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px; white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;bm_wcs_chute&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 13px; white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;滑槽口&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="400" width="434" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-10" value="`chute_no` varchar(20) NOT NULL COMMENT &#39;滑槽口编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-9">
-          <mxGeometry y="30" width="434" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-11" value="`line_no` varchar(20) NOT NULL COMMENT &#39;线路编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-9">
-          <mxGeometry y="60" width="434" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-12" value="`workbench_no` varchar(50) DEFAULT NULL COMMENT &#39;工作台编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-9">
-          <mxGeometry y="90" width="434" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-13" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space-collapse: preserve;&quot;&gt;bm_wcs_distribute&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space-collapse: preserve;&quot;&gt;分播墙&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="10" y="630" width="430" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-18" value="`workbench_no` varchar(50) DEFAULT NULL COMMENT &#39;工作台编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-13">
-          <mxGeometry y="30" width="430" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-16" value="`line_no` varchar(20) NOT NULL COMMENT &#39;线路编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-13">
-          <mxGeometry y="60" width="430" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-15" value="`chute_no` varchar(20) NOT NULL COMMENT &#39;滑槽口编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-13">
-          <mxGeometry y="90" width="430" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="lf4q9DslaleRkPASU9yI-14" value="`wall_no` varchar(32) NOT NULL COMMENT &#39;分播墙编码&#39;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-13">
-          <mxGeometry y="120" width="430" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lf4q9DslaleRkPASU9yI-39" value="&lt;div style=&quot;font-weight: 400; text-wrap: wrap; orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space-collapse: preserve;&quot;&gt;bm_wcs_distribute&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: 400; text-wrap: wrap; orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space-collapse: preserve;&quot;&gt;分播墙&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
           <mxGeometry x="-100" y="860" width="420" height="150" as="geometry" />
@@ -487,6 +448,54 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lf4q9DslaleRkPASU9yI-78" value="`workbench_facility_no` varchar(50) DEFAULT NULL COMMENT &#39;工作台设备ID(PC写入MAC地址)&#39;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-76">
+          <mxGeometry x="30" width="390" height="30" as="geometry">
+            <mxRectangle width="390" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-82" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lf4q9DslaleRkPASU9yI-64" target="lf4q9DslaleRkPASU9yI-54">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-310" y="1060" as="sourcePoint" />
+            <mxPoint x="-210" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-83" value="&lt;div style=&quot;font-weight: 400; text-wrap: wrap; orphans: 4;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 13px; white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;bm_wcs_chute&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 13px; white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;滑槽口&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-6" y="630" width="420" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-84" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-83">
+          <mxGeometry y="30" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-85" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-84">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-86" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;`chute_no` varchar(20) NOT NULL COMMENT &#39;滑槽口编码&#39;&lt;/span&gt;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-84">
+          <mxGeometry x="30" width="390" height="30" as="geometry">
+            <mxRectangle width="390" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-87" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="lf4q9DslaleRkPASU9yI-83">
+          <mxGeometry y="60" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-88" value="FK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-87">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-89" value="`workbench_no` varchar(50) DEFAULT NULL COMMENT &#39;工作台编码&#39;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-87">
+          <mxGeometry x="30" width="390" height="30" as="geometry">
+            <mxRectangle width="390" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-90" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="lf4q9DslaleRkPASU9yI-83">
+          <mxGeometry y="90" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-91" value="FK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-90">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lf4q9DslaleRkPASU9yI-92" value="`line_no` varchar(20) NOT NULL COMMENT &#39;线路编码&#39;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="lf4q9DslaleRkPASU9yI-90">
           <mxGeometry x="30" width="390" height="30" as="geometry">
             <mxRectangle width="390" height="30" as="alternateBounds" />
           </mxGeometry>

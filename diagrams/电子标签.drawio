@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T06:49:52.673Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="QuHoONIjyVy21NsBr9SI" version="24.0.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-03-05T07:00:18.154Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="k_RPh7xf8pVAendQkPm9" version="24.0.1" type="github" pages="5">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="11632" dy="3701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1165,10 +1165,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-17" value="重新渲染商品信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
-          <mxGeometry x="250" y="1590" width="350" height="60" as="geometry" />
+          <mxGeometry x="250" y="1680" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-19" value="重新渲染变动格口" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
-          <mxGeometry x="250" y="1730" width="350" height="60" as="geometry" />
+          <mxGeometry x="250" y="1820" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-3" source="r2INYkDBJYAaLkn8RVxv-28" target="r2INYkDBJYAaLkn8RVxv-32">
           <mxGeometry relative="1" as="geometry" />
@@ -1182,7 +1182,7 @@
         <mxCell id="r2INYkDBJYAaLkn8RVxv-32" value="将该商品总的待分播数量显示在【分播数量】输入框" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
           <mxGeometry x="254.5" y="830" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="r2INYkDBJYAaLkn8RVxv-34" value="点击确定后，带上数量重新调用条码接口" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-34" value="调整数量，点击确定后，带上数量重新调用条码接口" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
           <mxGeometry x="254.5" y="970" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-6" value="lesoon-sce-wms-e-api" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-2">

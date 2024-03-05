@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T02:56:16.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="PH-W3m_hEqv1ZWLFjBe1" version="24.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-05T03:25:07.529Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Wp6Lpoi_oqwg3yUUYEG3" version="24.0.1" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1737" dy="-804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2137" dy="-579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -317,6 +317,14 @@
         </mxCell>
         <mxCell id="qH0Zp2juqjix7ojZrz54-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SELECT&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`workbench_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; b.workbench_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_name`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_number`&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute a&lt;/div&gt;&lt;div&gt;&amp;nbsp; INNER JOIN bm_workbench_manage b on a.`store_no` = b.`store_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`workbench_no` = b.`workbench_no`&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and b.`workbench_facility_no` = &#39;88-A4-C2-3D-C2-31&#39;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qH0Zp2juqjix7ojZrz54-3">
           <mxGeometry x="10" y="40" width="410" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="qH0Zp2juqjix7ojZrz54-5" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" collapsed="1" parent="FaZC592zvoWZjne6oMdN-4">
+          <mxGeometry x="620" y="620" width="90" height="60" as="geometry">
+            <mxRectangle x="620" y="620" width="440" height="360" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qH0Zp2juqjix7ojZrz54-6" value="&lt;div&gt;SELECT&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`cell_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.sort_qty,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.item_qty AS electLabelStatus&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute_cell a&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bl_om_online_order_cell_pre b ON a.`store_no` = b.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = b.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`cell_no` = b.`cell_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bm_wcs_elect_label_log c ON a.`store_no` = c.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = c.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; and a.`cell_no` = c.cell_no&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;and a.`wall_no` = &#39;XXX&#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;GROUP BY&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;a.`store_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`wall_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`cell_no`&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qH0Zp2juqjix7ojZrz54-5">
+          <mxGeometry x="10" y="72" width="420" height="270" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="FaZC592zvoWZjne6oMdN-2" target="FaZC592zvoWZjne6oMdN-14" edge="1">
           <mxGeometry relative="1" as="geometry">

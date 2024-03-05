@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T03:25:07.529Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Wp6Lpoi_oqwg3yUUYEG3" version="24.0.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-05T03:25:18.577Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="l6PeMnoji0DBnG4xr-dA" version="24.0.1" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2137" dy="-579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -312,7 +312,7 @@
         </mxCell>
         <mxCell id="qH0Zp2juqjix7ojZrz54-3" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" collapsed="1" parent="FaZC592zvoWZjne6oMdN-4">
           <mxGeometry x="620" y="480" width="90" height="60" as="geometry">
-            <mxRectangle x="620" y="340" width="440" height="270" as="alternateBounds" />
+            <mxRectangle x="620" y="480" width="440" height="270" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qH0Zp2juqjix7ojZrz54-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SELECT&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`workbench_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; b.workbench_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_name`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_number`&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute a&lt;/div&gt;&lt;div&gt;&amp;nbsp; INNER JOIN bm_workbench_manage b on a.`store_no` = b.`store_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`workbench_no` = b.`workbench_no`&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and b.`workbench_facility_no` = &#39;88-A4-C2-3D-C2-31&#39;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qH0Zp2juqjix7ojZrz54-3">

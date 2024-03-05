@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T07:26:51.077Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="37Rzxw4Orvh-W3AJPpUP" version="24.0.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-03-05T07:31:41.864Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="TlwOrQ8_U8ARIhmKJx_v" version="24.0.1" type="github" pages="5">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="11632" dy="3701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1148,7 +1148,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="分播流程-扫码商品条码" id="GjgkezWKFA-Vb3DNZaam">
-    <mxGraphModel dx="3675" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2626" dy="-144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-0" />
         <mxCell id="beJmwEhUZY2iH8N51Vwd-1" parent="beJmwEhUZY2iH8N51Vwd-0" />
@@ -1165,10 +1165,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-17" value="重新渲染商品信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
-          <mxGeometry x="250" y="2670" width="350" height="60" as="geometry" />
+          <mxGeometry x="250" y="2540" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="r2INYkDBJYAaLkn8RVxv-19" value="重新渲染变动格口" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
-          <mxGeometry x="250" y="2810" width="350" height="60" as="geometry" />
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-19" value="重新渲染分播墙格口" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-3">
+          <mxGeometry x="250" y="2680" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-3" source="r2INYkDBJYAaLkn8RVxv-28" target="r2INYkDBJYAaLkn8RVxv-32">
           <mxGeometry relative="1" as="geometry" />
@@ -1404,7 +1404,7 @@
           <mxGeometry x="588" y="1110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-21" value="组装数据后返回" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
-          <mxGeometry x="380" y="2670" width="120" height="60" as="geometry" />
+          <mxGeometry x="380" y="2540" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-23" target="r2INYkDBJYAaLkn8RVxv-24">
           <mxGeometry relative="1" as="geometry" />
@@ -1453,11 +1453,14 @@
         <mxCell id="r2INYkDBJYAaLkn8RVxv-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="r2INYkDBJYAaLkn8RVxv-48" target="r2INYkDBJYAaLkn8RVxv-49" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="r2INYkDBJYAaLkn8RVxv-48" value="发送绿色常亮指令到电子标签" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
-          <mxGeometry x="379.5" y="2050" width="120" height="60" as="geometry" />
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-48" value="发送绿色常亮指令到&lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;当前格口&lt;/font&gt;&lt;/b&gt;对饮的电子标签" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
+          <mxGeometry x="379.5" y="2170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-49" target="r2INYkDBJYAaLkn8RVxv-77">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-49" value="记录分播墙电子标签日志" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
-          <mxGeometry x="379.5" y="2190" width="120" height="60" as="geometry" />
+          <mxGeometry x="379.5" y="2290" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-52" target="r2INYkDBJYAaLkn8RVxv-56">
           <mxGeometry relative="1" as="geometry" />
@@ -1474,26 +1477,46 @@
         <mxCell id="r2INYkDBJYAaLkn8RVxv-56" value="格口是否&lt;div&gt;已分播完成&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry x="380" y="1770" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-58" target="r2INYkDBJYAaLkn8RVxv-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640.238095238095" y="2380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-58" value="发送蓝色常亮指令到对应电子标签" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry x="580" y="1770" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-63" target="r2INYkDBJYAaLkn8RVxv-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="r2INYkDBJYAaLkn8RVxv-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-63" target="r2INYkDBJYAaLkn8RVxv-48">
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-63" target="r2INYkDBJYAaLkn8RVxv-70">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-63" value="格口是否超时" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry x="380" y="1910" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-65" target="r2INYkDBJYAaLkn8RVxv-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-65" value="发送黄色常亮指令到对应电子标签" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
-          <mxGeometry x="580" y="1910" width="120" height="60" as="geometry" />
+          <mxGeometry x="680" y="1910" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-66" value="黄色长亮" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry x="1120" y="1909" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="r2INYkDBJYAaLkn8RVxv-65" target="r2INYkDBJYAaLkn8RVxv-66" parent="beJmwEhUZY2iH8N51Vwd-6">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-70" target="r2INYkDBJYAaLkn8RVxv-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-70" value="发送熄灯指令到指定电子标签" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
+          <mxGeometry x="380" y="2050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-6" source="r2INYkDBJYAaLkn8RVxv-77" target="r2INYkDBJYAaLkn8RVxv-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-77" value="查询当前分播墙格口信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-6">
+          <mxGeometry x="379.5" y="2430" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-53" value="lesoon-sce-wcs-api" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-2">
           <mxGeometry x="1740" y="20" width="870" height="5130" as="geometry" />
@@ -1505,6 +1528,9 @@
           <mxGeometry x="250" y="1769" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-50" value="绿色常亮" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-53">
+          <mxGeometry x="250" y="2170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-72" value="熄灯" style="whiteSpace=wrap;html=1;" vertex="1" parent="beJmwEhUZY2iH8N51Vwd-53">
           <mxGeometry x="250" y="2050" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-2" source="beJmwEhUZY2iH8N51Vwd-58" target="beJmwEhUZY2iH8N51Vwd-61">
@@ -1531,6 +1557,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="r2INYkDBJYAaLkn8RVxv-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="r2INYkDBJYAaLkn8RVxv-48" target="r2INYkDBJYAaLkn8RVxv-50" parent="beJmwEhUZY2iH8N51Vwd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2INYkDBJYAaLkn8RVxv-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="beJmwEhUZY2iH8N51Vwd-2" source="r2INYkDBJYAaLkn8RVxv-70" target="r2INYkDBJYAaLkn8RVxv-72">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

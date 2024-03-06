@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T05:50:50.300Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="qEhJBheLerrcgkMKTvbf" version="24.0.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-03-06T05:52:32.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="8Z0WKZatrYnYHL8sRM0c" version="24.0.1" type="github" pages="5">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="11632" dy="3701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1148,7 +1148,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="分播流程-扫码商品条码" id="GjgkezWKFA-Vb3DNZaam">
-    <mxGraphModel dx="4245" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="9372" dy="3701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-0" />
         <mxCell id="beJmwEhUZY2iH8N51Vwd-1" parent="beJmwEhUZY2iH8N51Vwd-0" />

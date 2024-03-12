@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-11T02:16:50.886Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="74avcYLPTrbZldO_ONmd" version="24.0.4" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-03-12T10:15:57.205Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="4SGgo_xOr9fSsvbPsjPM" version="24.0.5" type="github" pages="7">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="11632" dy="3701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6524" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,10 +22,10 @@
         <mxCell id="Yv0LOf2NeITes6On473w-60" value="扫描商品条码" style="whiteSpace=wrap;html=1;" parent="FaZC592zvoWZjne6oMdN-1" vertex="1">
           <mxGeometry x="40" y="2520" width="129" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-10" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取当前&lt;/span&gt;&lt;font face=&quot;Segoe UI, tahoma, sans-serif&quot; color=&quot;#191d17&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;工作台对应分播墙信息&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-1">
+        <mxCell id="saPdWObUAmixJngYpiTu-10" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取当前&lt;/span&gt;&lt;font face=&quot;Segoe UI, tahoma, sans-serif&quot; color=&quot;#191d17&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;工作台对应分播墙信息&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-1" vertex="1">
           <mxGeometry x="20" y="340" width="195" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-9" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;渲染&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-1">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-9" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;渲染&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-1" vertex="1">
           <mxGeometry x="23.5" y="760" width="183" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-4" value="lesoon-sce-wms-e-api" style="swimlane;whiteSpace=wrap;html=1;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" vertex="1">
@@ -265,7 +265,7 @@
         <mxCell id="Yv0LOf2NeITes6On473w-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-140" target="Yv0LOf2NeITes6On473w-158" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-140" target="saPdWObUAmixJngYpiTu-1">
+        <mxCell id="saPdWObUAmixJngYpiTu-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="FaZC592zvoWZjne6oMdN-4" source="Yv0LOf2NeITes6On473w-140" target="saPdWObUAmixJngYpiTu-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-140" value="清除格口预占" style="whiteSpace=wrap;html=1;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
@@ -295,44 +295,44 @@
         <mxCell id="Yv0LOf2NeITes6On473w-158" value="发送熄灯指令到电子标签" style="whiteSpace=wrap;html=1;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="369" y="4679" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-1" value="打标签：工作台、拣货单号、流道号" style="whiteSpace=wrap;html=1;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="saPdWObUAmixJngYpiTu-1" value="打标签：工作台、拣货单号、流道号" style="whiteSpace=wrap;html=1;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="154" y="4819" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="saPdWObUAmixJngYpiTu-12" target="saPdWObUAmixJngYpiTu-14">
+        <mxCell id="saPdWObUAmixJngYpiTu-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="FaZC592zvoWZjne6oMdN-4" source="saPdWObUAmixJngYpiTu-12" target="saPdWObUAmixJngYpiTu-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-12" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;/rfapi/blOmOnlineRecheck/getDistributionWall&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="saPdWObUAmixJngYpiTu-12" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;/rfapi/blOmOnlineRecheck/getDistributionWall&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="222" y="340" width="398" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="saPdWObUAmixJngYpiTu-14" target="qH0Zp2juqjix7ojZrz54-1">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="FaZC592zvoWZjne6oMdN-4" source="saPdWObUAmixJngYpiTu-14" target="qH0Zp2juqjix7ojZrz54-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-14" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;查询分播墙信息&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="saPdWObUAmixJngYpiTu-14" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;查询分播墙信息&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="222" y="480" width="398" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="FaZC592zvoWZjne6oMdN-4" source="qH0Zp2juqjix7ojZrz54-1" target="qH0Zp2juqjix7ojZrz54-7">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="FaZC592zvoWZjne6oMdN-4" source="qH0Zp2juqjix7ojZrz54-1" target="qH0Zp2juqjix7ojZrz54-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-1" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;查询格口信息&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-1" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;查询格口信息&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="222" y="620" width="398" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-3" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" collapsed="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-3" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1" collapsed="1">
           <mxGeometry x="620" y="480" width="90" height="60" as="geometry">
             <mxRectangle x="620" y="480" width="440" height="270" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SELECT&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`workbench_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; b.workbench_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_name`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_number`&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute a&lt;/div&gt;&lt;div&gt;&amp;nbsp; INNER JOIN bm_workbench_manage b on a.`store_no` = b.`store_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`workbench_no` = b.`workbench_no`&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and b.`workbench_facility_no` = &#39;88-A4-C2-3D-C2-31&#39;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qH0Zp2juqjix7ojZrz54-3">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SELECT&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`workbench_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; b.workbench_name,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_name`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_number`&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute a&lt;/div&gt;&lt;div&gt;&amp;nbsp; INNER JOIN bm_workbench_manage b on a.`store_no` = b.`store_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`workbench_no` = b.`workbench_no`&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp; and b.`workbench_facility_no` = &#39;88-A4-C2-3D-C2-31&#39;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="qH0Zp2juqjix7ojZrz54-3" vertex="1">
           <mxGeometry x="10" y="40" width="410" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-5" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" collapsed="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-5" value="参考SQL" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1" collapsed="1">
           <mxGeometry x="620" y="620" width="90" height="60" as="geometry">
             <mxRectangle x="620" y="620" width="440" height="360" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-6" value="&lt;div&gt;SELECT&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`cell_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.sort_qty,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.item_qty AS electLabelStatus&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute_cell a&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bl_om_online_order_cell_pre b ON a.`store_no` = b.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = b.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`cell_no` = b.`cell_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bm_wcs_elect_label_log c ON a.`store_no` = c.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = c.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; and a.`cell_no` = c.cell_no&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;and a.`wall_no` = &#39;XXX&#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;GROUP BY&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;a.`store_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`wall_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`cell_no`&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qH0Zp2juqjix7ojZrz54-5">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-6" value="&lt;div&gt;SELECT&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`wall_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`cell_no`,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.status,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.sort_qty,&lt;/div&gt;&lt;div&gt;&amp;nbsp; c.item_qty AS electLabelStatus&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&amp;nbsp; bm_wcs_distribute_cell a&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bl_om_online_order_cell_pre b ON a.`store_no` = b.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = b.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`cell_no` = b.`cell_no`&lt;/div&gt;&lt;div&gt;&amp;nbsp; LEFT JOIN bm_wcs_elect_label_log c ON a.`store_no` = c.store_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; AND a.`wall_no` = c.wall_no&lt;/div&gt;&lt;div&gt;&amp;nbsp; and a.`cell_no` = c.cell_no&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&amp;nbsp; a.`store_no` = &#39;Z752Y&#39;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;and a.`wall_no` = &#39;XXX&#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;GROUP BY&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;a.`store_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`wall_no`,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;a.`cell_no`&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="qH0Zp2juqjix7ojZrz54-5" vertex="1">
           <mxGeometry x="10" y="72" width="420" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-7" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;组装后返回&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="FaZC592zvoWZjne6oMdN-4">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-7" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Lucida Console, Consolas, Courier, monospace&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 14.4px; white-space-collapse: preserve;&quot;&gt;组装后返回&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="FaZC592zvoWZjne6oMdN-4" vertex="1">
           <mxGeometry x="222" y="760" width="398" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FaZC592zvoWZjne6oMdN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="FaZC592zvoWZjne6oMdN-2" target="FaZC592zvoWZjne6oMdN-14" edge="1">
@@ -390,10 +390,10 @@
         <mxCell id="Yv0LOf2NeITes6On473w-161" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="Yv0LOf2NeITes6On473w-158" target="Yv0LOf2NeITes6On473w-160" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="saPdWObUAmixJngYpiTu-10" target="saPdWObUAmixJngYpiTu-12">
+        <mxCell id="saPdWObUAmixJngYpiTu-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="saPdWObUAmixJngYpiTu-10" target="saPdWObUAmixJngYpiTu-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qH0Zp2juqjix7ojZrz54-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="qH0Zp2juqjix7ojZrz54-7" target="qH0Zp2juqjix7ojZrz54-9">
+        <mxCell id="qH0Zp2juqjix7ojZrz54-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="tjXnVJBQ9HKJjdVD9FGJ-2" source="qH0Zp2juqjix7ojZrz54-7" target="qH0Zp2juqjix7ojZrz54-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Yv0LOf2NeITes6On473w-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Yv0LOf2NeITes6On473w-56" target="Yv0LOf2NeITes6On473w-58" edge="1">
@@ -405,16 +405,16 @@
         <mxCell id="Yv0LOf2NeITes6On473w-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Yv0LOf2NeITes6On473w-49" target="Yv0LOf2NeITes6On473w-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="saPdWObUAmixJngYpiTu-7" target="saPdWObUAmixJngYpiTu-8">
+        <mxCell id="saPdWObUAmixJngYpiTu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="saPdWObUAmixJngYpiTu-7" target="saPdWObUAmixJngYpiTu-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-7" value="进入ToC分播页面" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="saPdWObUAmixJngYpiTu-7" value="进入ToC分播页面" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-283" y="1420" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="saPdWObUAmixJngYpiTu-8" target="saPdWObUAmixJngYpiTu-10">
+        <mxCell id="saPdWObUAmixJngYpiTu-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="saPdWObUAmixJngYpiTu-8" target="saPdWObUAmixJngYpiTu-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="saPdWObUAmixJngYpiTu-8" value="获取当前电脑MAC地址&lt;br&gt;&lt;span style=&quot;color: rgb(25, 29, 23); font-family: &amp;quot;Segoe UI&amp;quot;, tahoma, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;http://localhost:10050/macAddress&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="saPdWObUAmixJngYpiTu-8" value="获取当前电脑MAC地址&lt;br&gt;&lt;span style=&quot;color: rgb(25, 29, 23); font-family: &amp;quot;Segoe UI&amp;quot;, tahoma, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;http://localhost:10050/macAddress&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="-330" y="1560" width="195" height="60" as="geometry" />
         </mxCell>
       </root>
@@ -1143,7 +1143,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="分播流程-扫码商品条码" id="GjgkezWKFA-Vb3DNZaam">
-    <mxGraphModel dx="2536" dy="-229" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6524" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="beJmwEhUZY2iH8N51Vwd-0" />
         <mxCell id="beJmwEhUZY2iH8N51Vwd-1" parent="beJmwEhUZY2iH8N51Vwd-0" />

@@ -3,7 +3,7 @@
 //创建地图
 var map = new AMap.Map('container', {
     zoom: 13,
-    center: [114.030317, 22.57199],
+    center: [116.34,39.89],
     mapStyle: "amap://styles/macaron" //设置地图的显示样式
 });
 

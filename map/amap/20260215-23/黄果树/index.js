@@ -6,9 +6,9 @@ var map = new AMap.Map('container', {
     rotation: 0,//初始地图顺时针旋转的角度
     viewMode: '3D', //开启3D视图,默认为关闭
     zooms: [2, 20],//地图显示的缩放级别范围
-    center: [108.720359,27.882738],//初始地图中心经纬度
+    center: [105.669102, 25.989377],//初始地图中心经纬度
     terrain: true, // 开启地形图
-    // mapStyle: "amap://styles/fresh" //设置地图的显示样式
+    mapStyle: "amap://styles/fresh" //设置地图的显示样式
 });
 AMap.plugin(['AMap.ControlBar', 'AMap.ToolBar'], function () {//异步加载插件
     var controlBar = new AMap.ControlBar({//控制地图旋转插件

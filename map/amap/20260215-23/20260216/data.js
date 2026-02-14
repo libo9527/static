@@ -1,16 +1,6 @@
 const administrativeCenter = [];
 const traffic = [{
     id: 6,
-    title: "大荔站",
-    position: [109.92573, 34.83477],
-    awesomeIcon: "subway",
-    iconLabel: {style: {color: "#333", fontSize: "14px"}},
-    iconStyle: "orange",
-    infoBody: "",
-    type: "动车/高铁站",
-    visible: true
-}, {
-    id: 6,
     title: "成都东站",
     position: [104.14, 30.63],
     awesomeIcon: "subway",
@@ -19,8 +9,48 @@ const traffic = [{
     infoBody: "",
     type: "动车/高铁站",
     visible: true
+},{
+    id: 6,
+    title: "大观站",
+    position: [104.13,30.62],
+    awesomeIcon: "subway",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "动车/高铁站",
+    visible: true
+},{
+    id: 6,
+    title: "驷马桥站",
+    position: [104.09,30.70],
+    awesomeIcon: "subway",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "动车/高铁站",
+    visible: true
+},{
+    id: 6,
+    title: "军区总医院站B口",
+    position: [104.11,30.75],
+    awesomeIcon: "subway",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "动车/高铁站",
+    visible: true
 }];
-const hotel = [];
+const hotel = [{
+    id: 9,
+    title: "7天优品酒店(成都火车东站地铁站店)",
+    position: [104.13,30.62],
+    awesomeIcon: "hotel",
+    iconLabel: {style: {color: "black", fontSize: "14px"}},
+    iconStyle: "salmon",
+    infoBody: "",
+    type: "酒店",
+    visible: true
+}];
 const food = [];
 const scenery = [
     {

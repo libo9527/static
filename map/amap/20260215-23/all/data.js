@@ -1,5 +1,25 @@
 const administrativeCenter = [];
-const traffic = [];
+const traffic = [{
+    id: 6,
+    title: "大荔站",
+    position: [109.92573, 34.83477],
+    awesomeIcon: "subway",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "动车/高铁站",
+    visible: true
+}, {
+    id: 6,
+    title: "成都东站",
+    position: [104.14, 30.63],
+    awesomeIcon: "subway",
+    iconLabel: {style: {color: "#333", fontSize: "14px"}},
+    iconStyle: "orange",
+    infoBody: "",
+    type: "动车/高铁站",
+    visible: true
+}];
 const hotel = [];
 const food = [];
 const scenery = [
@@ -93,8 +113,85 @@ const scenery = [
     },
     {
         id: 10,
-        title: "青城山-都江堰",
+        title: "都江堰",
         position: [103.613469, 30.997572],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+        iconStyle: "green",
+        infoBody: "",
+        type: "自然景观类景区",
+        visible: true
+    },
+    {
+        id: 10,
+        title: "青城山",
+        position: [103.56, 30.90],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightgreen", fontSize: "14px"}},
+        iconStyle: "green",
+        infoBody: "",
+        type: "自然景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "文殊院",
+        position: [104.07,30.68],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "宽窄巷子",
+        position: [104.05,30.66],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "抚琴夜市",
+        position: [104.04,30.68],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "春熙路",
+        position: [104.08,30.66],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "太古里",
+        position: [104.08,30.65],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 11,
+        title: "大慈寺",
+        position: [104.08,30.65],
         awesomeIcon: "photo",
         iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
         iconStyle: "red",
@@ -111,15 +208,7 @@ const scenery = [
         iconStyle: "red",
         infoBody: "",
         type: "人文景观类景区",
-        visible: true,
-        "photos":[
-            {
-                "url": "../imgs/乐山大佛01.jpg",
-            },
-            {
-                "url": "../imgs/九寨沟01.jpg",
-            }
-        ]
+        visible: true
     },
     {
         id: 13,
@@ -154,6 +243,41 @@ const scenery = [
         type: "人文景观类景区",
         visible: true
     },
+
+    {
+        id: 18,
+        title: "成都博物馆",
+        position: [104.06, 30.66],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 18,
+        title: "成都大熊猫繁育研究基地",
+        position: [104.14, 30.74],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+    {
+        id: 18,
+        title: "三星堆博物馆",
+        position: [104.22, 31.00],
+        awesomeIcon: "photo",
+        iconLabel: {style: {color: "lightcoral", fontSize: "14px"}},
+        iconStyle: "red",
+        infoBody: "",
+        type: "人文景观类景区",
+        visible: true
+    },
+
     {
         "id": 19,
         "title": "武侯祠",
@@ -186,7 +310,8 @@ const scenery = [
         "infoBody": "",
         "type": "人文景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 22,
         "title": "酉阳桃花源",
         "position": [108.722222, 28.891667],
@@ -196,7 +321,8 @@ const scenery = [
         "infoBody": "",
         "type": "人文景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 25,
         "title": "武隆喀斯特",
         "position": [107.711737, 29.493889],
@@ -206,7 +332,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 26,
         "title": "巫山小三峡—小小三峡",
         "position": [109.8, 31.166667],
@@ -216,7 +343,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 28,
         "title": "南川金佛山",
         "position": [107.1, 28.95],
@@ -237,7 +365,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 37,
         "title": "三峡人家风景区",
         "position": [111.042343, 30.763824],
@@ -247,7 +376,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 38,
         "title": "清江画廊旅游度假区",
         "position": [111.178635, 30.364521],
@@ -257,7 +387,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 39,
         "title": "武陵源-天门山旅游区",
         "position": [110.488037, 29.117028],
@@ -267,7 +398,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 40,
         "title": "梵净山旅游区",
         "position": [108.471016, 27.947212],
@@ -277,7 +409,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 41,
         "title": "赤水丹霞旅游区",
         "position": [105.778023, 28.456055],
@@ -287,7 +420,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 42,
         "title": "遵义会议会址旅游景区",
         "position": [106.92141, 27.727119],
@@ -297,7 +431,8 @@ const scenery = [
         "infoBody": "",
         "type": "人文景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 43,
         "title": "百里杜鹃景区",
         "position": [105.79535, 27.176472],
@@ -318,7 +453,8 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true
-    }, {
+    },
+    {
         "id": 45,
         "title": "丽江古城景区",
         "position": [100.235517, 26.870507],
@@ -515,7 +651,7 @@ const scenery = [
         "infoBody": "",
         "type": "自然景观类景区",
         "visible": true,
-        "photos":[
+        "photos": [
             {
                 "url": "../imgs/乐山大佛01.jpg",
             }

@@ -78,6 +78,16 @@ const innerScenery = [{
     visible: true
 }, {
     id: 73,
+    title: "张公桥美食街",
+    position: [103.77,29.57],
+    awesomeIcon: "arrows",
+    iconLabel: {style: {color: "green", fontSize: "14px"}},
+    iconStyle: "lightgreen",
+    infoBody: "",
+    type: "内部景点",
+    visible: true
+}, {
+    id: 73,
     title: "凌云栈道",
     position: [103.77, 29.54],
     awesomeIcon: "arrows",

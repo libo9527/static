@@ -1,0 +1,150 @@
+html,
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-size:13px;
+}
+#new-tab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 5px;
+    background: transparent;
+}
+#new-tab a i{
+    color: black;
+}
+#new-tab a i:hover{
+    color: #212980;
+    font-size: 20px;
+}
+#container{
+    height:100%;
+    width:100%;
+}
+.amap-marker-label{
+    border: 0;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgba(39, 39, 39, 0.85);
+    height: 15px;
+}
+.label-content-text {
+    line-height: 15px;
+}
+.amap-info-contentContainer img {
+    float: left;
+    margin-right: 6px;
+}
+.info-body{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#legend{
+    position: absolute;
+    bottom: 70px;
+    left: 5px;
+    z-index: 100;
+}
+
+.amap-toolbar{
+    top: 30px !important;
+    right: 25px !important;
+}
+
+/* switch css */
+/* https://codepen.io/chutou/pen/qdGZQr */
+label {
+    display: block;
+    vertical-align: middle;
+}
+
+label, input, select {
+    vertical-align: middle;
+}
+
+.mui-switch {
+    width: 30px;
+    height: 18px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    background-color: #fdfdfd;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+}
+
+.mui-switch:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mui-switch:checked {
+    border-color: #64bd63;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+}
+
+.mui-switch:checked:before {
+    left: 12px;
+}
+
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-animbg:checked {
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    background-color: #64bd63;
+    transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:checked:before {
+    transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-anim {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+
+.mui-switch.mui-switch-anim:before {
+    transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-anim:checked {
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+
+.mui-switch.mui-switch-anim:checked:before {
+    transition: left 0.3s;
+}
+/* switch css */
